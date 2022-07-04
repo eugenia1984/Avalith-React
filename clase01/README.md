@@ -36,10 +36,24 @@ La **cultura organizacional**, corporativa, o de empresa se refiere al sistema d
 
 #### Cultura Corporativa
 
-Avalith brinda servicios de **stafing calificado** para el desarrollo del software. Cuenta con **talento** y **experiencia** necesaria para escalar la transformación y desdarrollo digital al nivel requerido.
+Avalith brinda servicios de **staffing calificado** para el desarrollo del software. Cuenta con **talento** y **experiencia** necesaria para escalar la transformación y desdarrollo digital al nivel requerido.
 
 **Nos involucramos** en cada proyecto, detectando neceesidades y diseñamos equipos ágiles a medida.
 
 **Mejoramos** la productividad del equipo interno y aumentamos la capacidad de entrega.
 
 ---
+
+#### Elementos de la cultura organizacional
+
+- 1: **valores y competencias** ¿qué valoras en tu comunidad? ¿qué conocimientos, habilidades y destrezas fomentamos?
+
+- 2: **comunicación** ¿cuán clara y efectiva es?
+
+- 3: **visión** ¿hacia dónde nos dirigimos?
+
+- 4: **desarrollo profesional** ¿qué herramientas brindas para empoderar a tus colaboradores?
+
+- 5: **liderazgo** ¿fomentamos la motivación y la creatividad de manera inclusiva?
+
+- 6: **clima laboral** ¿qué aire se respira en tu empresa?
