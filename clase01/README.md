@@ -105,13 +105,50 @@ Es el programa de formaciónd e habilidades y conocimientos profesionales. Ofrec
 
 ---
 
-### 110 hs de capacitación
+#### 110 hs de capacitación
 
 Divididas en:
 
 - **90 hs** de **React**
 
-- **20 hs** de Workshop
+- **20 hs** de **Workshop**
+
+---
+
+#### Temario de React
+
+- Daserrollo web - conceptos básicos de JavaSCript: introducción, arrays y objects, asincronismo, conceptos avanzados.
+
+- React JS: Introducción a React, Hook, Eventos.
+
+---
+
+#### Workshops
+
+- Git
+
+- Skillers / IT Recruiter
+
+- Delivery Manager
+
+- Scrum
+
+- Kanban
+
+- Experiencia de usuario
+
+- Soft Wkills
+
+- AWS
+
+
+---
+
+### Condiciones de aprobación
+
+- 75 % de asistencia
+
+- 5 Trabajos Prácticos
 
 ---
 ---
