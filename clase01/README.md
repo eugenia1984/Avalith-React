@@ -27,3 +27,9 @@ La **Industria 4.0**, la revolución **tecnológica**, viene la disrupción, es 
 Tener éxito en este entorno volátil requiere no solo de una comprensión profunda de lo que es la disrupción y cómo lidiar con ella sino también y aún más importante, comprender cómo ser un agente de disrupción para los demás.
 
 ---
+
+#### Cultura organizacional
+
+La **cultura organizacional**, corporativa, o de empresa se refiere al sistema de creencias y valores compartidos a lo largo y ancho de una organización - desde la gerencia hasta el personal administrativo, incluyendo su relación con proveedores, clientes e incluso procesos de reclutamiento.
+
+---
