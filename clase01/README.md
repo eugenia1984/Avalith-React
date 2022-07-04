@@ -57,3 +57,39 @@ Avalith brinda servicios de **staffing calificado** para el desarrollo del softw
 - 5: **liderazgo** ¿fomentamos la motivación y la creatividad de manera inclusiva?
 
 - 6: **clima laboral** ¿qué aire se respira en tu empresa?
+
+---
+
+#### El propósito
+
+**Potenciar** y promover en diferentes organizaciones
+
+**Priorizar la excelencia**
+
+**Participamos activamente** de la innovación tecnológica.
+
+- INCENTIVAMOS el crecimiento individual y colectivo
+
+- FOMENTAMOS
+
+- AGILIZAMOS
+
+---
+
+#### Valores
+
+- ADAPTABILIDAD
+
+- INNOVACION
+
+- INCLUSION
+
+---
+
+#### Skill Factory
+
+Es el programa de formaciónd e habilidades y conocimientos profesionales. Ofrecemos de forma 100% virtual y gratuita, acceder a conocimientos específicos, coordinado por referentes de la industria IT.
+
+**SKiller** es la persona apasionada y motivada por la búsqueda de conocimiento de la industria IT y que decide aventurarse en nuevos desafíos orientados a su desarrollo profesional.
+
+---
