@@ -20,6 +20,10 @@
 
 ---
 
-####
+#### La cuarta revolución
+
+La **Industria 4.0**, la revolución **tecnológica**, viene la disrupción, es una fuerza que está cambiando el panorama corporativo como ninguna otra. Las organizaciones deben transformarse para satisfacer las demandas de lo digital y adaptarse a los constantes cambios.
+
+Tener éxito en este entorno volátil requiere no solo de una comprensión profunda de lo que es la disrupción y cómo lidiar con ella sino también y aún más importante, comprender cómo ser un agente de disrupción para los demás.
 
 ---
