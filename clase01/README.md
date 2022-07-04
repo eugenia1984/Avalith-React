@@ -3,6 +3,9 @@
 ## Skill Factory 2022 by AVALITH
 
 ---
+---
+
+## :star: Workshop
 
 #### Equipo:
 
@@ -92,4 +95,23 @@ Es el programa de formaciónd e habilidades y conocimientos profesionales. Ofrec
 
 **SKiller** es la persona apasionada y motivada por la búsqueda de conocimiento de la industria IT y que decide aventurarse en nuevos desafíos orientados a su desarrollo profesional.
 
+---
+
+### 2da edición 2022 de Skill Factory
+
+1530 se anotaron y se armaron del grupos de 80 personas
+
+**Fabián Tureo** estará en REact y **Alexis Moragues** con Node
+
+---
+
+### 110 hs de capacitación
+
+Divididas en:
+
+- **90 hs** de **React**
+
+- **20 hs** de Workshop
+
+---
 ---
