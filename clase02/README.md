@@ -21,7 +21,7 @@ Fabian Tureo
 ¿Qué más existe aparte del Desarrollo Web?
 ```
 
-- 2 Preparación del entonrno
+- 2 Preparación del entorno
 ```
 Instalación de programas necesarios
 Revisión de versiones
