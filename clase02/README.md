@@ -14,7 +14,7 @@ Fabian Tureo
 
 ## Temario
 
-- 1 DEsarrollo Web y Mobile
+- 1 Desarrollo Web y Mobile
 
 - 2 Preparación del entonrno
 
@@ -48,6 +48,14 @@ Fabian Tureo
 
 - 17 Conexión aBackENd
 
-- 18 Testing
+- 18 Test automation
+
+---
+
+## Introducción
+
+**Front End**: es la parte del desarrollo web que se dedica a la interfaz, es decir: diseño, desde la estructura dle sitio, la estilización tal como los colores, fondos, animaciones, etc, y muy importante, las funcionalidades.
+
+**Back End**: procesa la información desde el front y la almacena o recupera la información almacenada y la envía al front. Es la lógica escondida para que los datos de una página web funcionen, lo cual queda oculto a los ojos del visitante.
 
 ---
