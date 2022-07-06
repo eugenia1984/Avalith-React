@@ -11,3 +11,43 @@ Fabian Tureo
 - linkedin: [linkedin.com/in/fabian-esteban-tureo](https://linkedin.com/in/fabian-esteban-tureo)
 
 ---
+
+## Temario
+
+- 1 DEsarrollo Web y Mobile
+
+- 2 Preparación del entonrno
+
+- 3 HTML y CSS
+
+- 4 Git
+
+- 5 Introducción a JavaScript
+
+- 6 Arrays y Objetos
+
+- 7 JavaScript INtermedio
+
+- 8 Asincronismo
+
+- 9 Introducción a React
+
+- 10 Sintaxis y estructura de proyectos en React
+
+- 11 Programación funcional
+
+- 12 Hooks
+
+- 13 Routing
+
+- 14 Deploying de Aplicaciones
+
+- 15 State managment
+
+- 16 Autenticación
+
+- 17 Conexión aBackENd
+
+- 18 Testing
+
+---
