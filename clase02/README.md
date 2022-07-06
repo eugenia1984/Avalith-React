@@ -23,10 +23,14 @@ Fabian Tureo
 
 - 2 Preparación del entonrno
 ```
+Instalación de programas necesarios
+Revisión de versiones
+Configuración del editor y extensiones
 ```
 
 - 3 HTML y CSS
 ```
+
 ```
 
 - 4 Git
