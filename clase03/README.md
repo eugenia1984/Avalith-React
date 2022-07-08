@@ -116,5 +116,23 @@ Antes de iniciar el proceso de instalación, verificá si tenés alguna versión
 
 ``` node -v```
 
+**16.16.0** es la version LTS actual. Si tenemos entre 14 a 16 para REact igualmente estamos bien.
+
+#### Pasos:
+
+
+Para poder instalar una aplicación de React JS desde el CLI, debemos previamente instalar Nodejs
+
+- **1** ingresar a https://nodejs.org
+
+- **2** descargar la última versión de Node.js
+
+- **3** ejecutar el archivo descargado y ejecutar los siguientes pasos: aceptar / tildar todas las opciones (es importante tener seleccionado el add to path) / next / next / install
+
+---
+
+**GIT** Control de versiones
+
+---
 
 ---
