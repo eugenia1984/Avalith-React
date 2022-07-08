@@ -57,6 +57,28 @@ Para poder instalar una aplicación de React JS desde el CLI, debemos previament
 - Para descargarlo de [https://git-scm.com](https://git-scm.com), haciendo click en download , hacer NEXT y dejar todo con click asi tenemos git bash, que vea si hay actualizaciones de git, etc, etc.
 
 
+--
+
+## VSC Visual Studio Code
+
+
+### Extensiones
+
+- Error Lens
+
+- ES7 - React - REdux - REact-Native  snippets
+
+- GITLens
+
+- Live Server
+
+- Material Icon Theme
+
+- Mookai Pro (tema de pago, hay otros)
+
+- Prettier - Code formatter
+
+- snapcode (para poder tomar capturas de codigo) 
 
 ---
 ---
