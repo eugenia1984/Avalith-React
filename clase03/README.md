@@ -42,11 +42,11 @@ Antes de iniciar el proceso de instalación, verificá si tenés alguna versión
 
 Para poder instalar una aplicación de React JS desde el CLI, debemos previamente instalar Nodejs
 
-- **1** ingresar a https://nodejs.org
+- **1** - ingresar a https://nodejs.org
 
-- **2** descargar la última versión de Node.js
+- **2** - descargar la última versión de Node.js
 
-- **3** ejecutar el archivo descargado y ejecutar los siguientes pasos: aceptar / tildar todas las opciones (es importante tener seleccionado el add to path) / next / next / install
+- **3** - ejecutar el archivo descargado y ejecutar los siguientes pasos: aceptar / tildar todas las opciones (es importante tener seleccionado el add to path) / next / next / install
 
 ---
 
@@ -157,6 +157,24 @@ Etiquetas esenciales:
 ```
 
 Siempre entre {} y con key-value
+
+
+-->> CSS da los estilos la sitio. Y con buenas practicas puedo tener estilos reutilizables.
+
+-->> DRY 'Don't repeat yourself'
+
+-->> Hacerlo mobile first y con responsive design
+
+-->> Extension del archivo **.css**
+
+-->> Librerías: Bootstrap, Tailwindcss, Material-UI, Chakra UI, Bulma.
+
+-->> Linkear CSS a HTML : 
+```html
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+```
+
+Hay que ver donde tengo mi archivo .css para ver como le doy la ruta **./** si esta a la misma altura (en la carpeta raiz) ó **../** si está en un directorio y debo volver una hacia atrás.
 
 ---
 
