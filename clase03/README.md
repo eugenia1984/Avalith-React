@@ -85,9 +85,9 @@ Para poder instalar una aplicación de React JS desde el CLI, debemos previament
 
 # :star: 3 -  Maquetado
 
-#### Repaso de HTML5 Esencial
+##  Las tres tecnologías: HTML, CSS y JS:
 
-**HTML** (HYPERTEXT MARKUP LANGUAJE)
+### 1 -> HTML (HYPERTEXT MARKUP LANGUAJE)
 
 - Todas las webs lo utilizan
 
@@ -106,7 +106,7 @@ Para poder instalar una aplicación de React JS desde el CLI, debemos previament
 -->> También está Developer Mozilla y FreeCodeCamp
 
 
-### Elementos basicos HTMl
+#### Elementos basicos HTML
 
 HTML define una serie de elementos o etiquetas que servirán para delimitar el texto
 
@@ -116,11 +116,27 @@ HTML define una serie de elementos o etiquetas que servirán para delimitar el t
 </section>
 ```
 
+### Buenas practicas
 
+```!``` o  ```htl:5``` para armar la estructura basica
 
-#### CSS3 y Flexbox
+Etiquetas esenciales:
 
-**CSS** CASCADE STYLESHEET
+- ```h1```, ```h2```, ```h3```, ```h4```, ```h5```, ```h6```, los headers, debe haber un solo h1 y tieneen jerarquía.
+
+- ```section``` y las etiquetas semanticas: ```header```, ```footer```, ```nav```, ```aside```
+
+- ```img```
+
+- ```body```
+
+- ```head``` , las ```metatag``` para el SEO y el ```title```
+
+---
+
+### 2 -> CSS
+
+#### CSS3  CASCADE STYLESHEET
 
 - Estila componentes
 
@@ -144,7 +160,7 @@ Siempre entre {} y con key-value
 
 ---
 
-## JAVASCRIPT
+## 3 -> JAVASCRIPT
 
 - Dinamismo  a la web
 
