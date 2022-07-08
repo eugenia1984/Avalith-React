@@ -13,6 +13,52 @@
 
 ---
 
+
+### NODE.JS Y NPM (NODE PACKEGE MANAGER)
+
+Cuando usamos Node.js rápidamente tenemos que instalar módulos nuevos (librerías)
+
+Esta herramienta funciona de dos formas:
+
+-
+
+-
+
+-->> Otra alternativa es YARN
+
+
+## Instalación de Node.js
+
+Verificá si ya tenés una versión instalada
+
+Antes de iniciar el proceso de instalación, verificá si tenés alguna versión de Node.js instalada en tu equipo:
+
+``` node -v```
+
+**16.16.0** es la version LTS actual. Si tenemos entre 14 a 16 para REact igualmente estamos bien.
+
+
+#### Pasos:
+
+Para poder instalar una aplicación de React JS desde el CLI, debemos previamente instalar Nodejs
+
+- **1** ingresar a https://nodejs.org
+
+- **2** descargar la última versión de Node.js
+
+- **3** ejecutar el archivo descargado y ejecutar los siguientes pasos: aceptar / tildar todas las opciones (es importante tener seleccionado el add to path) / next / next / install
+
+---
+
+## GIT  Control de versiones
+
+- Para ver si ya lo tengo instalado: ```git --version```
+
+- Para descargarlo de [https://git-scm.com](https://git-scm.com) 
+
+---
+---
+
 ## 3 -  Maquetado
 
 #### Repaso de HTML5 Esencial
@@ -95,44 +141,3 @@ Siempre entre {} y con key-value
 
 ---
 
-NODE.JS Y NPM (NODE PACKEGE MANAGER)
-
-Cuando usamos Node.js rápidamente tenemos que instalar módulos nuevos (librerías)
-
-Esta herramienta funciona de dos formas:
-
--
-
--
-
--->> Otra alternativa es YARN
-
-
-## Instalación de Node.js
-
-Verificá si ya tenés una versión instalada
-
-Antes de iniciar el proceso de instalación, verificá si tenés alguna versión de Node.js instalada en tu equipo:
-
-``` node -v```
-
-**16.16.0** es la version LTS actual. Si tenemos entre 14 a 16 para REact igualmente estamos bien.
-
-#### Pasos:
-
-
-Para poder instalar una aplicación de React JS desde el CLI, debemos previamente instalar Nodejs
-
-- **1** ingresar a https://nodejs.org
-
-- **2** descargar la última versión de Node.js
-
-- **3** ejecutar el archivo descargado y ejecutar los siguientes pasos: aceptar / tildar todas las opciones (es importante tener seleccionado el add to path) / next / next / install
-
----
-
-**GIT** Control de versiones
-
----
-
----
