@@ -131,7 +131,7 @@ Validación de JWT y rutas privadas
 Login, localStorage y cookies
 ```
 
-- 17 Conexión a BackENd
+- 17 Conexión a BackEnd
 ```
 Petición HTTP
 API Key y Headers
@@ -173,5 +173,6 @@ Jest & Selenium (ideal)
 
 ## ¿Qué más existe aparte del Desarrollo Web?
 
+UX, Ui, Qa, Seguridad, etc, etc
 
 ---
