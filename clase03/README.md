@@ -91,3 +91,14 @@ Siempre entre {} y con key-value
 - Basado en prototipos
 
 - Imperativo
+
+
+---
+
+NODE.JS Y NPM (NODE PACKEGE MANAGER)
+
+Cuando usamos Node.js rápidamente tenemos que instalar módulos nuevos (librerías)
+
+-->> Otra alternativa es YARN
+
+---
