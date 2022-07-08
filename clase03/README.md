@@ -99,6 +99,22 @@ NODE.JS Y NPM (NODE PACKEGE MANAGER)
 
 Cuando usamos Node.js rápidamente tenemos que instalar módulos nuevos (librerías)
 
+Esta herramienta funciona de dos formas:
+
+-
+
+-
+
 -->> Otra alternativa es YARN
+
+
+## Instalación de Node.js
+
+Verificá si ya tenés una versión instalada
+
+Antes de iniciar el proceso de instalación, verificá si tenés alguna versión de Node.js instalada en tu equipo:
+
+``` node -v```
+
 
 ---
