@@ -3,7 +3,7 @@
 ---
 
 
-## 2 - Preparación del entorno
+# :star: 2 - Preparación del entorno
 
 - Instalación de programas necesarios
 
@@ -52,14 +52,16 @@ Para poder instalar una aplicación de React JS desde el CLI, debemos previament
 
 ## GIT  Control de versiones
 
-- Para ver si ya lo tengo instalado: ```git --version```
+- Para ver si ya lo tengo instalado: ```git --version```, con que sea superior a la 2 estamos bien.
 
-- Para descargarlo de [https://git-scm.com](https://git-scm.com) 
+- Para descargarlo de [https://git-scm.com](https://git-scm.com), haciendo click en download , hacer NEXT y dejar todo con click asi tenemos git bash, que vea si hay actualizaciones de git, etc, etc.
+
+
 
 ---
 ---
 
-## 3 -  Maquetado
+# :star: 3 -  Maquetado
 
 #### Repaso de HTML5 Esencial
 
