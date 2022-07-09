@@ -41,21 +41,17 @@ Otros son:
 
 - ```flex-wrap``` : nowrap, wrap(si hay más que el larga de la fila o columna se van a ir acomodando en la que sige), wrap-reverse (si hay más que el larga de la fila o columna se van a ir acomodando en la que sige en sentido inverso, empiezan de abajo hacia arriba -de atras hacia adelante-)
 
-- ```justify-content``` positions a container's items along the main axis and accepts the following values:
+- ```justify-content``` a cual alinea elementos horizontalmente (**sobre el main axis**) si están en filas y acepta los siguientes valores:
 
--**flex-start**: group items at the start of a container's main axis
+-**flex-start**: Alinea elementos al lado izquierdo del contenedor.
 
--**flex-end**: group items at the end of the main axis
+-**flex-end**: Alinea elementos al lado derecho del contenedor.
 
--**center**: group items in the center of the main axis
+-**center**: Alinea elementos en el centro del contenedor.
 
--**space-between**: evenly distribute items along the main axis such that the first item aligns at the start and the final item aligns at the end
+-**space-between**: Muestra elementos con la misma distancia entre ellos.
 
--**space-around**: evenly distribute items along the main axis such that all items have equal space around them
-
-- ```align-items```
-
-- ```align-content```
+-**space-around**: Muestra elementos con la misma separación alrededor de ellos.
 
 Y en casa comando hay varias opciones para diferentes resultados.
 
