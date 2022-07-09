@@ -148,6 +148,13 @@ React Testing Library
 Jest & Selenium (ideal)
 ```
 
+Extras
+```
+Instancias de AWS
+Patrones de Diseño
+GitHub
+Actions
+Documentación
 ---
 
 ## :star:  1 Desarrollo Web y Mobile 
@@ -158,7 +165,10 @@ Jest & Selenium (ideal)
 
 **Back End**: procesa la información desde el front y la almacena o recupera la información almacenada y la envía al front. Es la lógica escondida para que los datos de una página web funcionen, lo cual queda oculto a los ojos del visitante.
 
-## ¿Qué tengo que aprender?
+
+**Full Stack** sabe tanto de Front como de back.
+
+## ¿Qué tengo que aprender como Front End?
 
 - HTML5
 
@@ -166,13 +176,17 @@ Jest & Selenium (ideal)
 
 - JavaSCript
 
+- Bootstrap, Tailwind
+
+- SASS, LESS
+
 - Git
 
-- React
+- React, Vue, Angular -> algún framework
 
 
 ## ¿Qué más existe aparte del Desarrollo Web?
 
-UX, Ui, Qa, Seguridad, etc, etc
+UX, UI, QA, Seguridad, DevOps, GRapgic Designer, Data Scientist,etc, etc
 
 ---
