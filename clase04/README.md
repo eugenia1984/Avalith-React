@@ -8,6 +8,21 @@
 
 Se puede chequear en [Can I use](https://caniuse.com/?search=flexbox)
 
+
+```
+                     ^CRoss axis
+ flex container      |            Main size
+  -----------------------------------------
+  |                                       |  Cross size
+  |                                       |
+  |      ----------        -----------    |
+  |      | flex   |        |  flex    |   |
+  |      | item   |        |  item    |   |--->Main axis
+  |      ----------        ------------   |
+  |                                       |
+  |---------------------------------------|
+
+```
 ### ¿ Cómo lo aplico ?
 
 El más importante es:
@@ -20,11 +35,11 @@ El más importante es:
 
 Otros son:
 
-- ```flex-direction```
+- ```flex-direction``` : column (en columnas), row (en filas)
 
 - ```flex-shrink```
 
-- ```flex-wrap```
+- ```flex-wrap``` : nowrap, wrap(si hay más que el larga de la fila o columna se van a ir acomodando en la que sige), wrap-reverse (si hay más que el larga de la fila o columna se van a ir acomodando en la que sige en sentido inverso, empiezan de abajo hacia arriba -de atras hacia adelante-)
 
 - ```justify-content```
 
