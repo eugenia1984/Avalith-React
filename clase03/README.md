@@ -93,7 +93,7 @@ Para poder instalar una aplicación de React JS desde el CLI, debemos previament
 
 - Sintaxis de etiquetas, en general todas tiene su etiqueta de apertura y de cierre, salvo algunas excepciones como : ```br``` y ```img```.
 
-- Estructura de datos
+- Estructura de datos (etiuetas semánticas)
 
 - Lenguaje Estándar Universal
 
@@ -112,7 +112,7 @@ HTML define una serie de elementos o etiquetas que servirán para delimitar el t
 
 ```html
 <section class="commentas-sections">
-  <p> Parrafo </p>
+  <p>Soy un parrafo</p>
 </section>
 ```
 
@@ -136,7 +136,7 @@ Etiquetas esenciales:
 
 ### 2 -> CSS
 
-#### CSS3  CASCADE STYLESHEET
+#### CSS3 ( CASCADE STYLESHEET )
 
 - Estila componentes
 
@@ -153,6 +153,7 @@ Etiquetas esenciales:
 .comments-sections {
   background: lightcoral;
   color: darkgreen;
+  text-shadow: 0 0 5px black;
 }
 ```
 
