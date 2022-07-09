@@ -41,7 +41,17 @@ Otros son:
 
 - ```flex-wrap``` : nowrap, wrap(si hay más que el larga de la fila o columna se van a ir acomodando en la que sige), wrap-reverse (si hay más que el larga de la fila o columna se van a ir acomodando en la que sige en sentido inverso, empiezan de abajo hacia arriba -de atras hacia adelante-)
 
-- ```justify-content```
+- ```justify-content``` positions a container's items along the main axis and accepts the following values:
+
+-**flex-start**: group items at the start of a container's main axis
+
+-**flex-end**: group items at the end of the main axis
+
+-**center**: group items in the center of the main axis
+
+-**space-between**: evenly distribute items along the main axis such that the first item aligns at the start and the final item aligns at the end
+
+-**space-around**: evenly distribute items along the main axis such that all items have equal space around them
 
 - ```align-items```
 
