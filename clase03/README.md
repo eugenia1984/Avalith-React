@@ -16,26 +16,33 @@
 
 ### NODE.JS Y NPM (NODE PACKEGE MANAGER)
 
-Cuando usamos Node.js rápidamente tenemos que instalar módulos nuevos (librerías)
+Cuando usamos Node.js, rápidamente tenemos que instalar módulos nuevos (librerías), ya que al ser un sistema fuertemente modular viene prácticamente “vacío”. 
+
+Por lo tanto, para utilizar una funcionalidad de alguna librería publicada, deberemos instalar módulos adicionales. 
+
+Esta operación se realiza de forma muy sencilla con la herramienta npm 
+(Node Package Manager).
+
 
 Esta herramienta funciona de dos formas:
 
--
+- Como un repositorio ampliamente utilizado para la publicación de proyectos Node.js de código abierto.
 
--
+
+- Como una herramienta de línea de comandos. Esta utilidad ayuda a instalar y desinstalar paquetes, gestionar versiones y gestionar dependencias necesarias para ejecutar un proyecto.
+
+
 
 -->> Otra alternativa es YARN
 
 
 ## Instalación de Node.js
 
-Verificá si ya tenés una versión instalada
-
-Antes de iniciar el proceso de instalación, verificá si tenés alguna versión de Node.js instalada en tu equipo:
+Verificá si ya tenés una versión instalada -> Antes de iniciar el proceso de instalación, verificá si tenés alguna versión de Node.js instalada en tu equipo:
 
 ``` node -v```
 
-**16.16.0** es la version LTS actual. Si tenemos entre 14 a 16 para REact igualmente estamos bien.
+**16.16.0** es la version LTS actual. Si tenemos entre 14 a 16 para React igualmente estamos bien.
 
 
 #### Pasos:
@@ -61,6 +68,15 @@ Para poder instalar una aplicación de React JS desde el CLI, debemos previament
 
 ## VSC Visual Studio Code
 
+- Intuitivo
+
+- Tiene gran variedad de extensiones
+
+- Hecho en JavaScript
+
+- Apoyado por la comunidad
+
+- Altamente personalizable
 
 ### Extensiones
 
@@ -118,7 +134,9 @@ HTML define una serie de elementos o etiquetas que servirán para delimitar el t
 
 ### Buenas practicas
 
-```!``` o  ```htl:5``` para armar la estructura basica
+-->> ```!``` o  ```htl:5``` son los shortcut en VSC para armar la estructura basica
+
+-->> **.html** es mla extensión del archivo
 
 Etiquetas esenciales:
 
@@ -131,6 +149,12 @@ Etiquetas esenciales:
 - ```body```
 
 - ```head``` , las ```metatag``` para el SEO y el ```title```
+
+- listas: ```ul```, ```o```, ```li```
+
+- ```p```
+
+- anchor (links): ```a```
 
 ---
 
@@ -159,6 +183,7 @@ Etiquetas esenciales:
 
 Siempre entre {} y con key-value
 
+-->> Extension del archivo **.css**
 
 -->> CSS da los estilos la sitio. Y con buenas practicas puedo tener estilos reutilizables.
 
