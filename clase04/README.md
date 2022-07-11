@@ -9,15 +9,16 @@
 Se puede chequear en [Can I use](https://caniuse.com/?search=flexbox)
 
 
-```
-                     ^CRoss axis
+
+```                  ^ Cross axis
+                     |
  flex container      |            Main size
   -----------------------------------------
   |                                       |  Cross size
   |                                       |
   |      ----------        -----------    |
   |      | flex   |        |  flex    |   |
-  |      | item   |        |  item    |   |--->Main axis
+  |      | item   |        |  item    |   |--- >Main axis
   |      ----------        ------------   |
   |                                       |
   |---------------------------------------|
@@ -35,7 +36,11 @@ El más importante es:
 
 Otros son:
 
-- ```flex-direction``` : column (en columnas), row (en filas)
+- ```flex-direction``` : 
+
+-**column** (en columnas)
+
+-**row** (en filas)
 
 - ```flex-shrink```
 
