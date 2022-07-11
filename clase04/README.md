@@ -2,15 +2,17 @@
 
 ---
 
-## Flexbox
+## :star:  Flexbox
 
 #### Para ver donde funciona
 
 Se puede chequear en [Can I use](https://caniuse.com/?search=flexbox)
 
 
+### La estructura
 
-```                  ^ Cross axis
+``` 
+                     ^ Cross axis
                      |
  flex container      |            Main size
   -----------------------------------------
@@ -18,7 +20,7 @@ Se puede chequear en [Can I use](https://caniuse.com/?search=flexbox)
   |                                       |
   |      ----------        -----------    |
   |      | flex   |        |  flex    |   |
-  |      | item   |        |  item    |   |--- >Main axis
+  |      | item   |        |  item    |   | ----- >Main axis
   |      ----------        ------------   |
   |                                       |
   |---------------------------------------|
@@ -58,6 +60,13 @@ Otros son:
 
 -**space-around**: Muestra elementos con la misma separación alrededor de ellos.
 
-Y en casa comando hay varias opciones para diferentes resultados.
+---
+
+### :star: Git Esencial
+
+### Git vs GitHub (y otras alternativas)
+
+### Comandos básicos (y super necesarios)
+
 
 ---
