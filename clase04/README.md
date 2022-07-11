@@ -9,6 +9,8 @@
 Se puede chequear en [Can I use](https://caniuse.com/?search=flexbox)
 
 
+-->> Flexbox nos permite posicionar los elementos
+
 ### La estructura
 
 ``` 
@@ -38,29 +40,62 @@ El más importante es:
 
 Otros son:
 
+
 - ```flex-direction``` : 
 
--**column** (en columnas)
+-**column** (en columnas) y **column-reverse**
 
--**row** (en filas)
+-**row** (en filas) y **row reverse**
+
 
 - ```flex-shrink```
 
-- ```flex-wrap``` : nowrap, wrap(si hay más que el larga de la fila o columna se van a ir acomodando en la que sige), wrap-reverse (si hay más que el larga de la fila o columna se van a ir acomodando en la que sige en sentido inverso, empiezan de abajo hacia arriba -de atras hacia adelante-)
+-**stretch** van a ocupar todo el alto del contenedor
+
+-**flex-start** van a estar comenzando desde el borde de arriba
+
+-**center**
+
+-**flex-end**: van a estar pegados al borde de abajo
+
+- ```flex-wrap``` : 
+
+-**nowrap**
+
+--**wrap**, si hay más que el larga de la fila o columna se van a ir acomodando en la que sige
+
+-**wrap-reverse** si hay más que el larga de la fila o columna se van a ir acomodando en la que sige en sentido inverso, empiezan de abajo hacia arriba -de atras hacia adelante
 
 - ```justify-content``` a cual alinea elementos horizontalmente (**sobre el main axis**) si están en filas y acepta los siguientes valores:
 
 -**flex-start**: Alinea elementos al lado izquierdo del contenedor.
 
--**flex-end**: Alinea elementos al lado derecho del contenedor.
+-**flex-end**: mlinea elementos al lado derecho del contenedor.
 
--**center**: Alinea elementos en el centro del contenedor.
+-**center**: mlinea elementos en el centro del contenedor.
 
--**space-between**: Muestra elementos con la misma distancia entre ellos.
+-**space-between**: muestra elementos con la misma distancia entre ellos.
 
--**space-around**: Muestra elementos con la misma separación alrededor de ellos.
+-**space-around**: muestra elementos con la misma separación alrededor de ellos, pero no en el primero y ultimo y los bordes.
+
+-**space-evenly**: muestra elementos con la misma separación entre ellos, inclusive en el primero y ultimo y los bordes
 
 ---
+
+
+### Recursos para armar paletas de colores
+
+Combinaciones armónicas de colores.
+
+Sirven para expresar alguna idea
+
+Se utilizan como instrumento para la entidad visual del producto
+
+Páginas que nos ayudan:
+
+- [https://color.adobe.com/es/create](https://color.adobe.com/es/create)
+
+- [https://colorhunt.co/](https://colorhunt.co/)
 
 ### :star: Git Esencial
 
