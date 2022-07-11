@@ -99,7 +99,7 @@ Páginas que nos ayudan:
 
 ---
 
-Aca se puede ver la practica de la clase, en la carpeta: [practica_clase4]()
+Aca se puede ver la practica de la clase, en la carpeta: [practica_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica_clase4)
 
 ---
 
