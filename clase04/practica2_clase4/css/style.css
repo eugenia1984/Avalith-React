@@ -1,0 +1,83 @@
+/* Reseteo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* el primer container */
+.parentContainer.header{
+  background-color: turquoise;
+  width: 100vw;
+  height: 15vh;
+  display: flex; /*por default tengo flex-direction: row*/ 
+  flex-wrap: wrap; /* como los hijos tienene 30vw, cuando llego a 90vw se van a la proxima fila*/
+  justify-content: space-evenly; /* para distribuirlos uniformemente*/
+  align-items: center; /* para centrar en base al eje y*/
+}
+
+
+.childContainer.first,
+.childContainer.second {
+  width: 50vw;
+  height: 15vh; /* asi me queda un espacio entre row y row*/
+  border: 1px solid black;
+  display: flex; /* para hacer flexibles a los hijos*/
+  justify-content: center; /* con estas dos propiedades alineo los numeros, los centro a los hijos*/
+  align-items: center;
+}
+
+.childContainer.first {
+  background-color: #F0223B;
+}
+
+.childContainer.second {
+  background-color: #FA23A9;
+}
+
+/* el segundo container*/
+.parentContainer.main{
+  background-color: turquoise;
+  width: 100vw;
+  height: 70vh;
+  display: flex; /*por default tengo flex-direction: row*/ 
+  flex-wrap: wrap; /* como los hijos tienene 30vw, cuando llego a 90vw se van a la proxima fila*/
+  justify-content: space-evenly; /* para distribuirlos uniformemente*/
+  align-items: center; /* para centrar en base al eje y*/
+}
+
+
+/* el tercer container */
+.parentContainer.footer{
+  background-color: turquoise;
+  width: 100vw;
+  height: 15vh;
+  display: flex; /*por default tengo flex-direction: row*/ 
+  flex-wrap: wrap; /* como los hijos tienene 30vw, cuando llego a 90vw se van a la proxima fila*/
+  justify-content: space-evenly; /* para distribuirlos uniformemente*/
+  align-items: center; /* para centrar en base al eje y*/
+}
+
+.childContainer.six,
+.childContainer.seven,
+.childContainer.eight {
+  width: 33vw;
+  height: 15vh; /* asi me queda un espacio entre row y row*/
+  border: 1px solid black;
+  display: flex; /* para hacer flexibles a los hijos*/
+  justify-content: center; /* con estas dos propiedades alineo los numeros, los centro a los hijos*/
+  align-items: center;
+}
+
+.childContainer.six {
+  background-color: #D72BE3;
+}
+
+.childContainer.seven {
+  background-color: #F34AFF;
+}
+
+.childContainer.eight {
+  background-color: #7BE32B;
+}
+
