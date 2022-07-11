@@ -1,0 +1,26 @@
+/* Reseteo */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.parentContainer {
+  background-color: turquoise;
+  width: 100vw;
+  height: 75vh;
+  display: flex; /*por default tengo flex-direction: row*/ 
+  flex-wrap: wrap; /* como los hijos tienene 30vw, cuando llego a 90vw se van a la proxima fila*/
+  justify-content: space-evenly; /* para distribuirlos uniformemente*/
+  align-items: center; /* para centrar en base al eje y*/
+}
+
+.childContainer {
+  background-color: orange;
+  width: 30vw;
+  height: 15vh; /* asi me queda un espacio entre row y row*/
+  border: 1px solid black;
+  display: flex; /* para hacer flexibles a los hijos*/
+  justify-content: center; /* con estas dos propiedades alineo los numeros, los centro a los hijos*/
+  align-items: center;
+}
