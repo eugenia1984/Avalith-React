@@ -97,6 +97,12 @@ Páginas que nos ayudan:
 
 - [https://colorhunt.co/](https://colorhunt.co/)
 
+---
+
+Aca se puede ver la practica de la clase, en la carpeta: [practica_clase4]()
+
+---
+
 ### :star: Git Esencial
 
 ### Git vs GitHub (y otras alternativas)
