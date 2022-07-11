@@ -105,6 +105,7 @@ Aca se pueden ver las practicas de la clase, en la carpeta...
 
 ...[practica2_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica2_clase4)
 
+... Hay que replicar [https://www.esenzzia.com/](https://www.esenzzia.com/)
 ---
 
 ### :star: Git Esencial
