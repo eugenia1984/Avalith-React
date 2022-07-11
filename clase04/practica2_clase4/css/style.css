@@ -6,16 +6,15 @@
 }
 
 /* el primer container */
-.parentContainer.header{
+.parentContainer.header {
   background-color: turquoise;
   width: 100vw;
   height: 15vh;
-  display: flex; /*por default tengo flex-direction: row*/ 
+  display: flex; /*por default tengo flex-direction: row*/
   flex-wrap: wrap; /* como los hijos tienene 30vw, cuando llego a 90vw se van a la proxima fila*/
   justify-content: space-evenly; /* para distribuirlos uniformemente*/
   align-items: center; /* para centrar en base al eje y*/
 }
-
 
 .childContainer.first,
 .childContainer.second {
@@ -28,31 +27,39 @@
 }
 
 .childContainer.first {
-  background-color: #F0223B;
+  background-color: #f0223b;
 }
 
 .childContainer.second {
-  background-color: #FA23A9;
+  background-color: #fa23a9;
 }
 
 /* el segundo container*/
-.parentContainer.main{
+.parentContainer.main {
   background-color: turquoise;
   width: 100vw;
   height: 70vh;
-  display: flex; /*por default tengo flex-direction: row*/ 
+  display: flex; /*por default tengo flex-direction: row*/
   flex-wrap: wrap; /* como los hijos tienene 30vw, cuando llego a 90vw se van a la proxima fila*/
   justify-content: space-evenly; /* para distribuirlos uniformemente*/
   align-items: center; /* para centrar en base al eje y*/
 }
 
+.childContainer.third,
+.childContainer.forth {
+  width: 50vw;
+  height: 100vh;
+}
+.childContainer.third {
+  background-color: #8d0e96;
+}
 
 /* el tercer container */
-.parentContainer.footer{
+.parentContainer.footer {
   background-color: turquoise;
   width: 100vw;
   height: 15vh;
-  display: flex; /*por default tengo flex-direction: row*/ 
+  display: flex; /*por default tengo flex-direction: row*/
   flex-wrap: wrap; /* como los hijos tienene 30vw, cuando llego a 90vw se van a la proxima fila*/
   justify-content: space-evenly; /* para distribuirlos uniformemente*/
   align-items: center; /* para centrar en base al eje y*/
@@ -70,14 +77,13 @@
 }
 
 .childContainer.six {
-  background-color: #D72BE3;
+  background-color: #d72be3;
 }
 
 .childContainer.seven {
-  background-color: #F34AFF;
+  background-color: #f34aff;
 }
 
 .childContainer.eight {
-  background-color: #7BE32B;
+  background-color: #7be32b;
 }
-
