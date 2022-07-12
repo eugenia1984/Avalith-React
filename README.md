@@ -14,7 +14,7 @@ Curso de la Skill Factory de Avalith en **React**
 
 11/07: clase 04 -> [clase 04](https://github.com/eugenia1984/Avalith-React/tree/main/clase04)
 
-13/07 : clase 05 ->
+13/07 : clase 05 -> [clase 05](https://github.com/eugenia1984/Avalith-React/tree/main/clase05)
 
 15/07 : clase 06 ->
 
