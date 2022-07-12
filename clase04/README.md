@@ -116,7 +116,7 @@ Aca se pueden ver las practicas de la clase, en la carpeta...
 
 ... [practica_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica_clase4).
 
-Utilizando solamente Flexbox y sin ninguna librería externa, maquetar el diagrama.
+Utilizando solamente Flexbox y sin ninguna librería externa, maquetar el [**diagrama**](https://github.com/eugenia1984/Avalith-React/blob/main/clase04/maquetado.pdf).
 
 Cada texto debe estar posicionado donde se muestra en la imagen. La fuente puede ser de color blanca y un tamaño aprox. de 25px.
 
