@@ -125,9 +125,9 @@ Cada texto debe estar posicionado donde se muestra en la imagen. La fuente puede
 
 Cada cuadro debe tener el color hexadecimal que se menciona en cada caja. 
 
+[aca se puede ver](https://eugenia1984.github.io/Avalith-React/tree/main/clase04/practica2_clase4/index.html)
 
-
-...[practica2_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica2_clase4)
+... tercer practica:
 
 En grupos formados de manera aleatoria a través de Breakout Rooms Zoom, maquetar un equivalente de los diferentes sitios compartidos. 
 
