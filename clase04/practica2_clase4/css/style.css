@@ -5,6 +5,18 @@
   padding: 0;
 }
 
+/* General */
+p {
+  color: white;
+  font-size: 25px;
+}
+@media screen and (max-width: 568px) {
+  p {
+    font-size: 20px;
+  }
+}
+/* Secciones*/
+
 /* el primer container */
 .parentContainer.header {
   background-color: turquoise;
@@ -28,10 +40,14 @@
 
 .childContainer.first {
   background-color: #f0223b;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 .childContainer.second {
   background-color: #fa23a9;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
 
 /* el segundo container*/
@@ -48,12 +64,29 @@
 .childContainer.third,
 .childContainer.forth {
   width: 50vw;
-  height: 100vh;
+  height: 70vh;
 }
+
 .childContainer.third {
   background-color: #8d0e96;
 }
 
+/* los divs de adentro*/
+.grandsonContainer.forth,
+.grandsonContainer.fifth {
+  display: flex;
+  height: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.grandsonContainer.forth {
+  background-color: #14E3B5<;
+}
+
+.grandsonContainer.fifth {
+  background-color: #15967A;
+}
 /* el tercer container */
 .parentContainer.footer {
   background-color: turquoise;
@@ -68,7 +101,7 @@
 .childContainer.six,
 .childContainer.seven,
 .childContainer.eight {
-  width: 33vw;
+  flex-grow: 1;
   height: 15vh; /* asi me queda un espacio entre row y row*/
   border: 1px solid black;
   display: flex; /* para hacer flexibles a los hijos*/
@@ -78,12 +111,18 @@
 
 .childContainer.six {
   background-color: #d72be3;
+  justify-content: end;
+  align-items: flex-start;
 }
 
 .childContainer.seven {
   background-color: #f34aff;
+  justify-content: flex-start;
+  align-items: flex-end;
 }
 
 .childContainer.eight {
   background-color: #7be32b;
+  justify-content: center;
+  align-items: flex-end;
 }
