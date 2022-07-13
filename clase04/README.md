@@ -125,7 +125,7 @@ Cada texto debe estar posicionado donde se muestra en la imagen. La fuente puede
 
 Cada cuadro debe tener el color hexadecimal que se menciona en cada caja. 
 
-[aca se puede ver](https://eugenia1984.github.io/Avalith-React/tree/main/clase04/practica2_clase4/index.html)
+-->> [aca se puede ver](https://eugenia1984.github.io/Avalith-React/clase04/practica2_clase4/index.html)
 
 ... tercer practica:
 
