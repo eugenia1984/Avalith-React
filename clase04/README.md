@@ -114,14 +114,14 @@ Páginas que nos ayudan:
 
 Aca se pueden ver las practicas de la clase, en la carpeta...
 
-... [practica_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica_clase4).
+... **PRIMER PRACTICA** : [practica_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica_clase4).
 
 
 -->> [**aca se puede ver con pagina web en vivo**](https://eugenia1984.github.io/Avalith-React/clase04/practica_clase4/index.html)
 
 
 
-... [practica2_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica2_clase4).
+... **SEGUNDA PRACTICA** : [practica2_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica2_clase4).
 
 Utilizando solamente Flexbox y sin ninguna librería externa, maquetar el [**diagrama**](https://github.com/eugenia1984/Avalith-React/blob/main/clase04/maquetado.pdf).
 
@@ -131,7 +131,7 @@ Cada cuadro debe tener el color hexadecimal que se menciona en cada caja.
 
 -->> [**aca se puede ver con pagina web en vivo**](https://eugenia1984.github.io/Avalith-React/clase04/practica2_clase4/index.html)
 
-... tercer practica:
+... **TERCER PRACTICA**:
 
 En grupos formados de manera aleatoria a través de Breakout Rooms Zoom, maquetar un equivalente de los diferentes sitios compartidos. 
 
