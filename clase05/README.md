@@ -19,3 +19,20 @@
 - Soporte, Challenge y proyectos
 
 ---
+
+
+### Area Delivery
+
+- Seguimiento de proyectos
+
+- Facilitadores de FROW
+
+- Gestión administrativas de solicitudes y permisos
+
+- Onboarding & Offboarding developers staff
+
+- Confección de profiles
+
+- Feedbacks
+
+---
