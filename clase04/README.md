@@ -117,7 +117,7 @@ Aca se pueden ver las practicas de la clase, en la carpeta...
 ... [practica_clase4](https://github.com/eugenia1984/Avalith-React/tree/main/clase04/practica_clase4).
 
 
--->> [**aca se puede ver con pagina web en vivo**](https://eugenia1984.github.io/Avalith-React/clase04/practica1_clase4/index.html)
+-->> [**aca se puede ver con pagina web en vivo**](https://eugenia1984.github.io/Avalith-React/clase04/practica_clase4/index.html)
 
 
 
