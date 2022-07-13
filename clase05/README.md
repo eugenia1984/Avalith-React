@@ -6,3 +6,16 @@
 
 ---
 
+### Areas tecnicas
+
+- Mentoreo Grow
+
+- Entrevistas técnicas
+
+- Proyectos Internos
+
+- Presupuestación de proyectos
+
+- Soporte, Challenge y proyectos
+
+---
