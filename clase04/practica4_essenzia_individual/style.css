@@ -135,7 +135,6 @@ header {
   width: 80px;
   height: 40px;
   border: 2px solid var(--pure-white);
-
   position: fixed;
   left: 90%;
 }
@@ -338,3 +337,4 @@ footer {
   width: 100vw;
   background-color: var(--black);
 }
+
