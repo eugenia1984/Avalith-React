@@ -40,6 +40,21 @@
 
 **GitHub** me permite alojar mis repositorios locales.
 
+
+### Es necesario configurar las credenciales de forma inicial para que git pueda hacer login
+
+```git cofig --global user.name "mi nombre"``` -> para configurar el nombre
+
+```git cofig --global user.email "example@example.com"``` -> para configurar el email
+
+Para ver las varaibles configuradas:
+
+```git config --get [key_name]``` -> para ver las configuraciones, por ejemplo:
+
+**git config --get user.name** para ver mi nombre
+
+**git config --get user.email** para ver mi e-mail
+
 ---
 
 ## Buenas pácticas
