@@ -30,12 +30,12 @@ body {
 header {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 92%;
 }
 .container-header {
   background-color: var(--pure-white);
   height: 12vh;
-  width:100vw;
+  width: 98vw;
   display: flex;
 }
 
@@ -88,7 +88,7 @@ header {
   margin-top: 12vh;
   border: 1px solid var(--black-2);
   height: 78vh;
-  width:100%;
+  width:100vw;
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
@@ -171,6 +171,8 @@ header {
 /* THIN BANNER*/
 .container-thin-banner {
   height: 6vh;
+  width: 100vw;
+  margin-bottom: 2rem;
   padding-left: 30px;
   display: flex;
   align-items: center;
@@ -186,26 +188,51 @@ header {
 /* TRADE MARK */
 .container-trade-mark {
   background-color: var(--pure-white);
-  height: 90vh;
-  width:100%;
+  height: 70vh;
+  width:100vw;
+  margin-bottom: 2rem;
   display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.container3-child1 {
-  width: 100vh;
-  height: 100vh;
+.phrase,
+.search-catalog {
+  display: flex;
+  width: 50vw;
+  height: 100%;
+}
+
+.phrase .text {
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
-  text-align: center;
-  font-size: 50px;
+  align-items: center;
+  font-size: 4rem;
   font-weight: 700;
-  padding: 20px;
-  padding-top: 200px ;
 }
 
-.container3-child2 {
-  width: 100vh;
-  height: 70vh ;
+@media screen and (max-width:765px) {
+  .phrase .text {
+    font-size: 2rem;
+  }
+}
+
+.search-catalog {
+  display: flex;
+  flex-direction: column;
+}
+
+.txt {
+  height: 10%;
+  width: 100%;
+}
+.search-catalog-input {
+  height: 80%;
+  width: 100%;
   font-size: 250px;
   color: rgb(124, 117, 117);
   text-align: center;
@@ -213,20 +240,25 @@ header {
   text-decoration-line: underline; 
 }
 
-
-.container3-child3 {
+@media screen and (max-width: 765px) {
+  .search-catalog-input {
+    font-size: 80px;
+  }
+}
+.catalog {
+  height: 10%;
+  width: 100%;
   display: flex;
-  align-self: flex-end;
-  width: 100vh;
-  height: 27vh;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-evenly;
 }
 
-.container3-child3-1 {
+.catalog-see,
+.catalog-search {
   background-color: var(--pure-white);
   border: 0 solid var(--light-blue-white);
-  border-radius: 1.5rem;
   box-sizing: border-box;
   color: var(--dark-blue);
   cursor: pointer;
@@ -238,7 +270,6 @@ header {
   padding: 1rem 1.6rem;
   text-align: center;
   text-decoration: none var(--dark-blue) solid;
-  text-decoration-thickness: auto;
   transition: all .1s cubic-bezier(.4, 0, .2, 1);
   box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
   user-select: none;
@@ -246,7 +277,11 @@ header {
   touch-action: manipulation;
 }
 
-.container3-child3-1:hover {
+.catalog-see:hover {
+  border-bottom: 0.20rem solid var(--black);
+}
+
+.catalog-search:hover {
   background-color: var(--darken-blue);
   color: var(--pure-white);
 }
@@ -294,9 +329,10 @@ header {
 }
 
 .container-cards {
-  width: 100%;
+  width: 90%;
   height: 55%;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 10px 20px;
 }
@@ -309,6 +345,12 @@ header {
   flex-direction: column;
 }
 
+@media screen and (max-width: 765px) {
+  .card {
+    width: 48%;
+    margin-bottom: 0.25rem;
+  }
+}
 .link-vendidos a {
   padding: 10px 20px;
   display: flex;
