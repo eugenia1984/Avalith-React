@@ -1,4 +1,4 @@
-# Clase 05 * Miércoles 13 de Julio
+# Clase 07 * Lunes 18 de Julio
 
 ---
 
