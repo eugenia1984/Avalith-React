@@ -28,6 +28,8 @@
 
 ```git checkout <branch>``` -> sirve para movernos de una rama a otra
 
+```git checkout -b <branch>``` -> sirve para crear una nueva rama y movernos a ella
+
 ```git branch``` -> para ver las ramas en mi repositorio
 
 ```git branch nombre-rama``` -> para crear una rama
@@ -91,8 +93,9 @@ Si queres agregar iconos en los commits usando [Mark Up](https://gist.github.com
 
 ## Otros comandos
 
-```git pull origin [branch]``` sirve para traer la informacion desde una determinada rama
+```git pull origin [branch]``` sirve para traer la informacion desde una determinada rama (existe un repositorio y me lo traigo a mi local). La [branch] va a ser la rama que me quiero traer.
 
 ```git merge``` sirve para combinar los cambios entre dos ramas. Hacer el **merge** entre dos ramas puede generar **conflictos** que debemos resolver para concretar la fusión.
+
 ---
 
