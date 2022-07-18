@@ -1,0 +1,71 @@
+/* Reseteo */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #f1f1f1;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header,
+footer {
+  background-color: #513655;
+}
+
+footer p {
+  color: var(--white);
+  text-align: center;
+  line-height: 1.8;
+  padding: 1rem;
+}
+
+footer a {
+  color: var(--white);
+  text-decoration: none;
+}
+
+h1 {
+  color: var(--white);
+  padding: 1.75rem 0.75rem;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 2rem;
+  height: 80vh;
+}
+
+.practica {
+  width: 200px;
+  height: 120px;
+  margin: 0.25rem;
+}
+
+.practica a {
+  background-color: #91a89c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.practica a:hover {
+  background-color: #e9caab;
+
+}

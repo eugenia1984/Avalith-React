@@ -14,9 +14,9 @@ Curso de la Skill Factory de Avalith en **React**
 
 11/07: clase 04 -> [clase 04](https://github.com/eugenia1984/Avalith-React/tree/main/clase04) Flexbox
 
-13/07 : clase 05 -> [clase 05](https://github.com/eugenia1984/Avalith-React/tree/main/clase05)
+13/07 : clase 05 -> [clase 05](https://github.com/eugenia1984/Avalith-React/tree/main/clase05) Workshop : Delivery Managers
 
-15/07 : clase 06 ->
+15/07 : clase 06 -> [clase 06](https://github.com/eugenia1984/Avalith-React/tree/main/clase06) Git y GitHub
 
 18/07 : clase 07 ->
 
