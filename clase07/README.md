@@ -105,4 +105,7 @@ Se representa con {}
 -> Todas deben ser de tipo **conts**
 
 -> Todas las variables deben mostrarse con console.log
+
+-->> [Haciendo click aca lo podes ver](https://github.com/eugenia1984/Avalith-React/blob/main/clase07/practica.js)
+
 ---
