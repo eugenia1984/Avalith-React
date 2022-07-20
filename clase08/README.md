@@ -23,9 +23,40 @@ Ejemplo en codigo:
 ```JavaScript
 const string = "Hello world!";
 const numberAsString = "123";
+
 const StringToNumber = Number(string);
-console.log(`Parse string to number: ${StringToNumber}`);
+console.log(`Parse string to number: ${StringToNumber}`); // no deberia poder
+
+const toNumber = Number(NumberAsString);
+console.log(`Parse number: ${toNumber}`); // deberia poder
+
+const parseNumber = parseInt(numberAsString);
+console.log(`Parse number with parseInt: ${parseToNumber}`); // deberia poder
+
+const parseFloat = parseFloat(numberAString);
+console.log(`Parse number with parseFloat: ${parseFLoat}`); // deberia poder
+
+// Numero = 123,456
+// Truncado a enteros = 123
+// Truncado a dos decimales = 123,45
+// Truncado a un decimal = 123,4
+// Math.ceil --> Redondeo hacia arriba, hay que indicarle cuantos decimales
+// Math.floor --> Redondeo hacia abajo
 ```
+
+---
+
+¿Sabes que se puede escribir la palabra "banan" con inferencia de datos?
+
+```JavaScript
+// write banana with JavaScript
+const word = "b" + "a" + + "a";
+console.log(word);
+```
+
+Empieza con "b" y "a" que al ser String con **+** las va a concatenar, sigue con el espacio vacio que es un **NaN** y lo concatena y luego como tiene la "a" con el **+** tambien lo concatena.
+
+---
 
 ---
 
