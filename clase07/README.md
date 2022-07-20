@@ -68,23 +68,65 @@ const myFirstVariable = "Hello world"
 
 **"Hello world"** -> es el valor de la variable
 
-### Tipos de variables
+### Tipos de variables (datos primitivos)
+
+- **string**: Es una cadena de texto. Se coloca entre comillas ( “ “ )
+
+- **number**: Sirve para representar valores numéricos comprendidos entre números entre -(253 - 1) y 253 - 1. Incluye los números con decimales (punto flotante) y valores como infinito o NaN
+
+- **null**: vale justamente eso, null.
+
+- **boolean**: acepta dos valores que son true y false. True == 1, false == 0
+
+- **undefined**: Ocurre cuando a una determinada variable no se le asignó un valor determinado en tiempo de ejecución. 
 
 #### Arrays
 
-También denominado como lista
+También denominado como lista es un tipo de variable estructurada. Se representa con [] y su contenido debe estar separado por comas.
+
+
 #### Objeto
 
 Es una coleccion de datos ordenados en formato **key:value,**.
 
-Se representa con {}
+Se representa con {} y se separa cada key: value con “,”
 
-### Estructura de control, condicionales y operadores ECMA6
 
 
 #### JS is weird
 
 [jsisweird.com](https://www.jsisweird.com)
+
+
+```
+> 2 + 2
+<- 4
+> "2" + " 2"
+<- "22"  // porque infiere que son string y los concatena
+> 2 + 2 - 2
+<- 2 // son todos number
+> "2" + "2" - "2"
+<- 20 // "2" + "2" los concatena como un string y tiene "22" pero luego con el - 2 parsea a number y hace la resta
+```
+
+---
+
+## Scoope local y global
+ 
+ Ejemplo con codigo:
+ 
+ ```JavaScript
+ var number = 5; // scoope global
+ 
+ function sum() { // local scoope
+  const arr = [1, 2, 3]; // function scoope
+  let sum = 0; // function scoope
+  
+  for (let i = 0; i < arr.length, i++) { // blck scoope
+    sum = sum + arr[i];
+  }
+ }
+ ```
 
 ---
 
