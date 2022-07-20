@@ -18,11 +18,11 @@ Curso de la Skill Factory de Avalith en **React**
 
 15/07 : clase 06 -> [clase 06](https://github.com/eugenia1984/Avalith-React/tree/main/clase06) Git y GitHub
 
-18/07 : clase 07 ->
+18/07 : clase 07 -> [clase 07](https://github.com/eugenia1984/Avalith-React/tree/main/clase07) JavaScript: caracteristicas, variables, tipos de datos.
 
-20/07 : clase 09 ->
+20/07 : clase 08 -> [clase 08](https://github.com/eugenia1984/Avalith-React/tree/main/clase08) JavaScript
 
-22/07 : clase 10 ->
+22/07 : clase 09 ->
 
 
 ---
