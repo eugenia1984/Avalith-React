@@ -58,5 +58,27 @@ Empieza con "b" y "a" que al ser String con **+** las va a concatenar, sigue con
 
 ---
 
+## Distintos console
+
+```JavaScript
+console.log();
+colsole.info();
+console.warning();
+console.error();
+console.table();
+```
 ---
 
+```JavaScript
+const object = {
+  zoo : ["Panda", "Tiger", "Jirafe"],
+  username: "Fabian",
+  age: 20,
+  isSingle : true,
+  array : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+}
+console.log(object.username); // usamos DOT NOTATION
+console.log(object["username"]); // no uso dot notation, sino que entre "" muestro de que key voy a buscar el value
+console.log(`Animals zoo: ${object.zoo}`);
+console.log(`One animal of the zoo: ${object.zoo[[2]]}`); // para ver un elemento dle arrray
+```
