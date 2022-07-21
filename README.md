@@ -22,7 +22,41 @@ Curso de la Skill Factory de Avalith en **React**
 
 20/07 : clase 08 -> [clase 08](https://github.com/eugenia1984/Avalith-React/tree/main/clase08) JavaScript
 
-22/07 : clase 09 ->
+22/07 : clase 09 -> [clase 09](https://github.com/eugenia1984/Avalith-React/tree/main/clase09) JavaScript
 
+25/07 : clase 10 ->
 
+27/07 : clase 11 ->
+
+29/07 : clase 12 ->
+
+01/08 : clase 13 ->
+
+03/08 : clase 14 ->
+
+05/08: : clase 15 ->
+
+08/08: : clase 16 ->
+
+10/08: : clase 17 ->
+
+12/08: : clase 18 ->
+
+15/08: : clase 19 ->
+
+17/08: : clase 20 ->
+
+19/08: : clase 21 ->
+
+22/08: : clase 22 ->
+
+24/08: : clase 23 ->
+
+26/08: : clase 24 ->
+
+29/08: : clase 25 ->
+
+31/08: : clase 26 ->
+
+02/09: : clase 27 ->
 ---
