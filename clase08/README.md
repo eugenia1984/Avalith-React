@@ -91,7 +91,7 @@ console.log(`One animal of the zoo: ${object.zoo[[2]]}`); // para ver un element
 
 The shift() method is a mutating method. It changes the length and the content of this. In case you want the value of this to be the same, but return a new array with the last element removed, you can use arr.slice(0, -1) instead.
 
-````JavaScript
+```JavaScript
 const plants = ['broccoli', 'cauliflower', 'cabbage', 'kale', 'tomato'];
 console.log(plants.pop()); // expected output: "tomato"
 console.log(plants); // expected output: Array ["broccoli", "cauliflower", "cabbage", "kale"]
