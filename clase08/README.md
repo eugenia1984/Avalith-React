@@ -184,11 +184,9 @@ If end is greater than the length of the sequence, slice extracts through to the
  
 - ```.unshift()``` adds one or more elements to the beginning of an array and returns the new length of the array.
 
-````JavaScript
+```JavaScript
 const array1 = [1, 2, 3];
-
 console.log(array1.unshift(4, 5));  // expected output: 5
-
 console.log(array1); // expected output: Array [4, 5, 1, 2, 3]
 ```
 
@@ -209,8 +207,7 @@ unshift(element0, element1, /* ... ,*/ elementN)
 const array1 = ['one', 'two', 'three'];
 console.log('array1:', array1); // expected output: "array1:" Array ["one", "two", "three"]
 const reversed = array1.reverse();
-console.log('reversed:', reversed); // expected output: "reversed:" Array ["three", "two", "one"]
-// Careful: reverse is destructive -- it changes the original array.
+console.log('reversed:', reversed); // expected output: "reversed:" Array ["three", "two", "one"]  // Careful: reverse is destructive -- it changes the original array.
 console.log('array1:', array1); // expected output: "array1:" Array ["three", "two", "one"]
 ```
 
@@ -222,11 +219,8 @@ console.log('array1:', array1); // expected output: "array1:" Array ["three", "t
 
 ```JavaScript
 const elements = ['Fire', 'Air', 'Water'];
-
 console.log(elements.join()); // expected output: "Fire,Air,Water"
-
 console.log(elements.join('')); // expected output: "FireAirWater"
-
 console.log(elements.join('-')); // expected output: "Fire-Air-Water"
 ```
 
@@ -247,8 +241,8 @@ join(separator)
 const array1 = ['a', 'b', 'c'];
 const array2 = ['d', 'e', 'f'];
 const array3 = array1.concat(array2);
-
 console.log(array3); // expected output: Array ["a", "b", "c", "d", "e", "f"]
+```
 
 **Syntax**:
 ```
@@ -266,25 +260,24 @@ concat(value0, value1, ... , valueN)
 
 - ```.length()``` The length property of an object which is an instance of type Array sets or returns the number of elements in that array. The value is an unsigned, 32-bit integer that is always numerically greater than the highest index in the array.
 
-```
+```JavaScript
 const clothing = ['shoes', 'shirts', 'socks', 'sweaters'];
 console.log(clothing.length); // expected output: 4
 ```
 
 - ```.sort()```  sorts the elements of an array in place and returns the reference to the same array, now sorted. The default sort order is ascending, built upon converting the elements into strings, then comparing their sequences of UTF-16 code units values.
 
-```
+```JavaScript
 const months = ['March', 'Jan', 'Feb', 'Dec'];
 months.sort();
 console.log(months); // expected output: Array ["Dec", "Feb", "Jan", "March"]
-
 const array1 = [1, 30, 4, 21, 100000];
 array1.sort();
 console.log(array1); // expected output: Array [1, 100000, 21, 30, 4]
 ```
 
 **Syntax**:
-```
+```JavaScript
 // Functionless
 sort()
 
