@@ -73,7 +73,7 @@ Responder ante el cambio -> Seguimiento de un plan
 
 ## Scrum
 
-### Caracterñisticas:
+### Características:
 
 - Enfoque ágil para el desarrollo de sistemas de software innovadores
 
@@ -91,4 +91,38 @@ Responder ante el cambio -> Seguimiento de un plan
 
 - cada entrega contiene un conjunto de características comletas listas para ser puestas en producción.
 
+
+### Roles
+
+Un proyecto puede llevarse a cabo por uno o más equipos de Scrum
+
+Existen 3 roles: **Producto Owner**, **Scrum Master** y **Development* team*
+
+Un equipo de Scrum se auto-organiza
+
+#### Product Owner
+
+- Responsable del producto. ¿que se quiere? ¿para qué?
+
+- Entiende el valor de negociode las carcterísticas del sistema.
+
+- Es un representante del cliente
+
+- Decide que características y funcionalidades ha de tener el sistema y el orden en el que deben ser implementadas ( **Product Backlog**)
+
+- Participa activamente en el equipo
+
+
+#### Scrum Master
+
+- ayuda a los miembros del equipo a aplicar los principios, valores y prácticas de Scrum.
+
+- Aayuda a la organización en general en la adopción del proceso Scrum
+
+- lidera al equipo
+
+- es un: servant leader, coach, facilitator, teacher.
+
 ---
+
+
