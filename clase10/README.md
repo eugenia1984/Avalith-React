@@ -56,4 +56,39 @@ Mientras tanto, el ambiente es totalmente dinámico y los competidores lanzan nu
 
 - [https://agilemanifesto.org](https://agilemanifesto.org)
 
+- Características:
+
+individuos e interacciones -> procesos y herramientas
+
+software funcionando -> documenta cion exhaustiva
+
+colaboración con el cliente -> negociación de contratos
+
+Responder ante el cambio -> Seguimiento de un plan
+
+- ágil no implica sólo métodos o procesos -> es una manera de pensar la organización es una cuestión cultural.
+
+---
+
+
+## Scrum
+
+### Caracterñisticas:
+
+- Enfoque ágil para el desarrollo de sistemas de software innovadores
+
+- equipo multidisciplinar, auto-organizado y motivado
+
+- entregas de manera iterativa en ciclos cortos y fijos (no se aaplazan)
+
+- feedback del producto y proceso en cada iteración
+
+- basado en modelo de procesos iterativos, basado en los valores del manifesto agil
+
+- requisitos en forma de lista priorizanda de caracterñisticas y capacidades del producto (requimientos funcionales)
+
+- planificación adaptativa
+
+- cada entrega contiene un conjunto de características comletas listas para ser puestas en producción.
+
 ---
