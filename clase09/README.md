@@ -29,8 +29,6 @@ for (condicion) {
 -> Tambien existe **forEach** y **map**
 
 
-## Continuación con métodos disponibles para manipulacion de arrays y objetos
-
 ---
 
 ## Tarea:
