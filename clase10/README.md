@@ -35,3 +35,25 @@ Se determina **quien** participa en un proyecto, haciendo **que**, **cuando** y 
 - **Falta de flexibilidad**: ante cambios en las necesidades de clientes no es posible reaccionar. Planificación realizaadas.
 
 ---
+
+## Problemas clásicos
+
+El clientetarda mucho en poder utilizar el resultado del proyecto.
+
+Mientras tanto, el ambiente es totalmente dinámico y los competidores lanzan nuevos productos.
+
+**Los PROCESOS ÁGILES  se caracterizan justamente por ser lo contratio**
+
+---
+
+## El manifiesto ágil
+
+- Año 2001 - Utah
+
+- Gurús de la ingeniería de Software se juntaron para intentar encontrar un **nuevo modelo** de procesos de desarrollo de coftware
+
+- Definen un conjunto de valores que detallas en el **manifiesto ágil**
+
+- [https://agilemanifesto.org](https://agilemanifesto.org)
+
+---
