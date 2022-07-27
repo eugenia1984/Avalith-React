@@ -96,7 +96,7 @@ Responder ante el cambio -> Seguimiento de un plan
 
 Un proyecto puede llevarse a cabo por uno o más equipos de Scrum
 
-Existen 3 roles: **Producto Owner**, **Scrum Master** y **Development* team*
+Existen 3 roles: **Producto Owner**, **Scrum Master** y **Development team**
 
 Un equipo de Scrum se auto-organiza
 
