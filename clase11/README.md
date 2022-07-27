@@ -22,3 +22,42 @@ nameFunction()
 
 **KISS** -> Keep it simple, stupid!
 
+---
+
+## Sintaxis de una funcion ECMA6
+
+```JavaScript
+function nameFunction( parameters ) {
+  // body function
+}
+
+nameFunction()
+```
+
+```JavaScript
+name nameFunction = ( parameters ) => {
+  // body function
+}
+
+nameFunction()
+```
+
+---
+
+Si una arrow function posee una única instrucción, se puede utilizar un retorno implísito:
+
+```JavaScript
+const sum = (a, b) => {
+  return a+b
+}
+```
+
+Se puede poner asi:
+```JavaScript
+const sum = (a, b) =>  a+b
+```
+
+---
+
+
+
