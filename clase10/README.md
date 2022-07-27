@@ -125,4 +125,33 @@ Un equipo de Scrum se auto-organiza
 
 ---
 
+¿ Cuándo algo está terminado ?
+
+Qué significa específicamente que una tarea estña terminada?
+
+El equipo debe definir exactamente cuando algo está listo.
+
+Determina la clidad del entregable ( **potentially shippable**)
+
+---
+
+## Sprint review
+
+- se reúne todo el equipo, stakeholders, clientes y terceros interesados para revisar el incremento del producto.
+
+- generalmente se realiza una demo, donde se muestra lo que se ha desarrollado
+
+- si algo no va bien vuelve al product backlog. Se reprioriza.
+
+---
+
+## Sprint retrospective
+
+- reunión final de cada ciclo de desarrollo destinada a revisar el propio proceso de Scrum
+
+- La idea es proponer,  en caso que las hubiera, mejoras en el proceso.
+
+- Participan todos los miembros del equipo.
+
+---
 
