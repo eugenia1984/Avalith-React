@@ -1,0 +1,48 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+header {
+  background-color: yellow;
+}
+
+header h1 {
+  text-align: center;
+  padding: 2rem 0rem;
+}
+
+/* MAIN */
+main {
+  min-height: 80vh;
+}
+h2 {
+  text-align: center;
+  padding: 1rem 0rem;
+}
+
+label,
+input {
+  display: block;
+  margin: 1rem;
+}
+
+input {
+  padding: 0.50rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: yellow;
+}
+
+footer p {
+  text-align: center;
+  font-weight: 800;
+  padding: 1.5rem 0rem;
+}
