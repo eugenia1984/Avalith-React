@@ -2,7 +2,11 @@
 
 ---
 
-## Función
+## :star: JS Intermedio
+
+### Funciones en JavaScript
+
+¿Qué es una función ?
 
 - Es un conjunto de instrucciones agrupadas
 
@@ -59,6 +63,9 @@ const sum = (a, b) =>  a+b
 
 ---
 
+## :star: Manipulación de arrays y objetos
+
+
 ## Map, filter, find
 
 Junto con **reduce** son los métodos modernos para la manipulación de elementos iterables y se los considera fundamentales en la programación funcional.
@@ -77,6 +84,50 @@ Se utiliza para hacer operaciones, como sumar valores, multiplicar, agregar key 
 const newArray = arrayToProcess.map(function callback (element, index, array)) => {
   // new values
 }
+```
+
+#### Map vs For
+
+```JavaSCript
+const users = [
+    {
+        userName: "Fabi",
+        userLastName: "Tureo",
+    },
+    {
+        userName: "Melina",
+        userLastName: "Lencinas",
+    },
+    {
+        userName: "Guillermo",
+        userLastName: "Scharf",
+    },
+    {
+        userName: "Emi",
+        userLastName: "Salias",
+    },
+];
+```
+
+-Quiero obtener solo los nombres
+
+```JavaScript
+// Usando un For
+const userNames = [];
+for (let i = 0; i < users.length; i++) {
+    userNames.push(users[i].userName);
+}
+console.log(userNames);
+
+// Usando map
+const userNamesMap = users.map((user) => {
+    return user.userName;
+});
+console.log("map", userNamesMap);
+
+//Map en una línea
+const userNamesMap = users.map((user) => user.userName);
+console.log("map one line", userNamesMap);
 ```
 
 ---
