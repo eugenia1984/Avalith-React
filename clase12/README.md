@@ -41,8 +41,14 @@ const users = {
     userLastname: "Lencinas"
   },
   {
+    id: 3,
+    userName: "Guillermo",
+    userLastName: "Scharf"
   }.
   {
+    id: 4,
+    userName: "Emi",
+    userLastName: "Salias"
   }
 }
 ```
@@ -50,6 +56,15 @@ const users = {
 Quiero obtener los users cuyo ID sea menor que 3
 
 ```JavaScript
+const userLessThanThree = users.filter((user) => user.id < 3);
+console.log("Filtrados", userLessThanThree);
+```
+
+Quiero obtener los users cuyo ID sea mayor que users
+
+```JavaScript
+const userMoreThanTwo = users.filter((user) => user.id > 2);
+console.log("Filtrados", userMoreThanTwo);
 ```
 
 Un problema recurrente cuando solicitamos/nos llega la información desde una API (Application Programming Interface) y el caudal de información es mediano/grande, la performance puede verse afectada por el alto costo de métodos en conjunto (si, se puede) para poder crear un algoritmo de mejor rendimiento (no codigo de "mejor rendimiento")
