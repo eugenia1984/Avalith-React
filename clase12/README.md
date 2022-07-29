@@ -63,8 +63,8 @@ console.log("Filtrados", userLessThanThree);
 Quiero obtener los users cuyo ID sea mayor que users
 
 ```JavaScript
-const userMoreThanTwo = users.filter((user) => user.id > 2);
-console.log("Filtrados", userMoreThanTwo);
+const userGreaterThanTwo = users.filter((user) => user.id > 2);
+console.log("Filtrados", userGreaterThanTwo);
 ```
 
 Un problema recurrente cuando solicitamos/nos llega la información desde una API (Application Programming Interface) y el caudal de información es mediano/grande, la performance puede verse afectada por el alto costo de métodos en conjunto (si, se puede) para poder crear un algoritmo de mejor rendimiento (no codigo de "mejor rendimiento")
