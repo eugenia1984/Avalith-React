@@ -96,6 +96,37 @@ console.log(`Second position ${second});
 const [firstPos, , thirdPos, fouthPos] = names; // me salto el segundo al nombrarlo, pero lo dejo entre las ,
 ```
 
+**Destructuring**
+
+```JavaScript
+const userGuille = {
+  id: 3,
+  userName: "Guillermo",
+  userLastName: "Scharf"
+};
+
+const idDestructuring = userGuille.id;
+const userNameDestructuring = userGuille.userName;
+const userLastNameDestructuring = userGuille.userLastName;
+
+const { id:idUser, userName, userLastName} = userGuille;
+console.log("idUser", idUser);
+console.log("User name:", userName);
+console.log("User last name: ", userLastName);
+
+function getUser(user) {
+  return `${userName} ${userLastName}`
+}
+
+function getUserDestructuring2(user) {
+  const { userName, userLastName } = user;
+  return `${userName} ${userLastName}`;
+}
+
+function getUserDestructuring( { userName, userLastName} ) {
+  return `${userName} ${userLastName}`;
+}
+```
 
 ---
 
