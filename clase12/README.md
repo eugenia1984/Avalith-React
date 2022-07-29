@@ -6,7 +6,7 @@
 
 -> El **reduce** lo veremos más adelante
 
-- **1** Métodos más modernos para manipulación de arrays
+- **1 Métodos más modernos para manipulación de arrays**
 
 ### Filter
 
@@ -74,7 +74,27 @@ Un problema recurrente cuando solicitamos/nos llega la información desde una AP
 
 Similar a  lo que hace Filter y Map, Find recorre un array dado y devuelve la primera coincidencia respecto a una condición  dada. A partir de ese momento deja de recorrer el array.
 
-- **2** Spread Operator & Destructuring
+- **2 Spread Operator & Destructuring**
+
+```JavaScript
+const names = ["Fabian", " Melina", "Guillermo", "Emilia"];
+
+const firstPosition = names[0];
+const secondPosition = names[0];
+const thirdPosition = names[0];
+const fourthPosition = names[0];
+
+console.log(`First position: ${firstPosition});
+console.log(`Second position: ${secondPosition});
+console.log(`Third position: ${thirdtPosition});
+console.log(`Fourth position: ${fourthtPosition});
+
+// Destructuring of an array
+const [first, second, third, fouth] = names;
+console.log(`Second position ${second});
+
+const [firstPos, , thirdPos, fouthPos] = names; // me salto el segundo al nombrarlo, pero lo dejo entre las ,
+```
 
 
 ---
