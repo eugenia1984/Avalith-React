@@ -70,6 +70,10 @@ console.log("Filtrados", userGreaterThanTwo);
 Un problema recurrente cuando solicitamos/nos llega la información desde una API (Application Programming Interface) y el caudal de información es mediano/grande, la performance puede verse afectada por el alto costo de métodos en conjunto (si, se puede) para poder crear un algoritmo de mejor rendimiento (no codigo de "mejor rendimiento")
 
 
+### find
+
+Similar a  lo que hace Filter y Map, Find recorre un array dado y devuelve la primera coincidencia respecto a una condición  dada. A partir de ese momento deja de recorrer el array.
+
 - **2** Spread Operator & Destructuring
 
 
