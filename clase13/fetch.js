@@ -1,4 +1,4 @@
-const URL_USERS = "https://jsonplaceholder.typicode.com/users";
+const URL_USERS = "https://jsonplaceholder.typicode.com/todos";
 
 // metodo .then()
 /* Primer ejemplo
@@ -18,9 +18,12 @@ fetch(URL_USERS) // infiere en que el pedido es un GET
     for(let i=0; i<data.length; i++) { // para iterar lo que tengo en data
       //console.log(data[i]);
       body += `
-        <h2>${data[i].name}</h2>
-        <p>User name: ${data[i].username}</p>
-        <p>Website: ${data[i].website}</p>
+      <div class="card">
+        <h2>Id: ${data[i].id}</h2>
+        <p>Title: ${data[i].title}</p>
+        <p>Completed: ${data[i].completed}</p>
+      </div>
+        
       `
       document.getElementById("fetch-petition").innerHTML = body;
     }
