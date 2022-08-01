@@ -1,4 +1,4 @@
-# Clase 12 * Viernes 29 de Julio
+# Clase 12 * Viernes 29 de Julio * Filter y Find
 
 ---
 
