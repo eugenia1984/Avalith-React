@@ -34,3 +34,16 @@ Se puede trabajar de cuatro modos :
 ... Promise
 
 ---
+
+## Fetch y Then
+
+```JavaSCript
+const URL_USERS = "https://jsonplaceholder.typicode.com/users";
+// metodo .then()
+fetch(URL_USERS) // infiere en que el pedido es un GET
+  .then((response) => response.json())
+  .then( (data) => console.table(data)); // nested Promises
+```
+
+Ahora voy a querer vincular lo que obtuve con el DOM.
+
