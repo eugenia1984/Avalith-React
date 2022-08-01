@@ -15,8 +15,7 @@ fetch(URL_USERS) // infiere en que el pedido es un GET
   function showData(data) {
     console.log("Data", data);
     let body = ``;
-    for(let i=0; i<data.length; i++) { // para iterar lo que tengo en data
-      //console.log(data[i]);
+    for(let i=0; i<data.length; i++) { 
       body += `
       <div class="card">
         <h2>Id: ${data[i].id}</h2>
