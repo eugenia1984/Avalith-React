@@ -9,14 +9,20 @@ fetch(URL_USERS) // infiere en que el pedido es un GET
 */
 
 fetch(URL_USERS) // infiere en que el pedido es un GET
-  .then((response) => response.json())
+  .then((response) => response.json()) 
   .then( (data) => showData(data)); // nested Promises
 
   function showData(data) {
     console.log("Data", data);
     let body = ``;
     for(let i=0; i<data.length; i++) { // para iterar lo que tengo en data
-      console.log(data[i]);
+      //console.log(data[i]);
+      body += `
+        <h2>${data[i].name}</h2>
+        <p>User name: ${data[i].username}</p>
+        <p>Website: ${data[i].website}</p>
+      `
+      document.getElementById("fetch-petition").innerHTML = body;
     }
   }
 
