@@ -18,9 +18,9 @@ fetch(URL_USERS) // infiere en que el pedido es un GET
     for(let i=0; i<data.length; i++) { 
       body += `
       <div class="card">
-        <h2>Id: ${data[i].id}</h2>
-        <p>Title: ${data[i].title}</p>
-        <p>Completed: ${data[i].completed}</p>
+        <h2 class="card-item">Id : ${data[i].id}</h2>
+        <p class="card-item card-title"><strong>Title :</strong> ${data[i].title}</p>
+        <p class="card-item"><strong>Completed : </strong> ${data[i].completed}</p>
       </div>
         
       `
