@@ -74,4 +74,71 @@ function showData(data) {
 
 ---
 
+### tEMAS:
+
+1. ¿Qué es el asincronismo en JavaScript? 
+
+2. Objeto Promise
+
+3. Fetch + Async/Await
+
+4. Práctica
+
+---
+
+### ASINCRONISMO
+
+#### Antes de empezar: setTimeOut
+
+El método setTimeOut es (ni más ni menos) un temporizador. Este método permite ejecutar un callback luego de que haya transcurrido un determinado tiempo. Los dos parámetros más importantes a tener en cuenta son: la function a ejecutar y el time (en ms) que debe esperar para ejecutarse
+
+**Sintaxis de setTimeOut**
+
+```JavaScxript
+setTimeOut(function (){
+	// Do something
+}, time)
+
+In arrow function format
+setTimeOut(() => {
+	//Do Something
+}, time)
+
+```
+
+### Asincronismo
+
+Aprender a trabajar con asincronismo en JavaScript nos permitirá ejecutar tareas tengan un tiempo diferido respecto al tiempo de ejecución hasta que se consideren finalizadas. 
+Pero ¿por qué necesitamos saber esto?
+
+- JavaScript => Lenguaje Monohilo (Single-thread).
+
+- Significa que solo puede hacer una tarea a la vez (secuencial)
+ 
+- Aunque no sea multitarea (mejor llamado multi-thread), puede delegar la ejecución a otros procesos. 
+
+```
+Modelo de                  Modelo de
+concurrencia               Paralelismo
+(2 o  + tareas      VS     (2 o + tareas
+progresan                    ocurren
+simultáneamente)           simultaneamente)
+```
+
+Modelo de Paralelismo
+Dos o más tareas ocurren simultáneamente
+
+
+#### Operaciones sincrónicas y asincrónicas
+
+####  Event Loop
+
+####  Callbacks y promesas
+
+####  Práctica HTML/CSS/JS
+
+
+
+
+
 
