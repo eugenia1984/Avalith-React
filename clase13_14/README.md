@@ -125,15 +125,73 @@ progresan                    ocurren
 simultáneamente)           simultaneamente)
 ```
 
-Modelo de Paralelismo
-Dos o más tareas ocurren simultáneamente
+#### Consurrencia vs Paralelismo
+
+```
+    THREAD UNICO              MULTIPLES THREADS
+S      |                       |            |
+E      |                       |            |
+C    Task1                     |            |
+U      |                       |            |
+E      |                     Task1        Task2
+N    Task2                     |            |
+C      |                       |            |
+I      |                       |            |
+A      |                       |            |
+L      |                       |            |
+```
 
 
-#### Operaciones sincrónicas y asincrónicas
+```
+    THREAD UNICO              MULTIPLES THREADS
+E      |                       |            |
+N      |                       |            |
+T    Task1--                 Task2--        |
+R      |                       |            |
+E    Task2--                 Task1--      Task2----
+L      |                       |            |
+A    Task2----               Task2------   Task1----
+Z      |                       |            |
+A    Task1----                 |          Task1------
+D      |                       |            |
+O    Task2------               |            |
+       |                       |            |
+     Task1------               |            |
+```
 
-####  Event Loop
+
+### Operaciones sincrónicas y asincrónicas
+
+#### Entonces ¿redefinimos JS?
+
+JavaScript es un lenguaje concurrente, asíncrono, no bloqueante, interpretado, de alto nivel, monohilo.
+
+- Monohilo: Tiene un único hilo de ejecución
+
+- Concurrente: Permite el avance de tareas de forma simultánea
+
+- No bloqueante: Permite derivar procesos para seguir ejecutándose
+
+- Asíncrono: Ejecuta código que tarda más tiempo “en otro lado”
+
+
+####  Event Loop y Call Stack
+
+
+¿Cómo maneja el asincronismo, la concurrencia y el no-bloqueo si es single-thread?
+
+Mecanismo Event Loop
+
+JavaScript posee una pila de ejecución llamada Call Stack donde coloca las llamadas a funciones según el orden en que deban ejecutarse 
+Cada línea de ejecución se lee de forma secuencial pero, cuando una función llama a otra, entonces esa tarea se agrega a la pila hasta que termina de ejecutarla y luego la elimina de la pila
+
 
 ####  Callbacks y promesas
+
+Un Callback es una función que recibe como parámetro a otra función
+
+Cuando una función llama a otra función y esta última se resuelve, será agregada al Callback Queue. Esto indica que JS sigue ejecutando todas las demás tareas sincrónicas y, cuando se quede sin funciones a ejecutar en la pila de ejecución, allí agregará la información obtenida desde la cola de tareas
+
 
 ####  Práctica HTML/CSS/JS
 
