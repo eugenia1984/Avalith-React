@@ -30,7 +30,7 @@ Curso de la Skill Factory de Avalith en **React**
 
 29/07 : clase 12 -> [clase 12](https://github.com/eugenia1984/Avalith-React/tree/main/clase12) manipulacion de arrays: filter y map
 
-01/08 y 3/8 : clase 13 y 14->  [clase 13 y 14](https://github.com/eugenia1984/Avalith-React/tree/main/clase13) promesas y asincronismo
+01/08 y 3/8 : clase 13 y 14->  [clase 13 y 14](https://github.com/eugenia1984/Avalith-React/tree/main/clase13_14) promesas y asincronismo
 
 05/08: : clase 15 ->
 
