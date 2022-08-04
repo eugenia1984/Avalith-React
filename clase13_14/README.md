@@ -68,6 +68,8 @@ function showData(data) {
 }
 ```
 
+->> Se pueden ver ejemeplos de clase en **ejemplo.clase.js**
+
 ----
 
 # Clase 14 * Miércoles 3 de Agosto
