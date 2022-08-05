@@ -155,6 +155,8 @@ Patrones de Diseño
 GitHub
 Actions
 Documentación
+```
+
 ---
 
 ## :star:  1 Desarrollo Web y Mobile 
