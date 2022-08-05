@@ -34,7 +34,7 @@ footer a {
 }
 
 h1,
-h3 {
+h2 {
   color: var(--white);
   padding: 1.75rem 0.75rem;
   text-align: center;
@@ -83,7 +83,7 @@ h3 {
   height: 45vh;
 }
 
-.javascript h3 {
+.javascript h2 {
   background-color: #513655;
   font-size: 1.5rem;
 }
@@ -101,4 +101,9 @@ h3 {
   text-decoration: none;
   padding: 0.50rem 1rem;
   background-color: #91a89c;
+  margin: 0rem 0.5rem;
+}
+
+.links a:hover {
+  background-color: #e9caab;
 }

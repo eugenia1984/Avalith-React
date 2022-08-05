@@ -21,6 +21,10 @@ p {
   text-align: center;
   margin-bottom: 1rem;
 }
+
+hr {
+  margin: 1rem 0rem;
+}
 /* Cards */
 #jsonplaceholder h2 {
   background-color: rgb(217, 255, 0);
