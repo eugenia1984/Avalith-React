@@ -6,177 +6,177 @@ Curso de la Skill Factory de Avalith en **React**
 
 ### :star: Temario
 
-- 1. Desarrollo Web y Mobile :
+- **1. Desarrollo Web y Mobile** :
 
-¿Qué partes están implicadas?
+-¿Qué partes están implicadas?
 
-¿Qué tengo que aprender?
+-¿Qué tengo que aprender?
 
-¿Qué más existe aparte del Desarrollo Web?
+-¿Qué más existe aparte del Desarrollo Web?
 
-- 2. Preparación del entorno
+- **2. Preparación del entorno**:
 
-Instalación de programas necesarios
+-Instalación de programas necesarios
 
-Revisión de versiones
+-Revisión de versiones
 
-Configuración del editor y extensiones
+-Configuración del editor y extensiones
 
-- 3. HTML y CSS
+- **3. HTML y CSS**:
 
-Rvision de etiquetas básicas y conceptos básicos 
+-Rvision de etiquetas básicas y conceptos básicos 
 
-Revisión de CSS y Flexbox
+-Revisión de CSS y Flexbox
 
-- 4. Git
+- **4. Git**:
 
-Git vs GitHub (y otras alternativas)
+-Git vs GitHub (y otras alternativas)
 
-Comandos básicos (Y SUPER NECESARIOS)
+-Comandos básicos (Y SUPER NECESARIOS)
 
-- 5. Introducción a JavaScript
+- **5. Introducción a JavaScript**:
 
-¿Qué es JS y para qué se puede usar?
+-¿Qué es JS y para qué se puede usar?
 
-Tipos de variables y conversión de tipos
+-Tipos de variables y conversión de tipos
 
-Estructuras de control, Condicionales y Operadores
+-Estructuras de control, Condicionales y Operadores
 
-- 6. Arrays y Objetos
+- **6. Arrays y Objetos**:
 
-Manipulación de arrays 
+-Manipulación de arrays 
 
-Manipulación de Objetos
+-Manipulación de Objetos
 
-Destructuring
+-Destructuring
 
-- 7. JavaScript Intermedio
+- **7. JavaScript Intermedio**:
 
-Métodos para arrays y objetos
+-Métodos para arrays y objetos
 
-Eventos
+-Eventos
 
-Introducción a Regex
+-Introducción a Regex
 
-JS y DOM
+-JS y DOM
 
-- 8. Asincronismo
+- **8. Asincronismo**:
 
-Operaciones sincrónicas y asincrónicas
+-Operaciones sincrónicas y asincrónicas
 
-Event Loop
+-Event Loop
 
-Callbacks y promesas
+-Callbacks y promesas
 
-Async / await + Error Handling
+-Async / await + Error Handling
 
-- 9. Introducción a React
+- **9. Introducción a React**:
 
-¿Qué es y por qué utilizarlo?
+-¿Qué es y por qué utilizarlo?
 
-Web tradicional vs SPA vs PWA
+-Web tradicional vs SPA vs PWA
 
-Alternativas a React
+-Alternativas a React
 
-- 10. Sintaxis y estructura de proyectos en React
+- **10. Sintaxis y estructura de proyectos en React**:
 
-Formas de crear un proyecto en React
+-Formas de crear un proyecto en React
 
-Dependencias en el proyecto
+-Dependencias en el proyecto
 
-Props
+-Props
 
-Reutilización de componentes
+-Reutilización de componentes
 
-- 11. Programación funcional
+- **11. Programación funcional**:
 
-Componentes funcionales en React
+-Componentes funcionales en React
 
-Dependencias en el proyecto
+-Dependencias en el proyecto
 
-Props
+-Props
 
-Retilización de componentes
+-Retilización de componentes
 
-- 12. Hooks
+- **12. Hooks**:
 
-¿Qué son los hooks?
+-¿Qué son los hooks?
 
-Manejo de estados en un componente
+-Manejo de estados en un componente
 
-Ciclo de vida de un componente
+-Ciclo de vida de un componente
 
-Hooks Nativos y Custom Hooks (ideal
+-Hooks Nativos y Custom Hooks (ideal
 
-- 13. Routing
+- **13. Routing**:
 
-SPA y enrutamiento
+-SPA y enrutamiento
 
-Path y navegación
+-Path y navegación
 
-Enrutado dinámico y parámetros
+-Enrutado dinámico y parámetros
 
-- 14. Deploying de Aplicaciones
+- **14. Deploying de Aplicaciones**:
 
-¿Cómo subo mis proyectos de una forma sencilla?
+-¿Cómo subo mis proyectos de una forma sencilla?
 
-Otras alternativas de deploy
+-Otras alternativas de deploy
 
-Usando AWS para mi proyecto (ideal)
+-Usando AWS para mi proyecto (ideal)
 
-- 15. State managment
+- **15. State managment**:
 
-Context API
+-Context API
 
-¿Qué es Redux?
+-¿Qué es Redux?
 
-Redux vs Redux. Toolkit
+-Redux vs Redux. Toolkit
 
-Actions, reducers y store
+-Actions, reducers y store
 
-¿Hay más Redux's?
+-¿Hay más Redux's?
 
-- 16. Autenticación
+- **16. Autenticación**:
 
-¿Qué es JWT?
+-¿Qué es JWT?
 
-Validación de JWT y rutas privadas
+-Validación de JWT y rutas privadas
 
-Login, localStorage y cookies
+-Login, localStorage y cookies
 
-- 17. Conexión a BackEnd
+- **17. Conexión a BackEnd**:
 
-Petición HTTP
+-Petición HTTP
 
-API Key y Headers
+-API Key y Headers
 
-Axios interceptors (ideal)
+-Axios interceptors (ideal)
 
-Firebase
+-Firebase
 
-- 18. Test automation
+- **18. Test automation**:
 
-¿Por quñe es importante el testing?
+-¿Por que es importante el testing?
 
-Tipos de test
+-Tipos de test
 
-TDD
+-TDD
 
-React Testing Library
+-React Testing Library
 
-Jest & Selenium (ideal)
+-Jest & Selenium (ideal)
 
-- Extras
+- **Extras**
 
-Instancias de AWS
+-Instancias de AWS
 
-Patrones de Diseño
+-Patrones de Diseño
 
-GitHub
+-GitHub
 
-Actions
+-Actions
 
-Documentación
+-Documentación
 
 ---
 
@@ -206,9 +206,7 @@ Documentación
 
 29/07 : clase 12 -> [clase 12](https://github.com/eugenia1984/Avalith-React/tree/main/clase12) manipulacion de arrays: filter y map ( 6 - Arrays y Objetos / 7 - JavaScript Intermedio )
 
-01/08 y 3/8 : clase 13 y 14->  [clase 13 y 14](https://github.com/eugenia1984/Avalith-React/tree/main/clase13_14) promesas y asincronismo ( 8 - Asincronismo )
-
-05/08: : clase 15 ->
+01/08 , 3/8 y 05/08: clase 13 y 14 y 15->  [clase 13 y 14_15](https://github.com/eugenia1984/Avalith-React/tree/main/clase13_14) promesas y asincronismo ( 8 - Asincronismo )
 
 08/08: : clase 16 ->
 
