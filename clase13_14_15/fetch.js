@@ -2,7 +2,6 @@ const URL_USERS = "https://jsonplaceholder.typicode.com/todos";
 
 // metodo .then()
 /* Primer ejemplo
-
 fetch(URL_USERS) // infiere en que el pedido es un GET
   .then((response) => response.json())
   .then( (data) => console.table(data));

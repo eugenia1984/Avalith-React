@@ -70,13 +70,16 @@ function showData(data) {
 
 ->> Se pueden ver ejemeplos de clase en **ejemplo.clase.js**
 
-----
+
+---
+---
+
 
 # Clase 14 * Miércoles 3 de Agosto
 
 ---
 
-### tEMAS:
+### TEMAS:
 
 1. ¿Qué es el asincronismo en JavaScript? 
 
@@ -197,6 +200,21 @@ Cuando una función llama a otra función y esta última se resuelve, será agre
 
 ####  Práctica HTML/CSS/JS
 
+
+
+---
+---
+
+
+## :star: Clase 15 * Viernes 5 Agosto
+
+---
+
+Async-Await y .then() -> metodos para hacer pedidos
+
+fetch y axios -> metodo para manejar promesas
+
+---
 
 
 

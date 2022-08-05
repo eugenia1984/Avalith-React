@@ -3,8 +3,8 @@
 // Axios async/await
 // Promise
 
-const URL_USERS = "https://jsonplaceholder.typicode.com/users";
-fetch(URL_USERS) // Infiere en que el pedido es un GET
+const URL_USERS2 = "https://jsonplaceholder.typicode.com/users";
+fetch(URL_USERS2) // Infiere en que el pedido es un GET
   .then((response) => response.json())
   .then((data) => showData(data)); //Nested Promises
 
@@ -22,6 +22,7 @@ fetch(URL_USERS) // Infiere en que el pedido es un GET
 // }
 
 // Paint the data in the DOM with MAP and Arrow Function Format
+/*
 const showData = (data) => {
   console.log("Data", data);
   let body = ``;
@@ -33,6 +34,7 @@ const showData = (data) => {
 
   document.getElementById("fetch-petition").innerHTML = body;
 };
+*/
 
 // Paint the data in the DOM with MAP and Arrow Function Format + Destructuring
 // const showData = (data) => {

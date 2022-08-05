@@ -17,12 +17,16 @@ h1 {
   padding: 2rem 0rem;
 }
 
-h2 {
+p {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+/* Cards */
+#jsonplaceholder h2 {
   background-color: rgb(217, 255, 0);
 }
 
-/* Cards */
-#fetch-petition {
+#jsonplaceholder #fetch-petition {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -30,9 +34,9 @@ h2 {
   align-items: center;
 }
 
-.card {
+#jsonplaceholder .card {
   width: 200px;
-  height: 210px;
+  height: 300px;
   border: 1px solid black;
   margin: 7px;
   padding: 7px;
@@ -40,7 +44,7 @@ h2 {
   flex-direction: column;
 }
 
-.card-item {
+#jsonplaceholder .card-item {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -49,7 +53,12 @@ h2 {
   height: 70px;
 }
 
-.card-title {
+#jsonplaceholder .card-title {
   flex-direction: column;
   flex-grow: 1;
+}
+
+/* pokemon */
+.pokemon h2 {
+  text-align: center;
 }
