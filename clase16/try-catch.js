@@ -1,12 +1,4 @@
-## :star: Clase 16 * Manejo de errores
-
----
-
-## Try - Catch
-
-### Codigo que se corta en la tercer linea
-
-```JavaScript
+// Código que se corta en la tercera línea
 try {
   const onIncorrectFunction = null;
   console.log("Console.log before execute function");
@@ -19,11 +11,7 @@ try {
   console.log(`Error Message: ${error.message}`);
 }
 console.log("Console.log after try-catch");
-```
 
-### Otro ejemplo en código
-
-```JavaSCript
 const getNumberPokemon = prompt("Ingrese el número de pokemon");
 const URL_GET_POKEMON = `https://pokeapi.co/api/v2/pokemon/${getNumberPokemon}`;
 
@@ -41,5 +29,3 @@ const getPokemon = async () => {
   }
 };
 getPokemon();
-```
----
