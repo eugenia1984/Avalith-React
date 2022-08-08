@@ -63,6 +63,20 @@ hr {
 }
 
 /* pokemon */
-.pokemon h2 {
+.pokemon h2,
+.pokemon-async-await h2,
+.pokemon-con-axios h2 {
   text-align: center;
+  margin-bottom: 2rem;
+}
+
+#pokemon-then-fetch,
+#pokemon-async-await,
+#pokemon-axios  {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
