@@ -198,7 +198,7 @@ Speakers:
 
 **mensaje** la información a transmitir.
 
-**canal de comunicación** el medio por el que se transmite el mensaje. 
+**canal de comunicación** el medio por el que se transmite el mensaje, el canal suele condicionar la comunicación.
 
 ---
 
