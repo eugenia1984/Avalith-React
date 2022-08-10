@@ -158,18 +158,15 @@ Determina la clidad del entregable ( **potentially shippable**)
 ---
 
 
-# Clase 17 * Mirécoles 10 de Agosto
-
----
-
-## :star: Workshop
+# Clase 17 * Mirécoles 10 de Agosto * Comunicación eficaz (Workshop)
 
 ---
 
 Temario:
 
-- Comunicación eficaz
+1. ¿Qué es la comunicación eficaz?
 
+2. Elementos de la comunicación
 
 ---
 
@@ -181,3 +178,34 @@ Speakers:
 
 ---
 
+## :star: 1. ¿Qué es la comunicación eficaz?
+
+
+**Comunicar** es compartir una **información** racional y emocional, poniendola en común entre el **locutor** (**emisor**) y el **interlocutor**(**receptor**).
+
+-> Algo inherente al ser humano por ser ser social por naturaleza.
+
+-> **comunicación eficaz** debe tener una **escucha activa**, debe ser estratégica, planificado..
+
+---
+
+## :star: 2  Elementos de la comunicación
+
+
+**emires** tato el **emisor** como el **receptor** van a ir intercambiando sus roles durante la comunicación.
+
+**emisor** la fuente, quien transmite el mensaje al **receptor**
+
+**mensaje** la información a transmitir.
+
+**canal de comunicación** el medio por el que se transmite el mensaje. 
+
+---
+
+## :star: 3
+
+---
+
+## :star: 4
+
+---
