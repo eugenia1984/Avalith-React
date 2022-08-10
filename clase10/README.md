@@ -145,6 +145,7 @@ Determina la clidad del entregable ( **potentially shippable**)
 
 ---
 
+
 ## Sprint retrospective
 
 - reunión final de cada ciclo de desarrollo destinada a revisar el propio proceso de Scrum
@@ -152,6 +153,23 @@ Determina la clidad del entregable ( **potentially shippable**)
 - La idea es proponer,  en caso que las hubiera, mejoras en el proceso.
 
 - Participan todos los miembros del equipo.
+
+---
+---
+
+
+# Clase 17 * Mirécoles 10 de Agosto
+
+---
+
+## :star: Workshop
+
+---
+
+Temario:
+
+- Comunicación eficaz
+
 
 ---
 
