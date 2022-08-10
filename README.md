@@ -210,7 +210,7 @@ Curso de la Skill Factory de Avalith en **React**
 
 08/08: : clase 16 -> [clase 16](https://github.com/eugenia1984/Avalith-React/tree/main/clase16) ( 8 - Asincronismo - Manejo de Errores)
 
-10/08: : clase 17 -> [Workshop: comunicación eficaz]()
+10/08: : clase 17 -> [Workshop: comunicación eficaz](https://github.com/eugenia1984/Avalith-React/tree/main/clase10)
 
 12/08: : clase 18 ->
 
