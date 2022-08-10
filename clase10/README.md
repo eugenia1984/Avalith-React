@@ -173,3 +173,11 @@ Temario:
 
 ---
 
+Speakers:
+
+- Nicole Calaresu (Culture & Experiencie Manager)
+
+- Pablo Morgenstern (People & Culture Manager)
+
+---
+
