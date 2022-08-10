@@ -200,6 +200,8 @@ Speakers:
 
 **canal de comunicación** el medio por el que se transmite el mensaje, el canal suele condicionar la comunicación.
 
+**feedback** que pide el emisor, para ver si el receptor entendio bien el mensaje.
+
 ---
 
 ## :star: 3
