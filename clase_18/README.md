@@ -6,7 +6,7 @@
 
 1. Presentando React
 
-2. Formas de Crear un Proyecto en REact
+2. Formas de Crear un Proyecto en React
 
 3. Estructura de carpetas
 
@@ -16,7 +16,7 @@
 
 ---
 
-### Introducción a REact
+### 1 - Introducción a React
 
 - Es una librería creada por Facebook para el Front End
 
@@ -27,6 +27,35 @@
 - Propone el concepto de "Reactivo a los cambios"
 
 - Tiene una comunidad muy grande, hay mucha documentación
+
+---
+
+### 2. Formas de Crear un Proyecto en React
+
+
+**Creando un proyecto con CRA (Create React App)**
+
+CRA es el asincronismo correspondiente a **Create React App**.
+
+Es el comando que la librería trae de forma natural para poder crear un proyecto de React.
+
+Como sabemos que esto depende de **Node**, entonces es posible utilizar NPM para manejar los paquetes.
+
+En este caso, utilizaremos uno muy parecido que se llama **NPX** que no es más que un **NPM** pero EXecutable.
+
+- Veamos cómo crear un proyecto entonces:
+
+1. En una consola ubicada en la carpeta de nuestro proyecto, ejecutaremos el comando: ``` npx create-react-app [nombre-de-mi-proyecto]```
+
+2. Esperamos a que aparezca el mensaje "Happy hacking"
+
+3. Entramos a nuestra carpeta y ejecutamos ```npm start```
+
+- Tips que hay que tener en cuanta al dar el nombre al proyecto:
+
+-no se pueden dejar espacios
+
+-debe der tdo en minuscula
 
 ---
 
