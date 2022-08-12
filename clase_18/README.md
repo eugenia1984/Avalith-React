@@ -69,8 +69,29 @@ En este caso, utilizaremos uno muy parecido que se llama **NPX** que no es más 
 
 ---
 
+## 3. Estructura de carpetas
+
+```
+>node_modules
+>public
+>src
+ .gitignore
+  README:md
+  package-lock.json
+  package.json
+``` 
+ 
+Es super importante que en **.gitignore** tenga **node_modules** asi no se sube a GitHub, y al bajarlo nuevamente siempre correr ```npm install``` para que me descargue los modulos (**instalo las dependencias**, es decir bajo las librerias).
+
+
+---
+
 ### Tarea:
 
 - Buscar la diferencia entre **libreria** y **framework**, ¿que le falta a React para ser considerado un Framework? ¿ Por qué es ventaja que sea una librería?
+
+- Crear un proyecto y subirlo
+
+- Clonar un repositorio y agregar las dependencias
 
 ---
