@@ -57,9 +57,19 @@ En este caso, utilizaremos uno muy parecido que se llama **NPX** que no es más 
 
 -debe der tdo en minuscula
 
+- Creado un proyecto con VITE
+
+1. Para crear un proyecto con **Vite** en lugar de **CRA** es necesario que se ejecute el comando:
+
+```npm init vit@latest [nombre-de-mi-proyecto] ```
+
+2. Para continuar debemos ingresar a la carpeta creada utilizamos:
+
+```cd [nombre-de-mi-proyecto]```
+
 ---
 
-### Tares:
+### Tarea:
 
 - Buscar la diferencia entre **libreria** y **framework**, ¿que le falta a React para ser considerado un Framework? ¿ Por qué es ventaja que sea una librería?
 
