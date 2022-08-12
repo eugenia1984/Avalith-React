@@ -1,4 +1,4 @@
-## :star: Clase 18 * Viernes 12 Agosto * Introduccion a REact 
+## :star: Clase 18 * Viernes 12 Agosto * Introduccion a Ract 
 
 ---
 
