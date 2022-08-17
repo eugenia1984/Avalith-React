@@ -212,25 +212,25 @@ Curso de la Skill Factory de Avalith en **React**
 
 10/08: : clase 17 -> [Workshop: comunicación eficaz](https://github.com/eugenia1984/Avalith-React/tree/main/clase10)
 
-12/08: : clase 18 -> [Clase 18](https://github.com/eugenia1984/Avalith-React/tree/main/clase_18) ( 9 - Introduccion a React)
+12/08 y 17/08 : clase 18 y 19-> [Clase 18 y 19](https://github.com/eugenia1984/Avalith-React/tree/main/clase_18) ( 9 - Introduccion a React)
 
-15/08: : clase 19 ->
+15/08: : Feriado del 17 de Agosto
 
-17/08: : clase 20 ->
+19/08: : clase 20 ->
 
-19/08: : clase 21 ->
+22/08: : clase 21 ->
 
-22/08: : clase 22 ->
+24/08: : clase 22 ->
 
-24/08: : clase 23 ->
+26/08: : clase 23 ->
 
-26/08: : clase 24 ->
+29/08: : clase 24 ->
 
-29/08: : clase 25 ->
+31/08: : clase 25 ->
 
-31/08: : clase 26 ->
+02/09: : clase 26 ->
 
-02/09: : clase 27 ->
+
 
 
 ---
