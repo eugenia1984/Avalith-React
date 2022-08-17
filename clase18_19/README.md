@@ -16,6 +16,8 @@
 
 ---
 
+# :star: 9. Introducción a React
+
 ### 1 - Introducción a React
 
 - Es una librería creada por Facebook para el Front End
@@ -29,6 +31,8 @@
 - Tiene una comunidad muy grande, hay mucha documentación
 
 ---
+
+# :star: 10. Sintaxis y estructura de proyectos en React
 
 ### 2. Formas de Crear un Proyecto en React
 
