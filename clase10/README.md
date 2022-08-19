@@ -158,7 +158,7 @@ Determina la clidad del entregable ( **potentially shippable**)
 ---
 
 
-# Clase 17 * Mirécoles 10 de Agosto * Comunicación eficaz (Workshop)
+# :star: Clase 17 * Miércoles 10 de Agosto * Comunicación eficaz (Workshop)
 
 ---
 
@@ -203,11 +203,9 @@ Speakers:
 **feedback** que pide el emisor, para ver si el receptor entendio bien el mensaje.
 
 ---
-
-## :star: 3
-
 ---
 
-## :star: 4
+
+# :star: Clase 17 * Viernes 19 de Agosto * (Workshop)
 
 ---
