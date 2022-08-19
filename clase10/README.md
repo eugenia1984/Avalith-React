@@ -218,6 +218,6 @@ Poner foco en una **buenas experiencia de usuario** en el producto.
 
 - [Jacob Nielsen](https://www.nngroup.com/articles/ten-usability-heuristics/) hizo unas pautas, las 10 heuristicas de Nielsen, son 10 pautas facil de seguir, se recomienda utilizarlas.
 
-
+- Personalizar los errores [errores con gato](https://http.cat)
 
 ---
