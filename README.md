@@ -216,7 +216,7 @@ Curso de la Skill Factory de Avalith en **React**
 
 15/08: : Feriado del 17 de Agosto
 
-19/08: : clase 20 ->
+19/08: : clase 20 -> [Workshop](https://github.com/eugenia1984/Avalith-React/edit/main/clase10/README.md)
 
 22/08: : clase 21 ->
 
