@@ -206,6 +206,18 @@ Speakers:
 ---
 
 
-# :star: Clase 17 * Viernes 19 de Agosto * (Workshop)
+# :star: Clase 20 * Viernes 19 de Agosto * UX / UI (Workshop)
+
+Poner foco en una **buenas experiencia de usuario** en el producto.
+
+- Ponerse en los zapatos del usuario
+
+- Hay herramientas para utilizar, como por ejemplo: [material UI](https://material.io/design/usability/accessibility.html#layout-and-typography)
+
+- Tengo que pensar en la adaptabilidad también.
+
+- [Jacob Nielsen](https://www.nngroup.com/articles/ten-usability-heuristics/) hizo unas pautas, las 10 heuristicas de Nielsen, son 10 pautas facil de seguir, se recomienda utilizarlas.
+
+
 
 ---
