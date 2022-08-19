@@ -218,25 +218,25 @@ Poner foco en una **buenas experiencia de usuario** en el producto.
 
 - [Jacob Nielsen](https://www.nngroup.com/articles/ten-usability-heuristics/) hizo unas pautas, las 10 heuristicas de Nielsen, son 10 pautas facil de seguir, se recomienda utilizarlas.
 
--1**Visibility of system status**
+-1 **Visibility of system status**
 
--2**Match between system + real world**
+-2 **Match between system + real world**
 
--3**User control and freedom**
+-3 **User control and freedom**
 
--4**Consistency and standards**
+-4 **Consistency and standards**
 
--5**REcognition rather than recall**
+-5 **REcognition rather than recall**
 
--6**Error prevention**
+-6 **Error prevention**
 
 -7 **Flexibility and efficiency of use** los atajos que los usuarios novatos no conocen
 
--8**Aesthetic and minimalist design**
+-8 **Aesthetic and minimalist design** diseño lo más simple para que sea sensillo de entender y usar.
 
--9**Help users with errors**
+-9 **Help users with errors**
 
--10**Help and documentation**
+-10 **Help and documentation**
 
 - Personalizar los errores [errores con gato](https://http.cat)
 
