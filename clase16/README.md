@@ -4,6 +4,21 @@
 
 ## Try - Catch
 
+- Son dos bloques de código que nos permitirán controlar la forma en que se ejecuta nuestro script
+
+- Dentro del TRY guardaremos el código que intentaremos que se ejecute para lograr un comportamiento
+
+- Dentro del CATCH capturaremos los errores y los manipularemos
+
+- Si pasa el TRY, ignora lo que contenga el CATCH.
+
+
+El **CATCH** será quien se encargue de ejecutar una fracción de código que está realizada con el error. Al menos cuenta con dos propiedades: name y message. Generalmente, son un buen punto de partida para pensar en la UX. 
+
+También podemos gestionar un nuevo error a través de throw new Error
+
+---
+
 ### Codigo que se corta en la tercer linea
 
 ```JavaScript
