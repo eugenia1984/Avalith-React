@@ -19,5 +19,5 @@ function getMayorValueInput() {
   let firstNumber = Number(d.getElementById("firstNumber").value);
   let secondNumber = Number(d.getElementById("secondNumber").value);
   let text = mayorNumero(firstNumber, secondNumber);
-  d.getElementById("mayor").innerHTML = `<p>${text}</p>`
+  d.getElementById("mayor").innerHTML = `<h3>${text}</h3>`
 }
