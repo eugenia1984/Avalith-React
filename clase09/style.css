@@ -36,6 +36,18 @@ input {
   padding: 0.50rem;
 }
 
+button {
+  background-color: yellow;
+  padding: 0.25rem 0.50rem;
+  margin: 1rem;
+  border: none;
+}
+
+#mayor {
+  padding-left: 1rem;
+  text-align: center;
+}
+
 /* FOOTER */
 footer {
   background-color: yellow;

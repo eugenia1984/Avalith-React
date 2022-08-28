@@ -85,11 +85,36 @@ Dentro de la carpeta del proyecto, instalamos las dependencias : ```npm install`
 
 ## Lanzamos la aplicación
 
-4. Ahora lanzamos nuestra aplicación: ```npm run dev```
+Ahora lanzamos nuestra aplicación: ```npm run dev```
 
 
 ---
 
+## Relacionando mi proyecto a un repositorio
+
+Con create-react-app se me crea un repositorio de git
+
+```
+> git status
+```
+
+Para relacionarlo con el mio:
+```
+> git remote add origin [la url de github]
+```
+
+Para ver si ya esta vinculado:
+```
+> git remote -v origin 
+```
+
+Para commitear:
+```
+> git commit -m "mi mensaje"
+> git push origin master
+```
+
+---
 ## 3. Estructura de carpetas
 
 ```
@@ -104,21 +129,26 @@ Dentro de la carpeta del proyecto, instalamos las dependencias : ```npm install`
  
 Es super importante que en **.gitignore** tenga **node_modules** asi no se sube a GitHub, y al bajarlo nuevamente siempre correr ```npm install``` para que me descargue los modulos (**instalo las dependencias**, es decir bajo las librerias).
 
+---
+
+## Instalar las dependencias
+
+```npm install```
+
+Asi me va a bajar todo el paquete de node_modules
 
 ---
 
 ### Tarea:
 
-- Buscar la diferencia entre **libreria** y **framework**, ¿que le falta a React para ser considerado un Framework? ¿ Por qué es ventaja que sea una librería?
+1. Buscar la diferencia entre **libreria** y **framework**, ¿que le falta a React para ser considerado un Framework? ¿ Por qué es ventaja que sea una librería?
 
 Un **framework**, al ser un entorno de trabajo, puede contener varias librerías. Mientras una **librería** simplemente es un conjunto de elementos que te resuelve el laburo, por ej functions, classes, etc.
 
 React por sí mismo es una librería y no un framework, puesto que se ocupa de las interfaces de usuario. Sin embargo, diversos añadidos pueden convertir a React en un producto equiparable en características a un framework
 
+2. Crear un proyecto y subirlo
 
-
-- Crear un proyecto y subirlo
-
-- Clonar un repositorio y agregar las dependencias
+3. Clonar un repositorio y agregar las dependencias
 
 ---
