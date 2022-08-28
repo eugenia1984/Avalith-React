@@ -24,9 +24,9 @@
 
 - Su primer release fue lanzada en Mayo 2013
 
-- Su propósito principal es facilitar la tarea de crear interfaces de usuarios
+- Su propósito principal es facilitar la tarea de crear interfaces de usuarios (**UI**)
 
-- Propone el concepto de "Reactivo a los cambios"
+- Propone el concepto de "Reactivo a los cambios" (comenzo con clases y ahora tiene componentes funcionales)
 
 - Tiene una comunidad muy grande, hay mucha documentación
 
@@ -37,15 +37,15 @@
 ### 2. Formas de Crear un Proyecto en React
 
 
-**Creando un proyecto con CRA (Create React App)**
+:star: **Creando un proyecto con CRA (Create React App)**
 
-CRA es el asincronismo correspondiente a **Create React App**.
+- **CRA** es el asincronismo correspondiente a **Create React App**.
 
-Es el comando que la librería trae de forma natural para poder crear un proyecto de React.
+- Es el comando que la librería trae de forma natural para poder crear un proyecto de React.
 
-Como sabemos que esto depende de **Node**, entonces es posible utilizar NPM para manejar los paquetes.
+- Como sabemos que esto depende de **Node**, entonces es posible utilizar NPM para manejar los paquetes.
 
-En este caso, utilizaremos uno muy parecido que se llama **NPX** que no es más que un **NPM** pero EXecutable.
+- En este caso, utilizaremos uno muy parecido que se llama **NPX** que no es más que un **NPM** pero EXecutable.
 
 - Veamos cómo crear un proyecto entonces:
 
@@ -62,6 +62,8 @@ En este caso, utilizaremos uno muy parecido que se llama **NPX** que no es más 
 -debe der tdo en minuscula
 
 - Creado un proyecto con VITE
+
+:star: **Creando un proyecto con Vite**:
 
 1. Para crear un proyecto con **Vite** en lugar de **CRA** es necesario que se ejecute el comando:
 
