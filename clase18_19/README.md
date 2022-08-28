@@ -59,9 +59,11 @@
 
 -no se pueden dejar espacios
 
--debe der tdo en minuscula
+-debe der todo en minuscula
 
-- Creado un proyecto con VITE
+4. Crate React App va a crear un repositorio de GitHub
+
+
 
 :star: **Creando un proyecto con Vite**:
 
@@ -72,6 +74,19 @@
 2. Para continuar debemos ingresar a la carpeta creada utilizamos:
 
 ```cd [nombre-de-mi-proyecto]```
+
+---
+
+## Instalamos dependencias
+
+Dentro de la carpeta del proyecto, instalamos las dependencias : ```npm install```
+
+---
+
+## Lanzamos la aplicación
+
+4. Ahora lanzamos nuestra aplicación: ```npm run dev```
+
 
 ---
 
