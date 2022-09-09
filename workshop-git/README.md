@@ -65,3 +65,18 @@ Con cada commit vamos a ir guardando el estado dle codigo en ese momento, es com
 
 ---
 
+### Branching model
+
+Se suele dividir en tres ramas:
+
+- Produccion
+
+- Desarrollo
+
+- Testeo
+
+Vamos primero a desarrollar una feature, la vamos a testear, si tiene algún bug se corrige y se vuelve a testear hasta que funciona bien y se pasa a producción.
+
+Asi tenemos cambios atomicos.
+
+---
