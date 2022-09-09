@@ -86,3 +86,15 @@ Asi tenemos cambios atomicos.
 Voy a pedir que los cambios que realice en mi rama se mergean, para ello mando un **PR** y generalmente otro desarrollador lo ve, si hay que corregir algo me avisa y al final se confirma el PR y se mergea.
 
 ---
+
+### Revert
+
+Me revierte, vuelvo el tiempo atrás.
+
+---
+
+### Reset
+
+Me destruye los commit
+
+---
