@@ -229,6 +229,12 @@ Curso de la Skill Factory de Avalith en **React**
 
 02/09: : clase 26 ->
 
+05/09 : clase 27 ->
+
+07/09 : clase 28 ->
+
+09/09 : clase 29 -> [Workshop de Git](https://github.com/eugenia1984/Avalith-React/tree/main/workshop-git)
+
 
 
 
