@@ -1,80 +1,47 @@
-# Clase 4 : Comparativos especiales
+# :star: Workshop * GIT 
+---
+
+### Temas
+
+- Instalación
 
 ---
 
-### Definición
+## Instalación
 
-En inglés, hay algunas estructuras que comunmente se utilizan para expresar los cambios en la cualidad de una persona, animal, situación, etc.
+1. **Verifica si ya tenes una versión instalada**:  Antes de iniciar el proceso de instalación verificá si tenés alguna versión de git ya descargada e instalada, con el comando: ```git --version```. Si lo tenemos insalado nos va a decir la versión que tenemos. Sino vamos a [https://git-scm.com/](https://git-scm.com/) para poder instalarlo. Y volvemos a poner ```git --version``` por lo que nos va a dar la version.
 
-Nos vamos a centrar en dos de estas estructuras:
+2. **Comandos esenciales**: son:
 
-- **1 - Comparativos reiterados**: en general se usan para remarcar los cambios continuos en una situación y/o las tendencias observadas. Se utilizan para dar mayor énfasis a la cualidad de un sustantivo.
+```git init``` para iniciar un nuevo repositorio en local
 
--> Getting better and better
+```git status``` sirve para coontrolar el estado de nuestro repositorio
 
-- **Comparativos paralelos**: en este caso, lo que se persigue es asociar dos cualidades. También son utilizados para describir un proceso de causa-efecto.
+```git add .``` sirve para enviar los cambios desde el repositorio local al repositorio remoto, si quiero agregar un determinado archivo: ```git add [nombre_del_archivo]```
 
--> On a Monday Morning ... the stronget the better
+```git commit -m "mensaje"``` sirve para escribir un mensaje en el cambio que queremos versionar.
 
----
+```git push``` sirve para enviar los cambios desde el repositorio local al repositorio remoto.
 
-### COMPARATIVO REITERADO
+```git remote update origin --prune``` sirve para traer todas las ramas remotas hacia el repositorio local
 
-Los comparativos reiterados se utilizan para dar mayor énfasis a la cualidad de un sustantivo. La estructura
-se forma de manera muy simple: se debe repetir la cualidad (adjetivo) que quiere enfatizarse, en su forma
-comparativa; y generalmente no se menciona el objeto o concepto con que se está comparando.
+```git checkout <branch>``` sirve para movernos de una rama a otra
 
-Veamos dos ejemplos:
+```git checkout -b <nombre_de_la_nueva_rama>``` sirve para crear una nueva rama
 
-Smaller and smaller smart phones can be bought at reasonable prices.
+```git branch``` sirve para ver las ramas disponibles en el repositorio
 
-During the 20th century, cheaper and cheaper computers were launched into the market. 
+```git remote -v``` sirve para ver la direccion del repositorio remoto vinculado
 
----
+```git remote add origin <url>``` sirve para vincular el repositorio local a un repositorio remoto
 
-### COMPARATIVO PARALELO
+``` ```
+``` ```
 
-En el caso de los comparativos paralelos, lo que se persigue es asociar dos cualidades. Vale decir, mientras
-más/menos acentuada sea una cualidad, más/menos notoria será la otra. Esta estructura comparativa se
-construye anteponiendo el artículo the a ambos adjetivos en forma comparativa.
+``` ```
 
-Observa estos ejemplos:
+``` ```
 
-The newer the computer, the faster the performance.
-
-The more updated your firewall, the least risks.
-
-Ve al video para saber cómo se traducen estas formas.
-
-
----
-
-### PRACTICA
-
-Traduzca las siguientes oraciones.
-
-1. The more updated your software is, the more efficient it is in catching the virus.
-
-2. More and more qualified programmers are sent on training courses to Asian countries.
-
-3. The slower your computer gets, the riskier it becomes.
-
-4. Higher and higher technology systems are required to keep the software running properly.
-
-5. The less English you know, the more difficult it gets to understand and interpret programming
-languages.
-
-6. Fewer and fewer PCs are sold worldwide nowadays.
-
-7. More and more money is necessary to get yourself a new laptop.
-
----
-
-### Fuentes consultadas:
-[
-https://www.thoughtco.com/double-comparatives-1210274](
-https://www.thoughtco.com/double-comparatives-1210274)
-
-[https://www.englishgrammar.org/thethe-comparative-adjectives](https://www.englishgrammar.org/thethe-comparative-adjectives)
+``` ```
 
 ---
