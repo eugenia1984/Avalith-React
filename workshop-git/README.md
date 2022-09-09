@@ -51,7 +51,7 @@
 
 Para ver las variables configurables:
 
-```git config -- get [key_name]``` por ejemplo ```git congif --get user.name```
+```git config -- get [key_name]``` por ejemplo ```git config --get user.name```
 
 
 ---
