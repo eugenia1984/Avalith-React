@@ -39,6 +39,7 @@
 
 ```git clone <url>``` sirve para clonar un repositorio remoto a nuestro equipo
 
+```git pull origin <branch>``` sirve para
 
 ---
 
@@ -55,3 +56,12 @@ Para ver las variables configurables:
 
 
 ---
+
+### Linea temporal
+
+Primero estamos trabajando en nuestro repositorio local.
+
+Con cada commit vamos a ir guardando el estado dle codigo en ese momento, es como sacarle una foto instantanea.
+
+---
+
