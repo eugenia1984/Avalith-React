@@ -35,13 +35,21 @@
 
 ```git remote add origin <url>``` sirve para vincular el repositorio local a un repositorio remoto
 
-``` ```
-``` ```
+```git clone <url>``` sirve para clonar un repositorio remoto a nuestro equipo
 
-``` ```
 
-``` ```
+---
 
-``` ```
+### Configuraciones
+
+
+```git config --global user.name "[el_nombre]" ```
+
+```git config --global user.email "[el_email]" ```
+
+Para ver las variables configurables:
+
+```git config -- get [key_name]``` por ejemplo ```git congif --get user.name```
+
 
 ---
