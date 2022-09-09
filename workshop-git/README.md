@@ -80,3 +80,9 @@ Vamos primero a desarrollar una feature, la vamos a testear, si tiene algún bug
 Asi tenemos cambios atomicos.
 
 ---
+
+### Pull Request
+
+Voy a pedir que los cambios que realice en mi rama se mergean, para ello mando un **PR** y generalmente otro desarrollador lo ve, si hay que corregir algo me avisa y al final se confirma el PR y se mergea.
+
+---
