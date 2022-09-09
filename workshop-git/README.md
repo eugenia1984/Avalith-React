@@ -9,9 +9,11 @@
 
 ## Instalación
 
-1. **Verifica si ya tenes una versión instalada**:  Antes de iniciar el proceso de instalación verificá si tenés alguna versión de git ya descargada e instalada, con el comando: ```git --version```. Si lo tenemos insalado nos va a decir la versión que tenemos. Sino vamos a [https://git-scm.com/](https://git-scm.com/) para poder instalarlo. Y volvemos a poner ```git --version``` por lo que nos va a dar la version.
+**Verifica si ya tenes una versión instalada**:  Antes de iniciar el proceso de instalación verificá si tenés alguna versión de git ya descargada e instalada, con el comando: ```git --version```. Si lo tenemos insalado nos va a decir la versión que tenemos. Sino vamos a [https://git-scm.com/](https://git-scm.com/) para poder instalarlo. Y volvemos a poner ```git --version``` por lo que nos va a dar la version.
 
-2. **Comandos esenciales**: son:
+---
+
+## Comandos esenciales
 
 ```git init``` para iniciar un nuevo repositorio en local
 
