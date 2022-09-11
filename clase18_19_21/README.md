@@ -24,9 +24,9 @@
 
 - Su primer release fue lanzada en Mayo 2013
 
-- Su propósito principal es facilitar la tarea de crear interfaces de usuarios (**UI**)
+- Su propósito principal es facilitar la tarea de crear interfaces de usuarios (**UI**) a través de **componentes**.
 
-- Propone el concepto de "Reactivo a los cambios" (comenzo con clases y ahora tiene componentes funcionales)
+- Propone el concepto de **Reactivo a los cambios** (comenzo con clases y ahora tiene componentes funcionales)
 
 - Tiene una comunidad muy grande, hay mucha documentación
 
@@ -43,13 +43,13 @@
 
 - Es el comando que la librería trae de forma natural para poder crear un proyecto de React.
 
-- Como sabemos que esto depende de **Node**, entonces es posible utilizar NPM para manejar los paquetes.
+- Como sabemos que esto depende de **Node**, entonces es posible utilizar NPM (**Node Package Manager**) para manejar los paquetes.
 
 - En este caso, utilizaremos uno muy parecido que se llama **NPX** que no es más que un **NPM** pero EXecutable.
 
 - Veamos cómo crear un proyecto entonces:
 
-1. En una consola ubicada en la carpeta de nuestro proyecto, ejecutaremos el comando: ``` npx create-react-app [nombre-de-mi-proyecto]```
+1. En una consola ubicada en la carpeta de nuestro proyecto, ejecutaremos el comando: ``` npx create-react-app [nombre-de-mi-proyecto]```. Al poner el nombre debe ser todo en minuscula, sin mayusculas, sin caracteres especiales, si hay mas de una palabra y las quiero separar lo hago con -, no se pueden dejar espacios en blanco.
 
 2. Esperamos a que aparezca el mensaje "Happy hacking"
 
