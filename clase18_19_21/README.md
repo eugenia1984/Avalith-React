@@ -10,7 +10,7 @@
 
 3. Estructura de carpetas
 
-4. Errores en REact
+4. Errores en React
 
 5. ¿Cómo funciona React?
 
