@@ -440,7 +440,7 @@ Y lo importo en el archivo main SASS:
 ---
 ---
 
-## :star: Clase 23 *  de Agosto *  11. Programación funcional
+## :star: Clase 23 *  de Agosto *  11. Programación funcional / 12. Hooks
 
 
 ### JSX
@@ -556,7 +556,107 @@ style.css
 
 La App se carga una sola vez, al principio.
 
-Es reactivo, se me carga el **virtual DOM**, es decir una copia del DOM, y en cada cambio que voy haciendo en el proyecto voy desde el **estado original** y se me va a cambiar solo lo que modifico, el resto que queda igual no se va a volver a cargar, solo recarga el nodo que se modifica.
+Es reactivo, se me carga el **virtual DOM**, es decir una copia del DOM, y en cada cambio que voy haciendo en el proyecto voy desde el **estado original** y se me va a cambiar solo lo que modifico, el resto que queda igual no se va a volver a cargar, solo recarga el nodo que se modifica. Es decir hay **rerender**.
+
+---
+
+### Agregamos lógica al componente
+
+Voy a utilizar la logica de JavaScript para poder renderizar con JSX voy a poder inyectar variables y funciones de JS dentro del render, para lo cual voy a utilizar las **{}**.
+
+```JavaScript
+const TukiChild = () => {
+  console.log("TukiChild");
+  let contador = 0;
+  console.log("contador: ", contador);
+
+  return(
+    <div className="TukiChild">
+      <p><strong>TukiChild</strong></p>
+      <p>Soy hijo de TukiComponents y nieto de App.</p>
+      <p>Contador: {contador}</p>
+    </div>
+  );
+};
+
+export default TukiChild;
+```
+
+Y se me va a renderizar: **Contador: 0** o sea que se me ve la variable.
+
+Ahora vamos ahacer que esa variable se modifique:
+
+```JavaScript
+const TukiChild = () => {
+  console.log("TukiChild");
+  let contador = 0;
+
+  const increase = () => {
+    contador++;
+    console.log('contador: ', contador);
+  }
+
+  return(
+    <div className="TukiChild">
+      <p><strong>TukiChild</strong></p>
+      <p>Soy hijo de TukiComponents y nieto de App.</p>
+      <p>Contador: {contador}</p>
+      <button onCLick={increase}>Click Me!</button>
+    </div>
+  );
+};
+
+export default TukiChild;
+```
+
+---
+
+#### :star: Hook y useState
+
+-> En el console.log voy a ver como se me va a actualizar el contador, pero en lo que estoy renderizando no, siempre veo el **0**, veo siempre el valor inciial de la variable y no actualiza el valor del DOM, para modificarlo utilizamos un **HOOK** para controlar el **estado**, esto pasa porque el valor no lo uso (no lo uso como el innerHTML y lo inyecto en el HTML).
+
+Voy a tener mi contador (**count**) y además la función **setCount** que será un **setter function**(me va a settear el estado del contador) y voy a tener que invocar al **useState**.
+
+¿Qué tengo en mi array ?
+
+1. estado del componente
+
+2. función setter
+
+El **useState** me muestra el valor inicial., el cual puede ser un 0, un String, un Array vacío, le puedo pasar un objeto que tenga una key contador con value 0.
+
+-> el useState es nativo de React.
+
+-> **setCount** me setea el valor del estado + 1.
+
+-> El boton **onClick** escucha el evento (cuando le hago click) y ejecuta la funcion increase.
+
+```JavaScript
+import { useState } from 'react';
+
+const TukiChild = () => {
+  // Nuestro primer hook es el useState, el cual nos permite
+  // crear un estado en nuestro componente
+  const [ count, setCount] = useState({name: 'Euge', count: 0});
+  console.log("TukiChild");
+
+  const increase = () => {
+    console.log('Ahora funciona el increase');
+    setCount(count+1);
+  }
+
+  return(
+    <div className="TukiChild">
+      <p><strong>TukiChild</strong></p>
+      <p>Soy hijo de TukiComponents y nieto de App.</p>
+      <p>Contador: {count}</p>
+      <button onClick={increase}>Click Me!</button>
+    </div>
+  );
+};
+
+export default TukiChild;
+```
 
 ---
 ---
@@ -574,9 +674,9 @@ Declarar un estado a través de un hook que tenga una variable llamada **info** 
 
 -La **key name** debe tener el nombre de ustedes en diminutivo (o su apodo). 
 
--El setter debe ejecutarse cliquear un botón llamado **Change Info**, debe recuperar el estado inicial y debe cambiar el nombre en diminutivo (o apodo) por el nombre completo y debe agregar la key lastName con su correspondiente valor. 
+-El **setter** debe ejecutarse **cliquear un botón** llamado **Change Info**, debe recuperar el **estado inicial** y debe **cambiar el nombre en diminutivo (o apodo) por el nombre completo y debe agregar la key lastName con su correspondiente valor**. 
 
-Por ejemplo (i.e), en mi caso, el objeto inicial quedaría como: **{ name: "Fabi", age: 28 }** y luego del seteo del estado debe quedar **{ name: "Fabián", age: 28, lastName: Tureo }**. 
+Por ejemplo, en mi caso, el objeto inicial quedaría como: **{ name: "Fabi", age: 28 }** y luego del seteo del estado debe quedar **{ name: "Fabián", age: 28, lastName: Tureo }**. 
 
 -Mostrar el estado del hook por consola.
 
