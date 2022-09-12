@@ -442,6 +442,114 @@ Y lo importo en el archivo main SASS:
 
 ## :star: Clase 23 *  de Agosto *  11. Programación funcional
 
+
+### JSX
+
+Al crear mi componente en la **1er parte** voy a tener la **lógica del componente** (con variables, objetos, arrays, funciones, fetch, asincronismo, map(que tambien puede estar en la parte del render), hooks, etc.) y en la **2da parte** voy a tener el **return** que me devuelve lo que voy a ver en el **DOM** y va a tener las clases de CSS de este modo **className="App"**.
+
+
+-> Es un archivo **JSX**, es la conjunción de **JavaScript** y **XML** (dentro del componente utilizamos las etiquetas HTML) y dentro del return voy a poder ejecutar JavaScript.
+
+-> **Componente funcional** es un **componente** de **React** que es una **función de JavaScript** que me permite **ejecutar lógica de JavaScript** y que además me **retorna contenido que puedo ver en el DOM**.
+
+#### Agregamos estilos
+
+-> Utilizamos **className** porque **class** es una palabra reservada para los componentes de clases y la clase la pongo en camelCase.
+
+Dentro del **src** creo una carpeta llamada **styles** y dentro del mismo el archivo **styles.css**. Entonces en mi archivo le doy un forndo rojo a mi className App:
+
+```CSS
+.App {
+  background-color: red;
+}
+```
+Y ahora lo tengo que linkear, tengo dos opciones...
+
+... Tener una sola carpeta STYLES con UNA SOLA HOJA DE ESTILOS PARA TODO EL PROYECTO.
+
+... dentro de mi carpeta COMPONENTES tener un DIRECTORIO que va a tener el COMPONENTE + SU CSS.
+
+Entonces en el **index.js** (podría importarlo dentro de **App.js** también o si lo hago del cmodo de cada css por componente se importar en su componente correspondiente) le linkeo mi hoja de estilos
+
+```JavaSCript
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/styles.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<App />);
+```
+
+### Componentes padres y Componentes hijos
+
+Puedo tener un **componente padre** que dentro tenga **componentes hijos**.
+
+
+Ahora me voy a crear un nuevo componente llamado **TukiChild.js** que será comonente hijo de **TukiComponents.js**.
+
+
+TukiChild.js:
+
+```JavaScript
+const TukiChild = () => {
+  // la parte logica
+  console.log("Tuki Child");
+  // lo que se renderiza
+  return(
+    <div>
+      <p><strong>TukiChild</strong></p>
+      <p>Soy hijo de TukiComponents y nieto de App.</p>
+    </div>
+  );
+};
+
+export default TukiChild;
+```
+
+TukiComponents.js (el componente padre de TukiChild):
+```JavaScript
+import TukiChild from "./TukiChild";
+
+const TukiComponents = () => {
+  // la parte logica
+  console.log("Tuki Components");
+  // lo que se renderiza
+  return (
+    <div className="containerTukiComponents">
+      <h2>Tuki components</h2>
+      <TukiChild />
+  </div>
+  )
+};
+
+export default TukiComponents;
+```
+
+-> App -> TukiComponents -> TukiChild
+
+En consola veo primero el TukiCOmponentas y luego el TukiChilds, como es de un solo hilo va como en cascada del componente abuelo al hijo y al nieto.
+
+
+style.css
+```CSS
+.App {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.containerTukiComponents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+```
+
 ---
 ---
 

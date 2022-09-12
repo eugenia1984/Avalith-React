@@ -1,6 +1,6 @@
 import TukiComponents from "./components/TukiComponents";
 
-function App() {
+const App = () => {
   return (
     <div className="App">
       <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
