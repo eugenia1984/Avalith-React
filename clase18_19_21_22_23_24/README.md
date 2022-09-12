@@ -440,7 +440,7 @@ Y lo importo en el archivo main SASS:
 ---
 ---
 
-## :star: Clase 23 *  de Agosto *  11. Programación funcional / 12. Hooks
+## :star: Clase 23 *  26 de Agosto *  11. Programación funcional / 12. Hooks
 
 
 ### JSX
@@ -661,14 +661,52 @@ export default TukiChild;
 ---
 ---
 
-## Tarea
+## :star: Clase 24 * 29 de Agosto *  11. Programación funcional / 12. Hooks
+
+---
+
+## Realizamos este ejercicio:
 
 
-- Al contador de clics que desarrollamos hoy, agregarle una función llamada **decrease** que reste la cantidad de clics del estado. 
+1. Al contador de clics que desarrollamos hoy, agregarle una función llamada **decrease** que reste la cantidad de clics del estado. 
 
 Debe renderizar números negativos inclusive.
 
-Declarar un estado a través de un hook que tenga una variable llamada **info** junto con su setter correspondiente. 
+-> agrego la funcion **increase** y el boton con el onClick **decrease**:
+
+```JavaScript
+import { useState } from 'react';
+
+const TukiChild = () => {
+  // Nuestro primer hook es el useState, el cual nos permite
+  // crear un estado en nuestro componente
+  const [ count, setCount] = useState({name: 'Euge', count: 0});
+  console.log("TukiChild");
+
+  const increase = () => {
+    console.log('Ahora funciona el increase');
+    setCount(count+1);
+  }
+  // Function to decrease the count
+  const decrease = () => {
+    setCount(count-1);
+  }
+
+  return(
+    <div className="TukiChild">
+      <p><strong>TukiChild</strong></p>
+      <p>Soy hijo de TukiComponents y nieto de App.</p>
+      <p>Contador: {count}</p>
+      <button onClick={increase}>Click Me to increase!</button>
+      <button onClick={decrease}>Click Me to Decrease!</button>
+    </div>
+  );
+};
+
+export default TukiChild;
+```
+
+2. Declarar un estado a través de un hook que tenga una variable llamada **info** junto con su setter correspondiente. 
 
 -El **estado inicial** debe ser un objeto con dos keys: **name** y **age**.  
 
@@ -680,7 +718,30 @@ Por ejemplo, en mi caso, el objeto inicial quedaría como: **{ name: "Fabi", age
 
 -Mostrar el estado del hook por consola.
 
--Declarar un estado que tenga una variable llamada loading junto con su setter correspondiente. 
+-> Agrego el estado **info**
+```JavaScript
+ const [info, setInfo] = useState({name: 'Euge', age: 38});
+```
+
+-> Agrego la función para cambiar la información, pero primero debo recuperar la información incial (con un spread operator) : ``` setInfo({...info, name: 'Eugenia'});``` entonces si existe una key dentro de info que se llamae name me va a remplazar el value por Eugenia y le agrego la key lastName con el apellido.
+
+```JavaScript
+// Function to set the name of the user
+const changeInfo = () => {
+  setInfo({...info, name: 'Eugenia', lastName: 'Costa'});
+}
+```
+
+-> De este modo **controlamos estados y no mutamos la información original**. **Creamos un nuevo estado**.
+
+
+-> Agrego el boton de **change info**:
+```JavaScript
+<button inclick={changeInfo}>Change info</button>
+```
+
+
+3. Declarar un estado que tenga una variable llamada loading junto con su setter correspondiente. 
 
 -El estado inicial debe ser false y al cliquear un botón llamado Change Loading debe cambiar al contrario del estado. 
 
@@ -688,12 +749,298 @@ Por ejemplo, en mi caso, el objeto inicial quedaría como: **{ name: "Fabi", age
 
 -Mostrar el estado del hook por consola.
 
-- Declarar un estado que tenga una variable llamada **animals** junto con su setter correspondiente. 
+-> agrego el estado **loading**
+```JavaScript
+const [loading, setLoading] = useState(false);
+```
+
+-> Agrego la función para cambiar el estado, en este caso por mdio de una **negación** (**NOT/!**) lo voy a ir intercambiando treu/false/true/false..
+
+```JavaScript
+  const handleLoading = () => {
+    setLoading(!loading);
+  }
+```
+
+-> Agrego el boton:
+```JavaScript
+<botton onClick={handleLoading}>Loading</botton>
+```
+
+4. Declarar un estado que tenga una variable llamada **animals** junto con su setter correspondiente. 
 
 El estado inicial debe ser un array con un elemento de tipo string y cuyo valor sea "Raccoon" (Aguanten los Guardianes de la Galaxia :cohete:). 
 
 Al ejecutar el seteo del estado a través de un botón llamado Add Animals, se debe conservar el primer elemento y se debe agregar un array de cinco animales que puede estar guardado en una variable extra o no. 
 
-El resultado final debe mostrarse por consola y debe contener un array de seis elementos
+El resultado final debe mostrarse por consola y debe contener un array de seis elementos.
 
+-> declaro el estado con la variable **animal**:
+
+```JavaScript
+const[animals, setAnimals] = useState(['Racoon']);
+```
+
+Primero declaro una variable que guarda un array de animales (**animalsArray**) y luego creo la funcion para agregar los animales, para lo que voy a utilizar el **spread operator**:
+```JavaScript
+const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+const addAnimals = () =>  {
+    setAnimals([...animals, ...animalsArray]);
+  }
+```
+
+
+Y para controlar que solo me los agregue una vez y luego no vuelva a agregar le mismo array:
+```JavaScript
+const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+// set the animals array
+const addAnimals = () =>  {
+  animals.length === 1 && setAnimals([...animals, ...animalsArray]);
+}
+```
+
+Es como un ternario solo que primero evalua que tenga al longitud de un solo elemento y al tener el **&&** si ese es true sigue con la otra perta que es agregar el array de animales.
+
+
+Sino con un simple if lo resolvia:
+```JavaScript
+const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+// set the animals array
+const addAnimals = () =>  {
+  if(animals.length === 1) {
+    setAnimals([...animals, ...animalsArray]);
+  }
+}
+```
+
+-> Y agrego el boton para agregar los animales
+
+```JavaScript
+<button onClick={addAnimals}>Add animals</button>
+```
+
+---
+---
+
+
+### Para no tener tantos botones juntos, voy a pasar mi boton del count a un componente  Count.js
+
+- En mi **App.js** lo llamo:
+
+```JavaScript
+import Count from "./components/Count";
+import TukiComponents from "./components/TukiComponents";
+
+const App = () => {
+  return (
+    <div className="App">
+      <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
+      <TukiComponents />
+      <Count />
+    </div>
+  );
+}
+
+export default App;
+```
+
+- Count.js:
+```JavaScript
+import { useState } from "react";
+
+const Count = () => {
+  const [count, setCount] = useState(0);
+
+  const stock = 10;
+
+  // Function to increase the count
+  const increase = () => {
+    count < stock && setCount(count+1);
+  }
+  // Function to decrease the count
+  const decrease = () => {
+    setCount(count-1);
+  }
+
+  return(
+    <div>
+      <p>Count</p>
+      <p>TukiCount: {count} Tukis!</p>
+      <button onClick={increase}>Click Me to increase!</button>
+      <button onClick={decrease}>Click Me to Decrease!</button>
+    </div>
+  );
+};
+
+export default Count;
+```
+
+-> Y asi voy a ir **componentizando** mi aplicación.
+
+### :star: Paso de props
+
+-> Ahora si el nieto hace algo no va a modificar el Estado dle padre, en React hay unidirección se modifica desde el padre hacia los hijos, no desde los hijos hacia los padres. Lo único que si me lo va a permitr hacer son los **eventos**.
+
+-> Necesito que los componentes estén conectados, que un Padre le pueda enviar información al Hijo y que el Hijo le pueda enviar información al Padre.
+
+Podría en mi componente **Count** tener la variable stock para que no me pase al agregar los items del stock disponible, pero si por ejemplo tengo como 500 productos, esto ya es medio complicado manejarlo asi.
+
+
+Entonces en el **App.js** le paso a mi componente **count** unas **props**(propiedad) que esté disponible cuando app llama a Count y este invoca a las funciones. Y también me copio el array de animales:
+```JavaScript
+const App = () => {
+  const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+
+  return (
+    <div className="App">
+      <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
+      <TukiComponents />
+      <Count 
+        id={1} 
+        stock={10} 
+        initial={1} 
+        userName="Euge"
+        animals={animalsArray}
+      />
+    </div>
+  );
+}
+```
+
+Y **Count.js** va a ser usod e esa prop como parametro en la arrow function **props** que va a ser la prop **id** que vale **1**. Y va a recibir como segundo parametro la segunda **prop** **stock** con valor **10**. Y como tercar parametro un valor **initial** de **1**. Y como cuarta un **userName** de valor **"Euge"** y el **animals** con el array de los animales.
+
+Si es String va entre comillas dobles.
+
+Si es un Number va entre {}. Entre {} también se le puede pasr: arrays.
+
+-> Puedo usar **destructuring**:
+```JavaScript
+import TukiChild from "./TukiChild";
+
+// Hago un destructuring de las props para poder utilizarlas sobre el componente
+const TukiComponents = ({ animalsArray}) => {
+  const { animalsArray } = props;
+
+  return (
+    <div className="containerTukiComponents">
+      <h2>Tuki components</h2>
+      <TukiChild />
+    </div>
+  )
+};
+
+export default TukiComponents;
+```
+
+-> O sino las nombre con **props.**nombre:
+```JavaScript
+import { useState } from "react";
+
+const Count = (props) => {
+  console.log("Las props en Count: ", props);
+
+  console.log("El stock es: ", props.stock);
+  console.log("El initial es: ", props.initial);
+  console.log("El username es: ", props.userName);
+  console.log("El id es: ", props.id);
+  console.log("Los animales: ", props.animalsArray);
+}
+```
+
+**Apps.ja** le pasa animalsArray a **Tuki COmponents**:
+```JavaScript
+<TukiComponents animalsArray={animalsArray} />
+```
+
+**TukiCompponents.js** las recibe, por eso tengo **props**:
+```JavaScript
+import TukiChild from "./TukiChild";
+
+const TukiComponents = (props) => {
+
+  return (
+    <div className="containerTukiComponents">
+      <h2>Tuki components</h2>
+      <TukiChild animalsArray={props.animalsArray} />
+    </div>
+  )
+};
+
+export default TukiComponents;
+```
+
+Y se las pasa a su hijo **Tuki Child**:
+```JavaSCript
+import { useState } from 'react';
+
+const TukiChild = (props) => {
+  console.log("Las props de TukiChild: ", props);
+
+  const [info, setInfo] = useState({name: 'Euge', age: 38});
+  const [loading, setLoading] = useState(false);
+  const [animals, setAnimals] = useState(['Racoon']);
+
+  // Function to set the name of the user
+  const changeInfo = () => {
+    setInfo({...info, name: 'Eugenia', lastName: 'Costa'});
+  }
+  // Function to change state of loading
+  const handleLoading = () => {
+    setLoading(!loading);
+  }
+  //const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+  // set the animals array
+  const addAnimals = () =>  {
+    animals.length === 1 && setAnimals([...animals, ...animalsArray]);
+  }
+    
+  return(
+    <div className="TukiChild">
+      <p><strong>TukiChild</strong></p>
+      <p>Soy hijo de TukiComponents y nieto de App.</p>
+      <button onclick={changeInfo}>Change info</button>
+      <botton onClick={handleLoading}>Loading</botton>
+      <button onClick={addAnimals}>Add animals</button>
+    </div>
+  );
+};
+
+export default TukiChild;
+```
+
+Si en vez de utilizar el props utilizaba el destructuring {animalsArray} al pasar el parametro entonces al el componente TTukiShild podía directamente utilizar {animalsArrays} sin tener que usar props.
+
+-> **Mediante las props le puedo pasar información de un padre hacia un hijo**.
+
+---
+---
+
+## Tarea: 
+
+1. Crear un componente llamado **ItemListContainer** que sea llamado por **App.js** .
+
+Debe recibir una **prop** llamada **nameEcommerce** y debe renderizarse como el título de una Tienda Ficticia.
+
+2. Crear un Componente Llamado **NavBar** que tenga un hijo llamado **CartWidget**.
+
+CartWidget debe mostrar el icono de un carrito de compras y NavBar debe ser renderizado desde App.js
+
+3. Crear un componente llamado **ItemCount** y que se renderizará, por ahora, desde ItemListContainer. 
+
+El contador debe recibir dos props: Stock=15 e Initial=1. Usar estas props para realizar las validaciones dentro del contador para que no se supere el stock y además, el contador no debe permitir números negativos.
+
+---
+---
+## Tarea: 
+
+Realizar un pedido asincrónico al siguiente endpoint: https://fakestoreapi.com/products/. Utilizar el hook useEffect. En principio, utilizar fetch + async/await
+Si el pedido entra en un loop infinito, revisar el dependency array.
+
+Guardar los productos en un estado del componente ItemListContainer
+Mapear los productos para renderizarlos en el DOM desde el componente mencionado.
+Maquetar la vista correspondiente utilizando el camino que consideren apropiado para la estilización.
+
+Anotar las dudas que surjan para poder comentarlas en el encuentro y aclarar todo lo necesario
+
+---
 ---
