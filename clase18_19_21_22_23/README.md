@@ -154,7 +154,7 @@ React por sí mismo es una librería y no un framework, puesto que se ocupa de l
 ---
 ---
 
-# :star: Clase 21 * 22 de Agosto
+# :star: Clase 21 y 22 * 22 y 24 de Agosto *  10. Sintaxis y estructura de proyectos en React /  11. Programación funcional
 
 ---
 
@@ -266,6 +266,8 @@ root.render(
 );
 ```
 
+#### :star: Componente
+
 -> **App.js**:
 
 Es un **componente funcional** (un componente que se desprende de una función).
@@ -316,6 +318,47 @@ const App = () => {
 }
 ```
 
+
+-> Desde el **src** creo la carpeta **componentes** (components) donde voy a tener mis componentes funcionales.
+
+Y voy a crear mi primer componente, el nombre debe estar en **PascalCase**, le ponemos *TukiComponents.js*:
+
+```JavaScript
+const TukiComponents = () => {
+  return (
+    <div>
+      <h2>Tuki components</h2>
+  </div>
+  )
+};
+
+export default TukiComponents;
+```
+
+Por buena práctica mi archivo debe llamarse igual que la constante y que el nombre con que la exporto.
+
+
+Y la renderizo en **App.js**:
+
+```JavaScript
+import TukiComponents from "./components/TukiComponents";
+
+function App() {
+  return (
+    <div className="App">
+      <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
+      <TukiComponents />
+    </div>
+  );
+}
+
+export default App;
+```
+
+Al abrir ```<``` y comenzar a escribir Tuki ya me va a autocompletar ```<TukiComponents />``` y me va a importar ```import TukiComponents from "./components/TukiComponents";```(por las dudas me fijo que este bien llamada la ruta, aca no es necesario aclara que es un archivo .js).
+
+---
+
 3. Ahora al ejecutar ```npm start``` el navegador nos arrojará muchos errores. Vamos a solucionarlos siguiendo la ruta que nos muestra el error. 
 
 Si voy a *http://localhost:3000* no me va a correr sino dar esos errores
@@ -324,7 +367,7 @@ React tiene **hot reload** cada vez que hago un cambio se vuelve a compilar
 
 ---
 
-## JSX
+### :star: JSX
 
 
 JavaScript XML permite utilizar HTML y JavaScript juntos. Me permite utilizar lenguaje de marcado dentro de una función en React.
@@ -335,6 +378,71 @@ Si por ejemplo hacemos un fetch a una APi utilizamos .js ya que no tenemos nada 
 
 Para tener onsistencia si para algún componente necesito que tenga la extension .jsx entonces TODOS los componentes van a tener la extension .jsx.
 
+---
+
+### :star: React Bootstrap
+
+En [https://react-bootstrap.github.io/](https://react-bootstrap.github.io/) voy a **get started** e instalo mi primer **dependencia**:
+
+```npm install react-bootstrap bootstrap```
+
+En realidad me voy a instalar 2 dependencias: **react-bootstrap** y **bootstrap**.
+
+Y si ahora voy a mi package.json voy a ver en las dependencies:
+```
+"bootstrap": "^5.2.1",
+"react-bootstrap": "^2.5.0",
+```
+
+Lo bueno es que ya me instalo el Bootstrap versión 5 asi que puedo usar grid :)
+
+
+Y para que me funcione debo agregar el css de Bootstrap a mi proyecto (puede ser en el **index.js** o en el **App.js**, como buena practica lo ponemos dentro del index.js para que abarque todo):
+
+```JSX
+{/* The following line can be included in your src/index.js or App.js file*/}
+import 'bootstrap/dist/css/bootstrap.min.css';
+```
+
+Y si ahora voy a mi navegador ya veo que el font-size cambio al de Bootstrap.
+
+
+```HTML
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+  integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+  crossorigin="anonymous"
+/>
+```
+
+Si quiero customizar Bootstrap lo hago por SASS:
+
+```
+/* The following block can be included in a custom.scss */
+
+/* make the customizations */
+$theme-colors: (
+    "info": tomato,
+    "danger": teal
+);
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
+```
+
+Y lo importo en el archivo main SASS:
+```
+/* The following line can be included in a src/App.scss */
+@import "custom";
+```
+
+---
+---
+
+## :star: Clase 23 *  de Agosto *  11. Programación funcional
+
+---
 ---
 
 ## Tarea
