@@ -182,35 +182,17 @@ Esto ya lo usamos con **axios** cuando hicimos el CheckPooint #1.
 
 - Algunas librerías que se utilizan:
 
--React-Bootstrap
+-**React-Bootstrap**
 
--[Material UI](https://mui.com/) -ya creada en componentes-
+-[**Material UI**](https://mui.com/) -ya creada en componentes-. Ya utiliza sintaxis de React y está orientado a componentes, creando UI. Se utiliza bastante Skeleton.
 
--Tailwind
+-**Tailwind**, Muy buena sintaxis 
 
--Chakra UI
+-**Chakra UI**
 
--[Reactstrap](https://www.npmjs.com/package/reactstrap) - [https://reactstrap.github.io/?path=/story/home-installation--page](https://reactstrap.github.io/?path=/story/home-installation--page)-
+-[**Reactstrap**](https://www.npmjs.com/package/reactstrap) - [https://reactstrap.github.io/?path=/story/home-installation--page](https://reactstrap.github.io/?path=/story/home-installation--page)- Es Bootstrap adaptado a React. Actualmente trabajan con Bootstrap 5.
 
----
-
-## Material UI
-
-Ya utiliza sintaxis de React y está orientado a componentes, creando UI. Se utiliza bastante Skeleton.
-
-## Tailwind
-
-Muy buena sintaxis 
-
-## Chakra UI
-
-## Ractstrap
-
-Es Bootstrap adaptado a React. Actualmente trabajan con Bootstrap 5.
-
-## SASS para React
-
-También se puede utilizar
+-SASS para React. También se puede utilizar
 
 ---
 
@@ -271,7 +253,7 @@ Se crea una variable llamada **root**, con **ReactDOM** utiliza el metodo **.cre
 
 Y con el método **.render()** me va a renderizar lo que tengo en el componente **App** (del archivo App.js).
 
-```
+```JavaScript
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
@@ -288,7 +270,10 @@ root.render(
 
 Es un **componente funcional** (un componente que se desprende de una función).
 
-```
+```JavaScript
+// Arriba del componente van los IMPORT
+
+// En el medio declaramos nuestro COMPONENTE FUNCIONAL con lo que debe renderizar y la logica que tiene
 function App() {
   return (
     < >
@@ -297,8 +282,11 @@ function App() {
   );
 }
 
+// Al final van los exports
 export default App;
 ```
+
+-Tengo la funcion **App** que tiene un **return** con **un solo div padre** que es mi ```<> </>```, JSX me da error si tengo más de un div, por eos utilizo el **fragmento**.
 
 -**export** como para cuando trabajo con los modulos en JavaScript vanilla, **export** es una palabra reservad que me permite exportar mi componente para poder utilizarlo en otro lado (utilizando el **import**).
 
@@ -306,9 +294,27 @@ Hay 2 tipos de export...
 
 ...**export default App;** : exporta el componente **app**para usarlo en otro archivo. En ese otro archivo se puede importar con el nombre **App** o le puedo poner un **alias**(se lo cambio al importarlo).
 
-...**export**: exporta el componente para utilizarloe n otro archivo y debo **invocarlo con el mismo nombre que en el export** y llamarlo entre **{}**.
+...**export**: exporta el componente para utilizarloe n otro archivo y debo **invocarlo con el mismo nombre que en el export** y llamarlo entre **{}**. Y lo voy a utilizar adelante de mi componente funcional:
+```JavaScript
+export function App() {...}
+```
+Entonces en el import voy a tener que utilizar le mismo nombre y ponerlo entre llaves:
+```JavaScript
+import { App } from "./App";
+```
 
 
+-Si la tuviera como **arrow function para el componente**:
+
+```JavaScript
+const App = () => {
+ return (
+    < >
+      <h1>CheckPoint #2</h1>
+    </>
+  );
+}
+```
 
 3. Ahora al ejecutar ```npm start``` el navegador nos arrojará muchos errores. Vamos a solucionarlos siguiendo la ruta que nos muestra el error. 
 
