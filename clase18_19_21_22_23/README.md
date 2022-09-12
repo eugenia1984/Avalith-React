@@ -551,6 +551,14 @@ style.css
 ```
 
 ---
+
+## Tree DOM React
+
+La App se carga una sola vez, al principio.
+
+Es reactivo, se me carga el **virtual DOM**, es decir una copia del DOM, y en cada cambio que voy haciendo en el proyecto voy desde el **estado original** y se me va a cambiar solo lo que modifico, el resto que queda igual no se va a volver a cargar, solo recarga el nodo que se modifica.
+
+---
 ---
 
 ## Tarea
