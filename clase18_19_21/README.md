@@ -256,9 +256,59 @@ package.json
 README.md
 ```
 
--> package.json es donde está toda al configuración del proyecto
+-> **package.json** es donde está toda al configuración del proyecto
 
--> package-lock.json son las configuraciones que hace node-modules para poder funcionar
+-> **package-lock.json** son las configuraciones que hace node-modules para poder funcionar
+
+-> El **index.html** Solo tiene el ```<div id="root"> </div> ``` que va a renderizar mis componentes (que están llamandose en el **index.js** con el componente **App**). Se me está creando un **codo** que es el **div** con el id **root**.
+
+También ```<noscript>You need to enable JavaScript to run this app.</noscript>``` que avisa en el caso de que esté desactivado JavaScript en el navegador.
+
+
+-> **index.js**:
+
+Se crea una variable llamada **root**, con **ReactDOM** utiliza el metodo **.createRoot()** y le pasa como parametro el elemento por id **root** (o sea al div que tenemos en el index.html con el id="root").
+
+Y con el método **.render()** me va a renderizar lo que tengo en el componente **App** (del archivo App.js).
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+```
+
+-> **App.js**:
+
+Es un **componente funcional** (un componente que se desprende de una función).
+
+```
+function App() {
+  return (
+    < >
+      <h1>CheckPoint #2</h1>
+    </>
+  );
+}
+
+export default App;
+```
+
+-**export** como para cuando trabajo con los modulos en JavaScript vanilla, **export** es una palabra reservad que me permite exportar mi componente para poder utilizarlo en otro lado (utilizando el **import**).
+
+Hay 2 tipos de export...
+
+...**export default App;** : exporta el componente **app**para usarlo en otro archivo. En ese otro archivo se puede importar con el nombre **App** o le puedo poner un **alias**(se lo cambio al importarlo).
+
+...**export**: exporta el componente para utilizarloe n otro archivo y debo **invocarlo con el mismo nombre que en el export** y llamarlo entre **{}**.
+
+
 
 3. Ahora al ejecutar ```npm start``` el navegador nos arrojará muchos errores. Vamos a solucionarlos siguiendo la ruta que nos muestra el error. 
 
@@ -270,8 +320,14 @@ React tiene **hot reload** cada vez que hago un cambio se vuelve a compilar
 
 ## JSX
 
-JavaScript XML permite utilizar HTML y JavaScript juntos.
 
+JavaScript XML permite utilizar HTML y JavaScript juntos. Me permite utilizar lenguaje de marcado dentro de una función en React.
+
+Si el proyecto lo creamos con Vite, para los componentes que tiene HTML incrustado debemos utilizar la extension **.jsx**.
+
+Si por ejemplo hacemos un fetch a una APi utilizamos .js ya que no tenemos nada para renderizar(retornar).
+
+Para tener onsistencia si para algún componente necesito que tenga la extension .jsx entonces TODOS los componentes van a tener la extension .jsx.
 
 ---
 
