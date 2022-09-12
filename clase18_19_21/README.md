@@ -174,7 +174,23 @@ React por sí mismo es una librería y no un framework, puesto que se ocupa de l
 
 ## npm
 
-Está en esta web [https://npmjs.com] para poder instalar dependencias, tanto para React como para Nodejs.
+Está en esta web [https://npmjs.com](https://npmjs.com) para poder instalar dependencias, tanto para **React** como para  **Nodejs**.
+
+Es similar a un **CDN** como cuando usamos Bootstrap que linkeamos al CSS y al JavaScript de React, pero en React lo hacemos con **npm**. El tema de la CDN es que se va actualizando cada vez que tenga una nueva versión, y me puede traer problemas en mi proyecto, por esto es que al utilizar en **npm** podemos decir que versión usaremos y va a quedar esa, no se me va a actualizar automáticamente.
+
+Esto ya lo usamos con **axios** cuando hicimos el CheckPooint #1.
+
+- Algunas librerías que se utilizan:
+
+-React-Bootstrap
+
+-[Material UI](https://mui.com/) -ya creada en componentes-
+
+-Tailwind
+
+-Chakra UI
+
+-[Reactstrap](https://www.npmjs.com/package/reactstrap) - [https://reactstrap.github.io/?path=/story/home-installation--page](https://reactstrap.github.io/?path=/story/home-installation--page)-
 
 ---
 
@@ -249,6 +265,13 @@ README.md
 Si voy a *http://localhost:3000* no me va a correr sino dar esos errores
 
 React tiene **hot reload** cada vez que hago un cambio se vuelve a compilar
+
+---
+
+## JSX
+
+JavaScript XML permite utilizar HTML y JavaScript juntos.
+
 
 ---
 
