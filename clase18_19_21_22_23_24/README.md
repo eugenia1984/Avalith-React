@@ -1143,29 +1143,39 @@ actions                Store
 - App llama a ComponenteA, el cual llama a ComponenteB, el cual llama a ComponenteC, el cual llama a ComponenteD. Y nos queda paracido al callback Hell (**prop Hell**)
 
 ```
-|--------------------------------------|
-|                       |--------|     |
-|                       |  cart  |     |
-|                       | widget |     |
-|                       |--------|     |
-|                                      |
-|--------------------------------------|
-
-|-------------------------------------|
-|         ComponenteA                 |
-|  |-------------------------------|  |
-|  |       ComponenteB             |  |
-|  |  |-------------------------|  |  |
-|  |  |     ComponenteC         |  |  |
-|  |  |  |-------------------|  |  |  |
-|  |  |  |   ComponenteD     |  |  |  |
-|  |  |  |-------------------|  |  |  |
-|  |  |-------------------------|  |  |
-|  |-------------------------------|  |
-|-------------------------------------|
-
+APP
+|--------------------------------------------------------|
+|  |--------------------------------------|              |
+|  |                       |--------|     |              |
+|  |                       |  cart  |     |              |
+|  |                       | widget |     |              |
+|  |                       |--------|     |              |
+|  |                                      |              |
+|  |--------------------------------------|              |
+|                                             STORE      |
+|  |-------------------------------------|               |
+|  |       ComponenteA                   |               |
+|  |  |-------------------------------|  |               |
+|  |  |    ComponenteB                |  |               |
+|  |  | |------------------------|    |  |               |
+|  |  | |    ComponenteC         |    |  |               |
+|  |  | | |-------------------|  |    |  |               |
+|  |  | | |   ComponenteD     |  |    |  |               |
+|  |  | | |     ITEM          |  |    |  |               |
+|  |  | | |-------------------|  |    |  |               |
+|  |  | |------------------------|    |  |               |
+|  |  |-------------------------------|  |               |
+|  |-------------------------------------|               |
+|                                                        |
+|--------------------------------------------------------|
 ```
 
+
+- Voy a tener **variables** guardadas en **memoria** que van a estar en el **store** el cual abarca toda al aplicación, por lo cual todos los componentes van a poder acceder a él.
+
+- store me guarda la **informacion global** y cada componente va  atener sus **props** propias.
+
+- La app no debe recargarse, sino se me borra lo que tengo en el Store.
 
 ---
 ---
