@@ -1015,6 +1015,33 @@ Si en vez de utilizar el props utilizaba el destructuring {animalsArray} al pasa
 ---
 ---
 
+# :star: Clase 26 * 02/09
+
+---
+---
+
+# :star: Clase 27 * 05/09
+
+---
+---
+
+# :star: Clase 28 * 07/09 
+
+---
+---
+# :star: Clase 30 * 12/09
+
+---
+---
+
+# :star: Clase 31 * 14/09 
+
+
+
+
+---
+---
+
 ## Tarea: 
 
 1. Crear un componente llamado **ItemListContainer** que sea llamado por **App.js** .
