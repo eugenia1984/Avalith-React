@@ -1179,6 +1179,8 @@ APP
 
 - ayuda en los componentes adyacentes
 
+- un determinado componente tiene la capacidad de despachar(**dispatch**) una accion , llama a un reducer, actualiza el sado principal y modificar el store.
+
 ---
 ---
 
