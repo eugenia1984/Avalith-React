@@ -1125,6 +1125,51 @@ para guardar esa información y mostrarla en la UI
 ---
 ---
 
+## Redux
+
+- **single principle** cada componente tiene una tarea principal.
+
+REDUX
+```
+     r e d u c e r s
+     /             \
+return type        update
+and actions         state
+  /                    \
+ /                      v
+actions                Store
+```
+
+- App llama a ComponenteA, el cual llama a ComponenteB, el cual llama a ComponenteC, el cual llama a ComponenteD. Y nos queda paracido al callback Hell (**prop Hell**)
+
+```
+|--------------------------------------|
+|                       |--------|     |
+|                       |  cart  |     |
+|                       | widget |     |
+|                       |--------|     |
+|                                      |
+|--------------------------------------|
+
+|-------------------------------------|
+|         ComponenteA                 |
+|  |-------------------------------|  |
+|  |       ComponenteB             |  |
+|  |  |-------------------------|  |  |
+|  |  |     ComponenteC         |  |  |
+|  |  |  |-------------------|  |  |  |
+|  |  |  |   ComponenteD     |  |  |  |
+|  |  |  |-------------------|  |  |  |
+|  |  |-------------------------|  |  |
+|  |-------------------------------|  |
+|-------------------------------------|
+
+```
+
+
+---
+---
+
 ### Lo que se espera que sepa un React Developer
 
 - JavaScript (local storage)
