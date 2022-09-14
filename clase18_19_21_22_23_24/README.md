@@ -1113,10 +1113,35 @@ para guardar esa información y mostrarla en la UI
 # :star: Clase 31 * 14/09 
 
 
+## :star: Redux
 
+[https://redux.js.org/](https://redux.js.org/)
+
+
+- **Route map**:  React -> Redux -> REdux ToolKit
+ 
+- Otras opciones: **MobX**, **Flux** (utliza el MVC con hilo simple), **REdux ToolKit** (maneja el estado de manera diferente)
 
 ---
 ---
 
+### Lo que se espera que sepa un React Developer
 
+- JavaScript (local storage)
 
+- Asincronismo
+
+-  Manejar estados de Context
+
+- Con las respuestas del asincronismo y el estado puedas renderizar esa informacion
+
+- Cookies
+
+- Lazy loading, suspense, otros hooks (pero esto ya es más avanzado).
+
+- Next.js
+
+- Nestjs.com (es para el back end, para Node.js)
+
+---
+---
