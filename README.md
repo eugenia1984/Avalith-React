@@ -230,15 +230,15 @@ Curso de la Skill Factory de Avalith en **React**
 
 12/09 : clase 30
 
-15/09 : clase 31
+14/09 : clase 31
 
-17/09: clase 32
+16/09: clase 32
 
-20/09: clase 33
+19/09: clase 33
 
-22/09: clase 34
+21/09: clase 34
 
-25/09: clase 35
+23/09: clase 35
 
 
 
