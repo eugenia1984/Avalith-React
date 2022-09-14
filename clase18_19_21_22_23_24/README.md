@@ -1015,6 +1015,36 @@ Si en vez de utilizar el props utilizaba el destructuring {animalsArray} al pasa
 ---
 ---
 
+## Tarea: 
+
+1. Crear un componente llamado **ItemListContainer** que sea llamado por **App.js** .
+
+Debe recibir una **prop** llamada **nameEcommerce** y debe renderizarse como el título de una Tienda Ficticia.
+
+2. Crear un Componente Llamado **NavBar** que tenga un hijo llamado **CartWidget**.
+
+CartWidget debe mostrar el icono de un carrito de compras y NavBar debe ser renderizado desde App.js
+
+3. Crear un componente llamado **ItemCount** y que se renderizará, por ahora, desde ItemListContainer. 
+
+El contador debe recibir dos props: Stock=15 e Initial=1. Usar estas props para realizar las validaciones dentro del contador para que no se supere el stock y además, el contador no debe permitir números negativos.
+
+---
+---
+
+## Tarea: 
+
+Realizar un pedido asincrónico al siguiente endpoint: https://fakestoreapi.com/products/. Utilizar el hook useEffect. En principio, utilizar fetch + async/await
+Si el pedido entra en un loop infinito, revisar el dependency array.
+
+Guardar los productos en un estado del componente ItemListContainer
+Mapear los productos para renderizarlos en el DOM desde el componente mencionado.
+Maquetar la vista correspondiente utilizando el camino que consideren apropiado para la estilización.
+
+Anotar las dudas que surjan para poder comentarlas en el encuentro y aclarar todo lo necesario
+
+---
+---
 # :star: Clase 26 * 02/09
 
 ---
@@ -1034,6 +1064,51 @@ Si en vez de utilizar el props utilizaba el destructuring {animalsArray} al pasa
 ---
 ---
 
+## :star2: Proyecto para practicar
+
+### ¡Te elegimos para este proyecto! 
+
+- Uno de nuestros clientes necesita resolver una situación pero aún no se decide  con  qué  tecnología  hacerlo.  No  obstante  y  para  optimizar  los 
+tiempos, te encomendamos lo siguiente:  
+
+ Deberás crear un nuevo proyecto de React utilizando el CLI de CRA.  
+
+ La  aplicación,  en  principio,  debe  contar  con  tres  componentes principales, además de App:
+
+o Task 
+
+o TaskList 
+
+o TaskForm 
+
+ En esta ocasión, el cliente ha decidido solicitar que cada archivo .js (o .jsx) tenga su propia  hoja de estilos, por lo que deberás 
+alojarlas en una carpeta llamada styles.  
+
+ Deberás elegir una imagen que será la cabecera del producto. Esta imagen,  por  el  momento,  será  a  elección  y  te  indicaremos  dónde 
+colocar cuando se presente el mockup 
+
+ Cada tarea deberá tener un ID único. Como aún no está preparado el backend, deberás resolver este problema para que luego solo quede 
+la integración por resolver.  
+
+ Estamos  trabajando  con  los  mejores  estándares  de  codificación  por lo que necesitamos que todo esté escrito con las implementaciones 
+de ECMA6 y posteriores (funciones, destructuring, entre otros).  
+
+ Antes de que nuestro cliente se decida con qué tecnología trabajar, deberás conectar los componentes y sus eventos por medio de props. 
+Veremos cómo manejar esto más adelante.  
+
+ Este  proyecto  debe  permitir  crear  nuevos  ítems,  debe  permitir borrarlos  y  debe  generar  algún  cambio  en  la  UI  cuando  estén 
+completos.  El  cliente  está  evaluando  la  posibilidad  de  hacer  un update  del  proyecto  hacia  un  CRUD  pero  aún  no  nos  ha  solicitado 
+nada al respecto.  
+
+ Por  último,  deberás  implementar  un  formulario,  el  cual  estará vinculado con la creación de los ítems. No olvides crear un handler 
+para guardar esa información y mostrarla en la UI 
+ 
+ 
+¡Éxitos y te mantenemos al tanto de las nuevas features por desarrollar!
+
+---
+---
+
 # :star: Clase 31 * 14/09 
 
 
@@ -1042,32 +1117,5 @@ Si en vez de utilizar el props utilizaba el destructuring {animalsArray} al pasa
 ---
 ---
 
-## Tarea: 
 
-1. Crear un componente llamado **ItemListContainer** que sea llamado por **App.js** .
 
-Debe recibir una **prop** llamada **nameEcommerce** y debe renderizarse como el título de una Tienda Ficticia.
-
-2. Crear un Componente Llamado **NavBar** que tenga un hijo llamado **CartWidget**.
-
-CartWidget debe mostrar el icono de un carrito de compras y NavBar debe ser renderizado desde App.js
-
-3. Crear un componente llamado **ItemCount** y que se renderizará, por ahora, desde ItemListContainer. 
-
-El contador debe recibir dos props: Stock=15 e Initial=1. Usar estas props para realizar las validaciones dentro del contador para que no se supere el stock y además, el contador no debe permitir números negativos.
-
----
----
-## Tarea: 
-
-Realizar un pedido asincrónico al siguiente endpoint: https://fakestoreapi.com/products/. Utilizar el hook useEffect. En principio, utilizar fetch + async/await
-Si el pedido entra en un loop infinito, revisar el dependency array.
-
-Guardar los productos en un estado del componente ItemListContainer
-Mapear los productos para renderizarlos en el DOM desde el componente mencionado.
-Maquetar la vista correspondiente utilizando el camino que consideren apropiado para la estilización.
-
-Anotar las dudas que surjan para poder comentarlas en el encuentro y aclarar todo lo necesario
-
----
----
