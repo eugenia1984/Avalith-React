@@ -1177,6 +1177,8 @@ APP
 
 - La app no debe recargarse, sino se me borra lo que tengo en el Store.
 
+- ayuda en los componentes adyacentes
+
 ---
 ---
 
