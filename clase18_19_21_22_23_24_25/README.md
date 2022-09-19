@@ -1428,6 +1428,9 @@ export default ItemListContainer;
 
 Y ahora como los productos los tengo en un estado los puedo mapear y en cada iteracion obtengo un producto
 
+
+### :star: PETICION A LA API CON ASYNC - AWAIT 
+
 ```JSX
 import ItemCount from "./ItemCount.js";
 import { useState, useEffect } from "react";
@@ -1472,8 +1475,14 @@ const ItemListContainer = (props) => {
 export default ItemListContainer;
 ```
 
+
 ---
 ---
+
+# :star: Clase 25 * 31/08 * 11. Programación funcional / 12. Hooks / 13. Routing
+
+---
+
 
 ## Tarea: 
 
@@ -1494,7 +1503,555 @@ Si el pedido entra en un loop infinito, revisar el dependency array.
 - Anotar las dudas que surjan para poder comentarlas en el encuentro y aclarar todo lo necesario
 
 ---
+
+- Es super importante en el segundo parametro, que es el array vacio, avisarle que no se vuelva a ejecutar el useEffect. Sino estoy todo el tiempo consultando a la API, y me puede bloquear la API, no voy a tener control, no va a saber que dependencia escuchar.
+
+1ro se monta el DOM
+
+2do se usa el useEffect
+
+3ro como no tengo el render controlado por el array de dependencias (no tengo el array vacio como 2do param), al no estar controlado se vuelve a ejecutar, y se vuelve a invocar a useEffect y así sucesivamente, y asi se me termina saturando el navegador o la computadora. VOy a tener muy poca performance.
+
+
+El estado lo guardamos el en useState y en el setProducts le pasamos la data. Y el array que pasamos como 2do param va a ver si hay algo que cambie, con el useState al rpincipio aclaraba como se inicializa el estado.
+
+
 ---
+
+### Vemos como seria con un JSON local en vez de hacer el pedido a la API
+
+- Dentro de **public** me creo la carpeta **JSON**
+
+- Me copio lo que me trae la APi y lo guardo en un archivo **data.json**
+
+- Antes lo pedia a la API:
+
+```JSX
+const getProducts = async () => {
+    try {
+      const response = await fetch('https://fakestoreapi.com/products/');
+      console.log("Response: ", response);
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+  useEffect( () => {
+    getProducts();
+  }, [])
+```
+
+### PETICION CON ASYNC - AWAIT PERO A UN JSON LOCAL
+
+Ahora se lo pido al JSON que me cree
+
+Me creo la funcion getProductsLocal:
+
+```JSX
+const getProductsLocal = () => {
+    fetch('../JSON/data.json')
+      .then( (response) => response.json())
+      .then((data) => setProducts(data));
+  };
+```
+
+Y la invoco:
+
+```JSX
+useEffect( () => {
+  getProductsLocal();
+}, []);
+```
+
+### PETICION A LA API CON FETCH Y THEN
+
+```JSX
+const getProductsFetchThen = () => {
+  fetch('https://fakestoreapi.com/products/')
+    .then( (response) => response.json())
+    .then((data) => setProducts(data));
+  };
+
+useEffect( () => {
+  getProductsFetchThen();
+}, []);
+```
+
+---
+
+- Con el async - await es más facil declarar, ya le decís que es algo asíncrono. Es más declarativo, espera a que ocurra. Y es más performante.
+
+
+---
+
+- Cuando se está desarrollando, si el BackEnd no lo tenes y la API todavia no existe, se suele utilizar de este modo, haciendo un mock de la API.
+
+---
+
+### PETICIONES A LAS API CON AXIOS
+
+- Desde [https://axios-http.com/docs/intro](https://axios-http.com/docs/intro) veo la docmuntación.
+
+- ¿ Cómo se instala ?
+
+```$ npm install axios```
+
+
+- A diferencia de JS vanilla que apuntabamos a la CDN, en React debemos importar la librería: 
+
+```JSX
+import axios from "axios";
+```
+
+
+```JSX
+const getProductsAxios = async() => {
+    const getAxios = await axios.get('https://fakestoreapi.com/products/');
+    console.log("get axios: ", getAxios);
+    setProducts(getAxios.data);
+  }
+
+  useEffect( () => {
+    getProductsAxios();
+  }, []);
+```
+
+- Dentro de **axios** debo seear la info que tengo en **data**
+
+---
+
+- ventajas de axios:
+
+-performance
+
+-muy declarativo
+
+
+---
+
+### RESOLVEMOS EL PROBLEMA DE LA KEY
+
+- Es muy importante, porque como estamos comparando el DOM con el VIRTUAL DOM, cada producto es distinto, para esto usamos las **key**.
+
+- Con las props le vamos a agregar una key, que debe ser unica, en general se usa a id.
+
+```JSX
+{products.map( (product) => {
+  return (
+    <p key={product.id}>- {product.title}</p>
+  )
+})}
+```
+
+- Existe una lbrería, la **uuid** que se suele utilizar.
+
+- Pero en general las API y las base de datos suelen tener los id.
+
+- Otro modo es utilizar el **index** dentro del **map**:
+
+```JSX
+{products.map( (product, index) => {
+  return (
+    <p key={index}>- {product.title}</p>
+  )
+})}
+```
+
+---
+
+## :star: REACT ROUTER DOM (VERSION 6)
+
+- Web: [https://reactrouter.com/en/v6.3.0/getting-started/overview](https://reactrouter.com/en/v6.3.0/getting-started/overview)
+
+
+- Instalación: ```npm install react-router-dom@6```
+
+
+- Ejemplo de implementación CONFIGURANDO EL ROUTING:
+
+```JSX
+import { render } from "react-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
+// import your route components too
+
+render(
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />}>
+        <Route index element={<Home />} />
+        <Route path="teams" element={<Teams />}>
+          <Route path=":teamId" element={<Team />} />
+          <Route path="new" element={<NewTeamForm />} />
+          <Route index element={<LeagueStandings />} />
+        </Route>
+      </Route>
+    </Routes>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
+```
+
+- Aclaración:
+
+In previous versions of React Router you had to order your routes a certain way to get the right one to render when multiple routes matched an ambiguous URL. V6 is a lot smarter and will pick the most specific match so you don't have to worry about that anymore. For example, the URL /teams/new matches both of these route:
+```JSX
+<Route path="teams/:teamId" element={<Team />} />
+<Route path="teams/new" element={<NewTeamForm />} />
+```
+But ```teams/new``` is a more specific match than ```/teams/:teamId```, so ```<NewTeamForm />``` will render.
+
+
+- Navegación:
+
+```JSX
+import { Link } from "react-router-dom";
+
+function Home() {
+  return (
+    <div>
+      <h1>Home</h1>
+      <nav>
+        <Link to="/">Home</Link> |{" "}
+        <Link to="about">About</Link>
+      </nav>
+    </div>
+  );
+}
+```
+
+```JSX
+import { useNavigate } from "react-router-dom";
+
+function Invoices() {
+  let navigate = useNavigate();
+  return (
+    <div>
+      <NewInvoiceForm
+        onSubmit={async (event) => {
+          let newInvoice = await createInvoice(
+            event.target
+          );
+          navigate(`/invoices/${newInvoice.id}`);
+        }}
+      />
+    </div>
+  );
+}
+```
+
+- Renderizando URL con PARAMETROS:
+
+```JSX
+import { Routes, Route, useParams } from "react-router-dom";
+
+function App() {
+  return (
+    <Routes>
+      <Route
+        path="invoices/:invoiceId"
+        element={<Invoice />}
+      />
+    </Routes>
+  );
+}
+
+function Invoice() {
+  let params = useParams();
+  return <h1>Invoice {params.invoiceId}</h1>;
+}
+```
+
+Note that the path segment ```:invoiceId``` and the param's key ```params.invoiceId``` match up.
+
+A very common use-case is fetching data when the component renders:
+
+```JSX
+function Invoice() {
+  let { invoiceId } = useParams();
+  let invoice = useFakeFetch(`/api/invoices/${invoiceId}`);
+  return invoice ? (
+    <div>
+      <h1>{invoice.customerName}</h1>
+    </div>
+  ) : (
+    <Loading />
+  );
+}
+```
+
+- Puedo tener routings anidados (links hijos de otros)
+
+```JSX
+function App() {
+  return (
+    <Routes>
+      <Route path="invoices" element={<Invoices />}>
+        <Route path=":invoiceId" element={<Invoice />} />
+        <Route path="sent" element={<SentInvoices />} />
+      </Route>
+    </Routes>
+  );
+}
+```
+
+```
+"/invoices"
+"/invoices/sent"
+"/invoices/:invoiceId"
+```
+
+```JSX
+<App>
+  <Invoices>
+    <SentInvoices />
+  </Invoices>
+</App>
+```
+
+---
+
+- En el **index.html** importo **BrowserRouter** y englobo a *App*, asi voy a poder enrutar todo lo que tengo adentro de App:
+
+```JSX
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles/styles.css';
+import { BrowserRouter } from "react-router-dom";
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+```
+
+- En el *App.js* me voy cuento que el NavBar lo queiro siempre visible y el resto lo puedo enrutar, por eso el NavBar va a estar fuera del ruteo. Me tengo que importar **Routes** y lo utilizo con **Route** (también tengo que importarlo).
+
+¿ Qué indico dentro del Route ?
+
+1. el path, es decir la dirección a la que quiero ir.
+
+2. element, es decir que componente va a renderizar.
+
+Antes, en la versión 5 se llamaba **Switch** en vez de **Route**
+
+
+```JSX
+import Count from "./components/Count";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
+import { Routes, Route } from "react-router-dom";
+
+const App = () => {
+  const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+
+  return (
+    <div className="App">
+      <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
+      <NavBar />
+      <Routes >
+        <Route 
+          path="/" 
+          element={<ItemListContainer nameEcommerce="Tuki Store" />}
+        /> 
+        <Route 
+          path="/count"
+          element={<Count id={1} stock={10} initial={1} userName="Euge" animals={animalsArray} />}
+        />  
+      </Routes>
+    </div>
+  );
+}
+```
+
+-> Ahora en **http://localhost:3000/** voy a ver todo el ItemListContainer
+
+- el **Route** puede ser de autocierre, ya que no tiene nada adentro, mientras que el **Routes*+ debe tener apertura y cierre, ya que dentro tiene a los Route.
+
+- Agrego otro path para el **About**:
+
+```JSX
+return (
+    <div className="App">
+      <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
+      <NavBar />
+      <Routes >
+        <Route 
+          path="/" 
+          element={<ItemListContainer nameEcommerce="Tuki Store" />}
+        /> 
+        <Route 
+          path="/count"
+          element={<Count id={1} stock={10} initial={1} userName="Euge" animals={animalsArray} />}
+        />  
+        <Route 
+          path="/about"
+          element={<h2>Work in progress...</h2>}
+        />
+      </Routes>
+    </div>
+  );
+```
+
+- Me falta ahora hacer los links para que me lleven a estas rutas que estoy creando. La gente por si sola no va a adivinar que path escribir.
+
+- En el **ItemListContainer** tengo que poner la etiqueta **Link**. Para esto la importo:
+```JSX
+import Link from "react-router-dom";
+```
+
+Y la uso ```<Link to="/about">Vamos al About</Link>``, siempre debo indicarle con el **to** la ruta a la que va a ir. Nunca declaro a este link como **href**, porque href se recarga, lo declaro como **Link** asi prevengo la recarga(se pasa al DOM como etiqueta de anchor pero no genera el re render):
+```JSX
+return (
+    <div className="tukiStore">
+      <h2>Bienvenidos a {props.nameEcommerce}</h2>
+      <ItemCount 
+        stock={15} 
+        initial={1} 
+      />
+      <h3>Productos:</h3>
+      {products.map( (product) => {
+        return (
+          <p key={product.id}>- {product.title}</p>
+        )
+      })}
+      <Link to="/about">Vamos al About</Link>
+    </div>
+  );
+```
+
+- El link en el DOM lo muestra(transpila) como una etiqueta **a**(anchor, link)
+
+### Redireccionamiento programatico
+
+- ¿Y si alguine me pone cualquier dirección que no esta en mi enrutamiento ? Necesito redireccionar. En las versiones anteriores se llamaba **redirect**. En la versión 6 usamos el *.
+
+```JSX
+<Route path="*" element={<h1>Error 404</h1>} />
+```
+
+De este modo podria tneer mi pagina de error, peor es mucho más provechoso redirigir al asuario de nuevo a mi pagina de inicio:
+
+```JSX
+<Route path="*" element={<ItemListContainer nameEcommerce="Tuki Store" />} />
+```
+
+- Por buenas prácticas va a final de todos los Route.
+
+- El # adelante es lo que me evita que se me recargue la pagina.
+
+---
+
+### Queremos renderizar el detalle de los productos
+
+- Creo el componente **ItemList** para pasarle lo que tenemos en ItemListContainer porque podemos empezar a **Componetizar** la App.
+
+-> En **ItemListContainer** lo importo:
+```JSX
+import ItemList from "./ItemList.js";
+```
+
+-> Para renderizarlo:
+```JSX
+return (
+  <div className="tukiStore">
+    <h2>Bienvenidos a {props.nameEcommerce}</h2>
+    <ItemCount 
+      stock={15} 
+      initial={1} 
+    />
+    <h3>Productos:</h3>
+    <ItemList productos={products}/>
+    <Link to="/about">Vamos al About</Link>
+  </div>
+);
+```
+
+-> **ItemList** lo va a recibir en el parametro como props o lo puedo desestrocturar.
+
+
+```JSX
+import Item from "./Item.js";
+
+const ItemList = ({ products }) => {
+  console.log("Productos en ItemList: ", products);
+  return (
+    <div>
+      {products.map((product) => {
+        return (
+          <Item 
+            key={product.id}
+            title={product.title}
+            price={product.price}
+          />
+        );
+      })}
+    </div>
+  );
+}
+
+export default ItemList;
+```
+
+-> Y dentro me va a renderizar otor componente que lo voy a llamar **Item*+ (va a ser como una card), y va a recibir de ItemList las props para la key, el title y el price.:
+
+```JSX
+const Item = ({ title, price }) => {
+  return(
+   <div>
+     <h2>{title}</h2>
+      <p>{price}</p>
+   </div>
+  )
+}
+
+export default Item;
+```
+
+-> Y los transformo en Links
+```JSX
+import { Link } from "react-router-dom";
+
+const Item = ({ title, price, id, category }) => {
+  return (
+    <Link to={`/item/${id}`}>
+        <div>
+          <h1>{title}</h1>
+          <h3>{price}</h3>
+          <h4>{id}</h4>
+          <h5>{category}</h5>
+        </div>
+    </Link>
+  );
+};
+
+export default Item;
+```
+
+### Param en la URL 
+
+-> Ahora cada vez que hago lick en un Item tendria que ir a la url con ese id, pero.. dentro de App tengo el link /*, me falta aclarar la url con parametro **id**
+
+```JSX
+<Route  
+  path="/item/:id"
+  element={<h2>Work in progree: Item</h2>}
+/>
+```
+
+---
+---
+
 # :star: Clase 26 * 02/09
 
 ---

@@ -102,11 +102,15 @@ Curso de la Skill Factory de Avalith en **React**
 
 -¿Qué son los hooks?
 
+-useState, useEffect
+
 -Manejo de estados en un componente
+
+-Peticion a API con async-await, y fetch y then.
 
 -Ciclo de vida de un componente
 
--Hooks Nativos y Custom Hooks (ideal
+-Hooks Nativos y Custom Hooks (ideal)
 
 - **13. Routing**:
 
@@ -212,7 +216,7 @@ Curso de la Skill Factory de Avalith en **React**
 
 10/08: : clase 17 -> [Workshop: comunicación eficaz](https://github.com/eugenia1984/Avalith-React/tree/main/clase10)
 
-12/08 , 17/08 , 22/08 , 24/08 , 26/08 y 29/08: clase 18 - 19 - 21 - 22 - 23 - 24 -> [Clase 18 , 19 , 21 , 22 , 23 y 24](https://github.com/eugenia1984/Avalith-React/tree/main/clase18_19_21_22_23_24) ( 9 - Introduccion a React / 10. Sintaxis y estructura de proyectos en React / 11. Programación funcional / 12. Hooks)
+12/08 , 17/08 , 22/08 , 24/08 , 26/08 , 29/08 y 31/08: clase 18 - 19 - 21 - 22 - 23 - 24 - 25 -> [Clase 18 , 19 , 21 , 22 , 23 , 24 y 25](https://github.com/eugenia1984/Avalith-React/tree/main/clase18_19_21_22_23_24_25) ( 9 - Introduccion a React / 10. Sintaxis y estructura de proyectos en React / Clase 23: 11. Programación funcional / 12. Hooks) / clase 25 : 13. Routing
 
 15/08: : Feriado del 17 de Agosto
 
