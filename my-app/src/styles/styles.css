@@ -1,5 +1,5 @@
 .App {
-  background-color: red;
+  background-color: rgb(224, 95, 95);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,4 +16,42 @@
 .tukiChild {
   background-color: aqua;
   font-weight: bold;
+}
+
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+}
+
+.imageCart {
+  width: 32px;
+  height: 32px;
+}
+
+.tukiStore {
+  background-color: aquamarine;
+  padding: 24px 18px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  margin-top: 24px;
+}
+
+.btn-2 {
+  margin: 0px 8px;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  padding: 4px 8px;
+  background-color: yellow;
+}
+
+.btn-2:hover {
+  background-color: white;
 }

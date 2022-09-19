@@ -1,5 +1,6 @@
 import Count from "./components/Count";
-import TukiComponents from "./components/TukiComponents";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
 
 const App = () => {
   const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
@@ -7,7 +8,8 @@ const App = () => {
   return (
     <div className="App">
       <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
-      <TukiComponents animalsArray={animalsArray} />
+      <NavBar />
+      <ItemListContainer nameEcommerce="Tuki Store"/>
       <Count 
         id={1} 
         stock={10} 

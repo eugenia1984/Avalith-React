@@ -1,14 +1,10 @@
-import { useState } from 'react';
+import { useState } from 'react'; // Nuestro primer hook es el useState, el cual nos permite crear un estado en nuestro componente
 
-const TukiChild = () => {
-  // Nuestro primer hook es el useState, el cual nos permite
-  // crear un estado en nuestro componente
-  //const [ count, setCount] = useState({name: 'Euge', count: 0});
+const TukiChild = ({ animalsArray }) => {
   const [info, setInfo] = useState({name: 'Euge', age: 38});
   const [loading, setLoading] = useState(false);
   const [animals, setAnimals] = useState(['Racoon']);
 
-  
   // Function to set the name of the user
   const changeInfo = () => {
     setInfo({...info, name: 'Eugenia', lastName: 'Costa'});
@@ -17,10 +13,13 @@ const TukiChild = () => {
   const handleLoading = () => {
     setLoading(!loading);
   }
-  const animalsArray2 = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+  //const animalsArray2 = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
   // set the animals array
   const addAnimals = () =>  {
-    animals.length === 1 && setAnimals([...animals, ...animalsArray2]);
+    //animalsArray.length === 1 && setAnimals([...animals, ...animalsArray]);
+    if( animalsArray.length === 1 ) {
+      setAnimals([...animals, ...animalsArray])
+    };
   }
     
   return(

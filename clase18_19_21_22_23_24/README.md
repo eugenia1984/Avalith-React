@@ -1015,7 +1015,8 @@ Si en vez de utilizar el props utilizaba el destructuring {animalsArray} al pasa
 ---
 ---
 
-## Tarea: 
+
+## :star: Tarea: 
 
 1. Crear un componente llamado **ItemListContainer** que sea llamado por **App.js** .
 
@@ -1029,19 +1030,468 @@ CartWidget debe mostrar el icono de un carrito de compras y NavBar debe ser rend
 
 El contador debe recibir dos props: Stock=15 e Initial=1. Usar estas props para realizar las validaciones dentro del contador para que no se supere el stock y además, el contador no debe permitir números negativos.
 
+#### Punto 1
+
+- Creamos el componente **ItemListContainer**
+
+```JSX
+const ItemListContainer = (props) => {
+  return (
+    <div>
+      <h2>Bienvenidos a {props.nameEcommerce}</h2>
+    </div>
+  );
+}
+
+export default ItemListContainer;
+```
+
+- Recibo por props de App el nombre del E-Comemrce.
+
+- Lo importamos y renderizamos en App.js. Le asignamos la prop **nameEcommerc** con el valor de **"E-Commerce Example"**:
+
+```JSX
+import Count from "./components/Count";
+import ItemListContainer from "./components/ItemListContainer";
+
+const App = () => {
+  const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+
+  return (
+    <div className="App">
+      <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
+      <ItemListContainer nameEcommerce="E-Commerce Example"/>
+      <Count 
+        id={1} 
+        stock={10} 
+        initial={1} 
+        userName="Euge"
+        animals={animalsArray}
+      />
+    </div>
+  );
+}
+
+export default App;
+```
+
+#### Punto 2
+
+- Creamos el componente **NavBar**
+
+```JSX
+const NavBar = () => {
+  return (
+    <nav>
+      <h2>NavBar</h2>
+    </nav>
+  );
+}
+
+export default NavBar;
+```
+
+- Lo importamos y renderizamos desde App.js:
+
+```JSX
+import Count from "./components/Count";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
+
+const App = () => {
+  const animalsArray = ['Cat', 'Dog', 'Elephant', 'Duck', 'Cow'];
+
+  return (
+    <div className="App">
+      <h1>La primer práctica con React en la Skill Factory de Avalith</h1>
+      <NavBar />
+      <ItemListContainer nameEcommerce="E-Commerce Example"/>
+      <Count 
+        id={1} 
+        stock={10} 
+        initial={1} 
+        userName="Euge"
+        animals={animalsArray}
+      />
+    </div>
+  );
+}
+
+export default App;
+```
+
+- Creamos al componente hijo de NavBar, llamado **CartWidget**
+
+```JSX
+const CardWidget = () => {
+  return (
+    <>
+      <h2>CardWidget</h2>
+    </>
+  );
+}
+
+export default CardWidget;
+```
+
+- Como CardWidget es hijo de NavBar lo renderizo ahi, para lo cual tengo que importarlo:
+
+```JSX
+import CardWidget from "./CartWidget";
+
+const NavBar = () => {
+  return (
+    <nav>
+      <h2>NavBar</h2>
+      <CardWidget />
+    </nav>
+  );
+}
+
+export default NavBar;
+```
+
+
+- Y como me pedia que se vea el icono dle carrito:
+
+```JSX
+const CardWidget = () => {
+  return (
+    <>
+      <img 
+        src="https://img.icons8.com/cute-clipart/32/000000/shopping-cart.png" 
+        alt="shopping cart icon"  
+        width={32}
+        height={32}
+      />
+    </>
+  );
+}
+
+export default CardWidget;
+```
+
+- Y para darle algo de estilos voy a mi CartWidget y al div que engloba a mi nav le doy la clase **NavbarContainer** y le agrego estilo:
+
+```CSS
+
+.navbarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+```
+
+Asi aparecen uno al aldo del otro.
+
+- Y dentrod e CartWidget a la etiqueta de la imagen le agrego la clase llamada **imageCart** y le agrego CSS:
+
+```CSS
+.imageCart {
+  width: 32px;
+  height: 32px;
+}
+```
+
+- Para que quede mas presentable la Navbar la vamos a usar con React Bootstrap desde [https://react-bootstrap.github.io/components/navbar/](https://react-bootstrap.github.io/components/navbar/) me la copio.
+
+Para los import puedo tener:
+
+```JSX
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+```
+
+O lo simplifico en:
+
+```JSX
+import { Container, Nav, Navbar, NavDropdown  }from 'react-bootstrap/';
+```
+
+```JSX
+import CardWidget from "./CartWidget";
+import { Container, Nav, Navbar, NavDropdown  }from 'react-bootstrap/';
+
+const NavBar = () => {
+  return (
+    <div className="navbarContainer">
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand href="#home"><h2>Navbar</h2></Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="me-auto">
+              <Nav.Link href="#home">Home</Nav.Link>
+              <Nav.Link href="#link">Products</Nav.Link>
+              <NavDropdown title="Options" id="basic-nav-dropdown">
+                <NavDropdown.Item href="#action/3.1">Category 1</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.2">Category 2</NavDropdown.Item>
+                <NavDropdown.Item href="#action/3.3">Category 3</NavDropdown.Item>
+              </NavDropdown>
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+      <CardWidget />
+    </div>
+    
+  );
+}
+
+export default NavBar;
+```
+
+
+#### Punto 3
+
+- Aprovecho el contador que ya tenia y le cambio el nombre a Item o copio el mismo codigo en el nuevo componente.
+
+```JSX
+import { useState } from "react";
+
+const ItemCount = (props) => {
+  const [count, setCount] = useState(0);
+
+  const increase = () => { // Function to increase the count
+    setCount(count+1);
+  }
+  
+  const decrease = () => { // Function to decrease the count
+    setCount(count-1);
+  }
+
+  return(
+    <div>
+      <h2>Count</h2>
+      <p>TukiCount: {count} Tukis!</p>
+      <p>Stock: {props.stock}</p>
+      <button onClick={increase}>Click Me <br/> to increase!</button>
+      <button onClick={decrease}>Click Me <br/> to Decrease!</button>
+    </div>
+  );
+};
+
+export default ItemCount;
+```
+
+- ItemCount debe ser llamado desde ItemListContainer:
+
+```JSX
+import ItemCount from "./ItemCount.js";
+
+const ItemListContainer = (props) => {
+  console.log("Las props de ItemListContainer: ", props);
+
+  return (
+    <div className="tukiStore">
+      <h2>Bienvenidos a {props.nameEcommerce}</h2>
+      <ItemCount 
+        stock={15} 
+        initial={1} 
+      />
+    </div>
+  );
+}
+
+export default ItemListContainer;
+```
+
+- Le doy la clase tukiStore para ponerle otro color de fondo y diferenciarlo del otro componente.
+
+- Vuelvo a IemCount para pasar en vez de props por parametro, le paso el objeto desestructurado, y ademas le sumo las validaciones para que no sume más items que el stock disponible y que no reste hasta números negativos.
+
+```JSX
+import { useState } from "react";
+
+const ItemCount = ({ stock, initial }) => {
+  const [count, setCount] = useState(0);
+
+  const increase = () => { // Function to increase the count
+    const newValue = count+1;
+    if(newValue <= stock)  {
+      setCount(newValue);
+    }
+  }
+  
+  const decrease = () => { // Function to decrease the count
+    const newValue = count-1;
+    newValue >= initial && setCount(newValue);
+  }
+
+  return(
+    <div>
+      <h2>Count</h2>
+      <p>TukiCount: {count} Tukis!</p>
+      <p>Stock: {stock}</p>
+      <button onClick={increase}>Click Me <br/> to add!</button>
+      <button onClick={decrease}>Click Me <br/> to quit!</button>
+      <button>Add <br/> to Cart</button>
+    </div>
+  );
+};
+
+export default ItemCount;
+```
+
+- Agrego otro boton para a futuro agregarlo al carrito
+
+- Agregamos asincronismo y utlizamos un nuevo hook ...
+
+## :star: useEffect (hook)
+
+- Permite generar efectos secundarios que quiero que ocurran una ve que ocurra el render.
+
+- Vamos a usar useEffect para hacer un pedido a una API.
+
+- APi a usar: [https://fakestoreapi.com/](https://fakestoreapi.com/)
+
+- En ListItemContainer:
+
+importo:
+```JSX
+import { useState, useEffect } from "react";
+```
+
+lo uso:
+```JSX
+const [ products, setProducts ] = useState([]);
+```
+
+Lo seteo como un array vacio porque lo voy a llenar con lo que me va a traer mi pedido a la API
+
+- useEffect se ejecuta cuando...
+
+... **se carga por primera vez un componente en el DOM**.
+
+... **cuando se actualiza el componente**
+
+- Sintaxis del useEffect:
+
+```JSX
+useEffect( () => {
+    getProducts();
+}, [])
+```
+
+Tiene 2 parametors:
+
+1. callback
+
+2. **array de dependencias del useEffect**, al tenerlo vacío le decimos que se ejecute uan sola vez.
+
+- Pido los productos al la API, los traigo, y ahora esa data tengo que mandarla al array:
+
+```JSX
+import ItemCount from "./ItemCount.js";
+import { useState, useEffect } from "react";
+
+const ItemListContainer = (props) => {
+  const [ products, setProducts ] = useState([]);
+  console.log("Products: ", products);
+
+  const getProducts = async () => {
+    try {
+      const response = await fetch('https://fakestoreapi.com/products/');
+      console.log("Response: ", response);
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+  useEffect( () => {
+    getProducts();
+  }, [])
+
+  return (
+    <div className="tukiStore">
+      <h2>Bienvenidos a {props.nameEcommerce}</h2>
+      <ItemCount 
+        stock={15} 
+        initial={1} 
+      />
+    </div>
+  );
+}
+
+export default ItemListContainer;
+```
+
+- Ahora products arranca en un array vacio, espera el pedido de la API, y cuando ya tiene la respuesta rellena con los productos.
+
+- la dependencia queda en el listener y si eso cambia ejecuta el useEffect, y si hay cambio lo renderiza.
+
+
+Y ahora como los productos los tengo en un estado los puedo mapear y en cada iteracion obtengo un producto
+
+```JSX
+import ItemCount from "./ItemCount.js";
+import { useState, useEffect } from "react";
+
+const ItemListContainer = (props) => {
+  const [ products, setProducts ] = useState([]);
+  console.log("Products: ", products);
+
+  const getProducts = async () => {
+    try {
+      const response = await fetch('https://fakestoreapi.com/products/');
+      console.log("Response: ", response);
+      const data = await response.json();
+      setProducts(data);
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+  useEffect( () => {
+    getProducts();
+  }, [])
+
+  return (
+    <div className="tukiStore">
+      <h2>Bienvenidos a {props.nameEcommerce}</h2>
+      <ItemCount 
+        stock={15} 
+        initial={1} 
+      />
+      <h3>Productos:</h3>
+      {products.map( (product) => {
+        return (
+          <p>- {product.title}</p>
+        )
+      })}
+    </div>
+  );
+}
+
+export default ItemListContainer;
+```
+
 ---
 ---
 
 ## Tarea: 
 
-Realizar un pedido asincrónico al siguiente endpoint: https://fakestoreapi.com/products/. Utilizar el hook useEffect. En principio, utilizar fetch + async/await
+- Realizar un pedido asincrónico al siguiente endpoint: https://fakestoreapi.com/products/. 
+
+Utilizar el hook useEffect. 
+
+En principio, utilizar fetch + async/await
+
 Si el pedido entra en un loop infinito, revisar el dependency array.
 
-Guardar los productos en un estado del componente ItemListContainer
-Mapear los productos para renderizarlos en el DOM desde el componente mencionado.
-Maquetar la vista correspondiente utilizando el camino que consideren apropiado para la estilización.
+- Guardar los productos en un estado del componente ItemListContainer
 
-Anotar las dudas que surjan para poder comentarlas en el encuentro y aclarar todo lo necesario
+- Mapear los productos para renderizarlos en el DOM desde el componente mencionado.
+
+- Maquetar la vista correspondiente utilizando el camino que consideren apropiado para la estilización.
+
+- Anotar las dudas que surjan para poder comentarlas en el encuentro y aclarar todo lo necesario
 
 ---
 ---
