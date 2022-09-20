@@ -2076,18 +2076,42 @@ export default Item;
 |  |  | ITEM LIST - mapea y    |  |    |
 |  |  | genera los items       |  |    |
 |  |  |                        |  |    |
-|  |  | |------| |------|      |  |    |
-|  |  | | Item | | Item |      |  |    |
-|  |  | |------| |------|      |  |    |
+|  |  | |--------| |--------|  |  |    |
+|  |  | | ITEM   | | ITEM   |  |  |    |
+|  |  | | DETAIL | | DETAIL |  |  |    |
+|  |  | |--------| |--------|  |  |    |
 |  |  |------------------------|  |    | 
 |  |------------------------------|    |
 |                                      |
 |--------------------------------------|
 ```
 
+ITEM DETAIL -> va a tener el detalle del producto, con su id generamos la URL y un enrutamiento dinamico.
+
+-> Necesitamos un nuevo render y vamos a tener
+
+ItemListContainer (seria como mi carrousel de productos) -> ItemList -> Item (la card del producto) 
+
+Y al entrar al detalle se debe poder clickear y mostrar el producto.
+
+-> Lovemos con el ejemplo del slider de productos de Mercado Pago.
+
+-> Vemos que al ver la pagina del producto vemos que la URL cambio
+
+- Para tener esto dinámico hay que hacer un enrutamiento de una forma que lo capture el ItemList Container.
+
+- React Router DOM versión 6:
+
+1. en **index.js** tenemos importado **BRowserRouter** de **react-router-dom** y englobando al componente App tenemos el componente **BRowserRouter**
+
+2. En **App.js** importamos **Routes** y **Route** de **react-router-dom** y vamos a tener **Route** como etiqueta central que va a englobar toods los enrutamientos y adentro va a tener varios **Route** (cada Route es un enrutameinto a una URL).
+
+3. Que solamente el pedido a la API esté enrutado, la parte de arriba del NavBar no.
+
+
 https://www.youtube.com/watch?v=7zSCVcUTD-o&list=PLJPvCr6dK-cmOZSKyBMiQwptaQb30wqHl&index=21
 
-33.09
+38.20
 
 ---
 ---
