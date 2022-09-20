@@ -2054,6 +2054,41 @@ export default Item;
 
 # :star: Clase 26 * 02/09
 
+- Hacer el enrutamiento dinamico
+
+- Arreglar el detalle del producto.
+
+```
+|--------------------------------------|
+|     APP                              |
+|  |--------------------------------|  |
+|  | NAVBAR        |------------|   |  |
+|  |               | CartWidget |   |  |
+|  |               |------------|   |  |
+|  |--------------------------------|  |
+|                                      |
+|  |------------------------------|    |
+|  |  Pedido a la API - envio los |    |
+|  |  productos por props a la    |    |
+|  |  item list                   |    |
+|  |                              |    |
+|  |  |------------------------|  |    |
+|  |  | ITEM LIST - mapea y    |  |    |
+|  |  | genera los items       |  |    |
+|  |  |                        |  |    |
+|  |  | |------| |------|      |  |    |
+|  |  | | Item | | Item |      |  |    |
+|  |  | |------| |------|      |  |    |
+|  |  |------------------------|  |    | 
+|  |------------------------------|    |
+|                                      |
+|--------------------------------------|
+```
+
+https://www.youtube.com/watch?v=7zSCVcUTD-o&list=PLJPvCr6dK-cmOZSKyBMiQwptaQb30wqHl&index=21
+
+33.09
+
 ---
 ---
 
