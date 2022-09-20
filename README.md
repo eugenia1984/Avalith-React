@@ -222,8 +222,6 @@ Curso de la Skill Factory de Avalith en **React**
 
 19/08: : clase 20 -> [Workshop UX / UI](https://github.com/eugenia1984/Avalith-React/edit/main/clase10)
 
-31/08: : clase 25 ->
-
 02/09: : clase 26 ->
 
 05/09 : clase 27 ->
