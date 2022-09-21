@@ -8,11 +8,14 @@ const Form = () => {
 
   username === "fabi" && setUsername("tukidev");
 
+  const handleSubmit = (ev) => {
+    ev.preventDefault();
+    console.log(ev.target.search.value);
+  }
+
   return (
     <form
-    // onSubmit={(ev) => {
-    //     ev.preventDefault(), console.log(ev.target.search.value);
-    // }}
+      onSubmit={handleSubmit}
     >
       <input
         type="text"
