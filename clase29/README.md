@@ -165,9 +165,6 @@ video index 26
 ---
 
 
----
----
-
 # :star: Clase 31 * 14/09 
 
 
