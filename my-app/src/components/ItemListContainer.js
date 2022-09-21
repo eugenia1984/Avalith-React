@@ -12,13 +12,13 @@ const ItemListContainer = (props) => {
   // localhost:3000/category/:category - Debe filtrar los resultados y renderizar solamente el listado que corresponda
 
   const { category } = useParams();
-  console.log("useParams", useParams());
-  console.log("Category", category);
+  //console.log("useParams", useParams());
+  //console.log("Category", category);
 
   // Petición con Axios
   const getProductsAxios = async () => {
     const getAxios = await axios.get("https://fakestoreapi.com/products/");
-    console.log("getAxios", getAxios);
+    //console.log("getAxios", getAxios);
     if (category) {
       setProducts(
         getAxios.data.filter((product) => product.category === category)
@@ -26,8 +26,6 @@ const ItemListContainer = (props) => {
     } else {
       setProducts(getAxios.data);
     }
-
-    // setProducts(getAxios.data);
   };
 
   useEffect(() => {

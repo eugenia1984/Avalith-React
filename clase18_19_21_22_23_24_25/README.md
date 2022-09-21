@@ -2102,17 +2102,269 @@ Y al entrar al detalle se debe poder clickear y mostrar el producto.
 
 - React Router DOM versión 6:
 
-1. en **index.js** tenemos importado **BRowserRouter** de **react-router-dom** y englobando al componente App tenemos el componente **BRowserRouter**
+1. En **index.js** tenemos importado **BRowserRouter** de **react-router-dom** y englobando al componente App tenemos el componente **BRowserRouter**
 
-2. En **App.js** importamos **Routes** y **Route** de **react-router-dom** y vamos a tener **Route** como etiqueta central que va a englobar toods los enrutamientos y adentro va a tener varios **Route** (cada Route es un enrutameinto a una URL).
+2. En **App.js** importamos **Routes** y **Route** de **react-router-dom** y vamos a tener **Route** como etiqueta central que va a englobar toods los enrutamientos y adentro va a tener varios **Route** (cada Route es un enrutameinto a una URL).  Cada Route debe tener un **path** (que URL busca) y **element**(que componente muestra)
 
 3. Que solamente el pedido a la API esté enrutado, la parte de arriba del NavBar no.
 
+---
 
-https://www.youtube.com/watch?v=7zSCVcUTD-o&list=PLJPvCr6dK-cmOZSKyBMiQwptaQb30wqHl&index=21
+- Queremos que nuestra NavBar tenga categorías que sean clickeables.
 
-38.20
+```JSX
+const NavBar = () => {
+  return (
+    <div className="navbarContainer">
+      <Link to="/">
+        <h1>Tuki E-commerce</h1>
+      </Link>
+      <Link to="/category/jewelery">
+        <h1>Jewelery</h1>
+      </Link>
+      <Link to="/category/electronics">
+        <h1>Electronics</h1>
+      </Link>
+      {/* Acá incorporamos a CartWidget en nuestro render */}
+      <CartWidget />
+    </div>
+  );
+};
+```
 
+-> Se puede traer la categoria y mostrarla
+
+-> En el **ItemList** agrego otra propiedad que sea category:
+```JSX
+category={product.category}
+```
+
+
+-> Y en **item** puedo agregar:
+
+```JSX
+<h5>{category}</h5>
+```
+
+Y en el link:
+
+```JSX
+ <Link to={`/item/${id}`}>
+```
+
+-> Creo el **ItemListContainer**:
+```JSX
+// Vamos a tener que pedir un solo producto
+// Pedimos la info de los productos a la API y la filtramos por ID
+// Le envía la info por props a ItemDetail
+
+const ItemDetailContainer = () => {
+  return <h1>Soy el ItemDetailContainer</h1>;
+};
+
+export default ItemDetailContainer;
+```
+
+-> Y el **ItemDetail**:
+```JSX
+// Vamos a tener que renderizar ese único producto
+// Recibe la info por props
+// El contador viene acá
+const ItemDetail = () => {
+  return <h1>Soy el ItemDetail</h1>;
+};
+
+export default ItemDetail;
+```
+
+-> La ruta que deberíamso tener es: **localhost:3000/category/nombre-de-categoria** asi me fitra de acuerdo a la categoria, el category es harcodeado, pero el nombre-de-categoria es la que me va a estar filtrando acorde a la categoria elegida. Por ejemplo: localhost:3000/category/celulares/
+
+
+-> Tengo que agregar ese enrutado en **App.js** agrego el path. Como le paso la prop **category** uso en al URL **:category** y luego para seleccionar la categoría le paso por parámetro **:id**:
+
+```JSX
+<Route
+  path="/category/:category/:id"
+  element={<ItemListContainer nameEcommerce="Tuki Store" />}
+/>
+```
+
+-> Me va quedando así:
+
+```JSX
+return (
+  <div className="App">
+    <NavBar />
+    <Routes>
+      <Route
+        path="/"
+        element={<ItemListContainer nameEcommerce="Tuki Store" />}
+      />
+      <Route
+        path="/category/:category/:id"
+        element={<ItemListContainer nameEcommerce="Tuki Store" />}
+      />
+      <Route
+        path="/about"
+        element={<h1>Work In Progress: About</h1>}
+      />
+      <Route
+        path="*"
+        element={<ItemListContainer nameEcommerce="Tuki Store" />}
+      />
+      <Route
+        path="/item/:id"
+        element={<h1>Work In Progress: Item</h1>}
+      />
+      <Route path="/form" element={<Form />} />
+    </Routes>
+    {/* Tags de Autocierre */}
+  </div>
+);
+```
+
+-> Y en la **NavBar** le cambio y uso dos categorias que ya tengo en mi pedido dle API:
+```JSX
+<Link to="/category/jewelery">
+  <h1>Jewelery</h1>
+</Link>
+<Link to="/category/electronics">
+  <h1>Electronics</h1>
+</Link>
+```
+
+-> Tengo que capturar esa categoría que me viene, las categorías deben ser clickeables para que me lleven hacia algún lado, por eso las uso con **Link**.
+
+-> Y tambien linkeo el nombre de mi e-commerce para que al hacer click este en el home:
+```JSX
+<Link to="/">
+  <h1>Tuki E-commerce</h1>
+</Link>
+```
+
+-> Y en **ItemList** ademas de products, voy a tener index como param en el map para que lo tenga como key:
+
+
+```JSX
+{products.map((product, index) => {
+  return (
+    <Item
+      key={index}
+      id={product.id}
+      title={product.title}
+      price={product.price}
+      category={product.category}
+    />
+  );
+})}
+```
+
+-> **localhost:3000/** muestra todos los productos.
+
+-> **localhost:3000/category/:category** debe filtrar los resultados y filtrar para mostrar solamente la categoria que se pide.
+
+¿ Cómo lo logramos ?
+
+Con React-Router-DOm y **useParams** en **ItemListContainer** :
+
+```JSX
+import { Link, useParams } from "react-router-dom";
+```
+
+```JSX
+const { category } = useParams();
+```
+
+Hago el pedido con **Axios** y si existe la categoria, entonces la seteo, mapeandola con el filter y voy viendo por la categoria.
+
+Obtenemos una categoria, y la tenemos que estar escuchando, para ello en el useEffect le agrgo en el array category.
+
+Entonces al tener ese listener, cada vez que cambio de categoria me hace el re-render. 
+
+```JSX
+const getProductsAxios = async () => {
+  const getAxios = await axios.get("https://fakestoreapi.com/products/");
+  console.log("getAxios", getAxios);
+  if (category) {
+    setProducts(
+      getAxios.data.filter((product) => product.category === category)
+    );
+  } else {
+    setProducts(getAxios.data);
+  }
+};
+```
+
+```JSX
+useEffect(() => {
+  getProductsAxios();
+}, 
+```
+
+
+
+-> En la NavBar le digo que todas als categorias son clickleables, con la etiqueta **Link**
+
+-> Para que me lleve a algún lado lo manejo en el enrutador, con los **path** y los **element**, lo hago dinamico con los dos **:** de category (de la documentación de React-Router_DOM sacamos que los : indican que son dinamicos), lo que si debe ser una **key** por eso usamos **category** que esta en el JSON de la API.
+
+-> En ItemListContainer invoco a **useParam** que es un hook que me permite calcular los datos dinámicos de los param que llegan en la URL.
+
+-> Vamos a necesitar estar escuchando el cambio de categoria para renderizar , por eso pasamos category en el useEffect. Lo guardo en la constante category para usarla en el use Effect.
+
+```JSX
+const getProductsAxios = async () => {
+  const getAxios = await axios.get("https://fakestoreapi.com/products/");
+  //console.log("getAxios", getAxios);
+  if (category) {
+    setProducts(
+      getAxios.data.filter((product) => product.category === category)
+    );
+  } else {
+    setProducts(getAxios.data);
+  }
+};
+```
+
+Si existe la categoria que me setee los productos, o sea que si la categoria no existe no me trae nada. Por eso ene l array de dependencias le paso category, sino no me va a re renderizar la categoria al existir. Ya que es el useEffect el que va a invocar a getProductsAxios.
+
+Ahora con **setProducts(getAxios.data);** lo que digo es que si no encuentra la categoria igual me muestre los productos
+
+En la URL del home se va a mostrar todos, porque no hay una categoria seleccionada, ahora si me voy a electronics, me va a filtrar por la categoria electronic y veo solo esos.
+
+-> **useParams** es un bjeto que te trae un solo objeto que tiene una **key** que es la **categoria** y el value. En cambio si en la URL tendria más parametros, como por ejemplo la categoría y el id, entonces ahi si voy a tener los id de los productos.
+
+Entonces:
+
+```JSX
+<Route
+  path="/category/:category/:id"
+  element={<ItemListContainer nameEcommerce="Tuki Store" />}
+/>
+```
+
+-> Ahora hay que recuperar ese id dinámico 
+
+-> Si el proyecto es muy grnde y tiene muchas rutas, loq ue se puede hacer, para no tneer todo en la App, es pasarlo aparte y tener todo el enrutamiento junto. Pero ... no se sule hacer mucho, porque el proyecto esta componetizado.
+Pero, no es necesario, porque es como una URL encadenada, un componente llama al otro, como para ir filtrando la ruta de la URL.
+
+-> Otro modo, que aca no lo estamos utilizando, es por **queryParams** y sería asi:
+
+```JSX
+let url;
+url = `www.google.com.ar/MLA-${id}`; 
+```
+
+De este modo iria harcodeando la categoria MLA y le paso dinamicamente el id.
+
+Y para asegurarme que pase bien ese id, voy a tener que utilizar luego los metodos de JavaScript como **.trim()** y **.toLowerCase()**
+
+### Tarea
+
+- Debemos hacer que al filtrar la categoria y todo podamos ver al producto.
+
+- En el **ItemList Container**: vamos a tener que pedir un solo producto. Pedimos la info de los productos a la API y la filtramos por ID. Le envía la info por props a ItemDetail
+
+- En el **ItemDetail** hay que renderizar ese único producto. Recibe la info por props. El contador viene acá
 ---
 ---
 
