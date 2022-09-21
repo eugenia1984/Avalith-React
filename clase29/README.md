@@ -115,9 +115,25 @@ para guardar esa información y mostrarla en la UI
 
 ¡Éxitos y te mantenemos al tanto de las nuevas features por desarrollar!
 
+- [Aca se puede ver la aplicación en el repositorio](https://github.com/eugenia1984/note-app)
 
-https://www.youtube.com/watch?v=ERSqgsA6huY&list=PLJPvCr6dK-cmOZSKyBMiQwptaQb30wqHl&index=24
 
+---
+
+## Pasos
+
+1. Hacemos la estructura basica del proyecto:
+
+```
+src
+    components
+       Task.js
+       TaskList.js
+    styles
+       App.css
+App.js
+index.js
+```
 
 ---
 ---
