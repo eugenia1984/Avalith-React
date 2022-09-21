@@ -2365,10 +2365,109 @@ Y para asegurarme que pase bien ese id, voy a tener que utilizar luego los metod
 - En el **ItemList Container**: vamos a tener que pedir un solo producto. Pedimos la info de los productos a la API y la filtramos por ID. Le envía la info por props a ItemDetail
 
 - En el **ItemDetail** hay que renderizar ese único producto. Recibe la info por props. El contador viene acá
+
 ---
 ---
 
 # :star: Clase 27 * 05/09
+
+## :star: README
+
+En el README usamos **MarkDown** como lenguaje.
+
+- **Dillinger**: editor online [https://dillinger.io/](https://dillinger.io/)
+
+
+- [**Documentación de GitHub**](https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
+
+- Los encabezados ahora se hacen con # (hasgtag, gatito), el h1 es con uno solo, el h2 es con dos, y asi hasta tener el h6. PAra los títulos de las secciones.
+
+- Lo que no tenga etiquetas es un parrafo.
+
+- Las imagenes son inline. Se muestran con un **!** y **[]** a continuación, sin espacios, dentro dentra el alt de la imagen, y a continuación entre **()** el link a la imagen.
+
+- Los las tres comillas invertidas puedo poner codigo dentro, usarlo por ejemplo para dejar los pasos de clonar el repo, ir a la carpeta y levantarlo. Y si luego de las tres comillas invertidas si es en algun lenguaje en particular hay que indicar el lenguaje entonces nos marca con las particularidades del mismo.
+
+---
+
+
+## :star: FORMULARIOS : React Hook Form
+
+- Web: [https://react-hook-form.com/](https://react-hook-form.com/)
+
+
+- Por el momenot tenemos version: 5, 6 y 7.
+
+- Es sencilla de usar.
+
+- Trae un hook para desestructurar (**useForm**** y algunos métodos como: **register**,  **handleSubmit**, **watch** y el objeto para manejar errores **formState: { errors } }**.
+
+---
+
+- Pero ahora en la clase lo vamos a hacer con JavaSCript.
+
+- ¿Como manejamos los input?
+
+- Creamos el componente **Form**
+```JSX
+import { useState } from "react";
+
+const Form = () => {
+  const [search, setSearch] = useState("");
+  const [username, setUsername] = useState("");
+  console.log("Soy estado de Search: ", search);
+  console.log("Soy estado de Username: ", username);
+
+  username === "fabi" && setUsername("tukidev");
+
+  return (
+    <form
+    // onSubmit={(ev) => {
+    //     ev.preventDefault(), console.log(ev.target.search.value);
+    // }}
+    >
+      <input
+        type="text"
+        autoComplete="off"
+        name="search"
+        placeholder="Search"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
+      <p>Resultados de la búsqueda: {search}</p>
+      <input
+        type="text"
+        name="username"
+        placeholder="Insert here your username"
+        value={username}
+        onChange={(e) => setUsername(e.target.value)}
+      ></input>
+      <button type="submit">Buscar</button>
+      <p>Resultados del username: {username}</p>
+    </form>
+  );
+};
+
+export default Form;
+```
+
+Y en **App.js** lo enrutamos:
+
+```JSX
+<Route path="/form" element={<Form />} />
+```
+
+Para usarlo antes lo importamos:
+```JSX
+import Form from "./components/Form";
+```
+
+- Entonces ahora en **localhost:3000/form** voy a ver el formulario.
+
+ 
+ https://www.youtube.com/watch?v=aP2xTAswX-g&list=PLJPvCr6dK-cmOZSKyBMiQwptaQb30wqHl&index=22
+
+1.43
 
 ---
 ---
