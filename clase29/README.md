@@ -120,6 +120,12 @@ para guardar esa información y mostrarla en la UI
 
 ---
 
+### MockUp
+
+![MockUp](https://github.com/eugenia1984/Avalith-React/blob/main/clase29/mockup.png)
+
+---
+
 ## Pasos
 
 1. Hacemos la estructura basica del proyecto:
