@@ -2408,7 +2408,9 @@ En el README usamos **MarkDown** como lenguaje.
 
 - ¿Como manejamos los input?
 
-- Creamos el componente **Form**
+- Creamos el componente **Form**:
+
+
 ```JSX
 import { useState } from "react";
 
@@ -2464,10 +2466,63 @@ import Form from "./components/Form";
 
 - Entonces ahora en **localhost:3000/form** voy a ver el formulario.
 
- 
- https://www.youtube.com/watch?v=aP2xTAswX-g&list=PLJPvCr6dK-cmOZSKyBMiQwptaQb30wqHl&index=22
+1. Al hacer click en BUSCAr se me re renderiza, esto lo tengo que evitar.
 
-1.43
+```JSX
+onSubmit={(ev) => {
+  ev.preventDefault(), console.log(ev.target.search.value);
+} 
+```
+
+Identifica que al hacer click en BUSCAR se llama a el evento viene del input y con el .value tomo el valor.
+
+2. Pero... se ejecuta uan sola vez, no se actualiza, por ahora es in **INPUT NO CONTROLADO**, se ejecuta cada vez que se hace click. REcien se me dispara al hacer click en el buscar.
+
+3. Quiero guardar lo del evento, y usar un estado para renderizarlo, asi muestro los resultados de la busqueda.
+
+Entonces agrego un search:
+```JSX
+const [search, setSearch] = useState("");
+```
+
+Y voy a setearlo en:
+```JSX
+onChange={(e) => setSearch(e.target.value)}
+```
+
+4. Tengo que manejar el formulario en tiempo real. Actualizo el value que sea dinamico:
+```JSX
+onChange={(e) => setSearch(e.target.value)}
+```
+
+5. Y lo uso para setear el estado:
+```JSX
+onChange={(e) => setSearch(e.target.value)}
+```
+
+-> **Ya tenemos controlado el SEARCH a travel del onChange**
+
+-> Pero ... no estamos pudiendo modificarle el valor.
+
+-> **Por eso en el value dejo el search dinamico como un valor de una variable**.
+
+-> Ahora si el value y el estado se actualizan al mismo tiempo. No voy a necesitar el evento onSubmit. Voy a tener controlado el estado del componente con el value del input.
+
+6. Aplico la misma logica para un input al que hay que ingresarle el nombre del usuario:
+
+```JSX
+const [username, setUsername] = useState("");
+```
+
+```JSX
+<input
+  type="text"
+  name="username"
+  placeholder="Insert here your username"
+  value={username}
+  onChange={(e) => setUsername(e.target.value)}
+></input>
+```
 
 ---
 ---

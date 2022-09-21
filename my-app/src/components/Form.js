@@ -3,8 +3,8 @@ import { useState } from "react";
 const Form = () => {
   const [search, setSearch] = useState("");
   const [username, setUsername] = useState("");
-  console.log("Soy estado de Search: ", search);
-  console.log("Soy estado de Username: ", username);
+  // console.log("Soy estado de Search: ", search);
+  // console.log("Soy estado de Username: ", username);
 
   username === "fabi" && setUsername("tukidev");
 
