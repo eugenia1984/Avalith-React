@@ -216,7 +216,7 @@ Curso de la Skill Factory de Avalith en **React**
 
 10/08: : clase 17 -> [Workshop: comunicación eficaz](https://github.com/eugenia1984/Avalith-React/tree/main/clase10)
 
-12/08 , 17/08 , 22/08 , 24/08 , 26/08 , 29/08 , 31/08 , 02/09 y 05/09: [Clase 18 , 19 , 21 , 22 , 23 , 24 , 25 , 26 y 27](https://github.com/eugenia1984/Avalith-React/tree/main/clase18_19_21_22_23_24_25_26_27) ( 9 - Introduccion a React / 10. Sintaxis y estructura de proyectos en React / Clase 23: 11. Programación funcional / 12. Hooks) / clase 25 : 13. Routing / Clae 27: MarkDown y Formularios.
+12/08 , 17/08 , 22/08 , 24/08 , 26/08 , 29/08 , 31/08 , 02/09 y 05/09: [Clase 18 , 19 , 21 , 22 , 23 , 24 , 25 , 26 y 27](https://github.com/eugenia1984/Avalith-React/tree/main/clase18_19_21_22_23_24_25_26_27) ( 9 - Introduccion a React / 10. Sintaxis y estructura de proyectos en React / Clase 23: 11. Programación funcional / 12. Hooks / Clase 25 : 13. Routing / Clase 27: MarkDown y Formularios).
 
 15/08: : Feriado del 17 de Agosto
 
