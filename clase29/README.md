@@ -127,10 +127,14 @@ para guardar esa información y mostrarla en la UI
 ```
 src
     components
-       Task.js
-       TaskList.js
+        Task.js
+        TaskList.js
+        TaskForm.js
     styles
-       App.css
+        App.css
+        Task.css
+        TaskList.css
+        TaskForm.css
 App.js
 index.js
 ```
