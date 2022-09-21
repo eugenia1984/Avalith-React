@@ -48,7 +48,7 @@ Pones los estilos en un archivo .js y lo usas en el proyecto.
 ## Three.js
 
 
-[**ThreeJS**](https://threejs.org/) es una librería, peor para hacer cosas en 3D.
+[**ThreeJS**](https://threejs.org/) es una librería, pero para hacer cosas en 3D.
 
 
 ---
@@ -126,6 +126,8 @@ para guardar esa información y mostrarla en la UI
 
 ```
 src
+    assets
+        images
     components
         Task.js
         TaskList.js
@@ -138,6 +140,10 @@ src
 App.js
 index.js
 ```
+
+2. En cada componente le importo su css propio.
+
+3. Voy armando la estructura, en **App.js** voy a tener el **logo** (evaluar si lo puedo componetizar), un **h1** y **TaskList**.
 
 ---
 ---
