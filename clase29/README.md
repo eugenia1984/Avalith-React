@@ -151,11 +151,15 @@ index.js
 
 3. Voy armando la estructura, en **App.js** voy a tener el **logo** (evaluar si lo puedo componetizar), un **h1** y **TaskList**.
 
+4. Vamos a hacer un **borrado logico** cambiando un estado de **true** a **false**, de este modo la tarea no se va a estar borrando, va a seguir existiendo, sol oque no la muestro (no hacemos un **borrado físico**); de este modo la tarea nunca se nos va a borrar.
+
+
 ---
 ---
 
 # :star: Clase 30 * 12/09
 
+video index 26
 
 ---
 ---
@@ -172,7 +176,7 @@ index.js
 [https://redux.js.org/](https://redux.js.org/)
 
 
-- **Route map**:  React -> Redux -> REdux ToolKit
+- **Route map**:  React -> Redux -> Redux ToolKit
  
 - Otras opciones: **MobX**, **Flux** (utliza el MVC con hilo simple), **REdux ToolKit** (maneja el estado de manera diferente)
 
