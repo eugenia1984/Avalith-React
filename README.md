@@ -224,7 +224,7 @@ Curso de la Skill Factory de Avalith en **React**
 
 07/09 : clase 28 -> [Workshop de Git](https://github.com/eugenia1984/Avalith-React/tree/main/workshop-git)
 
-09/09 : [clase 29](https://github.com/eugenia1984/Avalith-React/tree/main/clase29): Librerias para estilos, Formularios, Renderizado condicional, [App de Tareas - note-app]().
+09/09 : [clase 29](https://github.com/eugenia1984/Avalith-React/tree/main/clase29): Librerias para estilos, Formularios, Renderizado condicional, [App de Tareas - note-app](https://github.com/eugenia1984/note-app).
 
 12/09 : clase 30
 
