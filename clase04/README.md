@@ -105,6 +105,8 @@ Páginas que nos ayudan:
 
 - [https://color.adobe.com/es/create](https://color.adobe.com/es/create)
 
+- [https://branition.com/colors](https://branition.com/colors)
+
 ---
 
 [Disney y la psicologia del color](https://mott.pe/noticias/lo-que-los-villanos-de-disney-revelan-sobre-la-psicologia-del-color/)
