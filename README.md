@@ -8,179 +8,153 @@ Curso de la Skill Factory de Avalith en **React**
 
 - **1. Desarrollo Web y Mobile** :
 
+```
 -¿Qué partes están implicadas?
-
 -¿Qué tengo que aprender?
-
 -¿Qué más existe aparte del Desarrollo Web?
+```
 
 - **2. Preparación del entorno**:
 
+```
 -Instalación de programas necesarios
-
 -Revisión de versiones
-
 -Configuración del editor y extensiones
+```
 
 - **3. HTML y CSS**:
 
+```
 -Rvision de etiquetas básicas y conceptos básicos 
-
 -Revisión de CSS y Flexbox
+```
 
 - **4. Git**:
 
+```
 -Git vs GitHub (y otras alternativas)
-
 -Comandos básicos (Y SUPER NECESARIOS)
+```
 
 - **5. Introducción a JavaScript**:
 
+```
 -¿Qué es JS y para qué se puede usar?
-
 -Tipos de variables y conversión de tipos
-
 -Estructuras de control, Condicionales y Operadores
+```
 
 - **6. Arrays y Objetos**:
-
+```
 -Manipulación de arrays 
-
 -Manipulación de Objetos
-
 -Destructuring
+```
 
 - **7. JavaScript Intermedio**:
-
+```
 -Métodos para arrays y objetos
-
 -Eventos
-
 -Introducción a Regex
-
 -JS y DOM
+```
 
 - **8. Asincronismo**:
-
+```
 -Operaciones sincrónicas y asincrónicas
-
 -Event Loop
-
 -Callbacks y promesas
-
 -Async / await + Error Handling
+```
 
 - **9. Introducción a React**:
-
+```
 -¿Qué es y por qué utilizarlo?
-
 -Web tradicional vs SPA vs PWA
-
 -Alternativas a React
+```
 
 - **10. Sintaxis y estructura de proyectos en React**:
-
+```
 -Formas de crear un proyecto en React
-
 -Dependencias en el proyecto
-
 -Props
-
 -Reutilización de componentes
+```
 
 - **11. Programación funcional**:
-
+```
 -Componentes funcionales en React
-
 -Dependencias en el proyecto
-
 -Props
-
 -Retilización de componentes
+```
 
 - **12. Hooks**:
-
+```
 -¿Qué son los hooks?
-
 -useState, useEffect
-
 -Manejo de estados en un componente
-
 -Peticion a API con async-await, y fetch y then.
-
 -Ciclo de vida de un componente
-
 -Hooks Nativos y Custom Hooks (ideal)
+```
 
 - **13. Routing**:
-
+```
 -SPA y enrutamiento
-
 -Path y navegación
-
 -Enrutado dinámico y parámetros
+```
 
 - **14. Deploying de Aplicaciones**:
-
+```
 -¿Cómo subo mis proyectos de una forma sencilla?
-
 -Otras alternativas de deploy
-
 -Usando AWS para mi proyecto (ideal)
+```
 
 - **15. State managment**:
-
+```
 -Context API
-
 -¿Qué es Redux?
-
 -Redux vs Redux. Toolkit
-
 -Actions, reducers y store
-
 -¿Hay más Redux's?
+```
 
 - **16. Autenticación**:
-
+```
 -¿Qué es JWT?
-
 -Validación de JWT y rutas privadas
-
 -Login, localStorage y cookies
+```
 
 - **17. Conexión a BackEnd**:
-
+```
 -Petición HTTP
-
 -API Key y Headers
-
 -Axios interceptors (ideal)
-
 -Firebase
+```
 
 - **18. Test automation**:
-
+```
 -¿Por que es importante el testing?
-
 -Tipos de test
-
 -TDD
-
 -React Testing Library
-
 -Jest & Selenium (ideal)
+```
 
 - **Extras**
-
+```
 -Instancias de AWS
-
 -Patrones de Diseño
-
 -GitHub
-
 -Actions
-
 -Documentación
+```
 
 ---
 
@@ -226,19 +200,9 @@ Curso de la Skill Factory de Avalith en **React**
 
 09/09 : [clase 29](https://github.com/eugenia1984/Avalith-React/tree/main/clase29): Librerias para estilos, Formularios, Renderizado condicional, [App de Tareas - note-app](https://github.com/eugenia1984/note-app).
 
-12/09 : clase 30
-
-14/09 : clase 31
-
-16/09: clase 32
-
-19/09: clase 33
-
-21/09: clase 34
-
-23/09: clase 35
-
-
-
 
 ---
+
+- Seguime en: [LinkedIn - maria-eugenia-costa](https://www.linkedin.com/in/maria-eugenia-costa/)
+
+- ---
